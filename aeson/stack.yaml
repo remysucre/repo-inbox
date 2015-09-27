@@ -1,0 +1,12 @@
+flags:
+  aeson-benchmarks:
+    old-locale: false
+  aeson:
+    old-locale: false
+    developer: false
+packages:
+- '.'
+- examples/
+- benchmarks/
+extra-deps: []
+resolver: nightly-2015-09-19

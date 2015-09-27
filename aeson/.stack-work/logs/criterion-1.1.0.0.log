@@ -1,0 +1,87 @@
+Configuring criterion-1.1.0.0...
+Building criterion-1.1.0.0...
+Preprocessing library criterion-1.1.0.0...
+[ 1 of 13] Compiling Paths_criterion  ( .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/autogen/Paths_criterion.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Paths_criterion.o )
+[ 2 of 13] Compiling Criterion.Types  ( Criterion/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Criterion/Types.o )
+
+Criterion/Types.hs:65:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Criterion/Types.hs:73:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+
+Criterion/Types.hs:472:10: Warning:
+    No explicit implementation for
+      ‘toJSON’
+    In the instance declaration for ‘ToJSON Outliers’
+
+Criterion/Types.hs:489:10: Warning:
+    No explicit implementation for
+      ‘toJSON’
+    In the instance declaration for ‘ToJSON OutlierEffect’
+
+Criterion/Types.hs:527:10: Warning:
+    No explicit implementation for
+      ‘toJSON’
+    In the instance declaration for ‘ToJSON OutlierVariance’
+
+Criterion/Types.hs:547:10: Warning:
+    No explicit implementation for
+      ‘toJSON’
+    In the instance declaration for ‘ToJSON Regression’
+
+Criterion/Types.hs:574:10: Warning:
+    No explicit implementation for
+      ‘toJSON’
+    In the instance declaration for ‘ToJSON SampleAnalysis’
+
+Criterion/Types.hs:594:10: Warning:
+    No explicit implementation for
+      ‘toJSON’
+    In the instance declaration for ‘ToJSON KDE’
+
+Criterion/Types.hs:624:10: Warning:
+    No explicit implementation for
+      ‘toJSON’
+    In the instance declaration for ‘ToJSON Report’
+[ 3 of 13] Compiling Criterion.Monad.Internal ( Criterion/Monad/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Criterion/Monad/Internal.o )
+
+Criterion/Monad/Internal.hs:20:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 4 of 13] Compiling Criterion.Measurement ( Criterion/Measurement.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Criterion/Measurement.o )
+[ 5 of 13] Compiling Criterion.Monad  ( Criterion/Monad.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Criterion/Monad.o )
+[ 6 of 13] Compiling Criterion.Report ( Criterion/Report.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Criterion/Report.o )
+[ 7 of 13] Compiling Criterion.IO.Printf ( Criterion/IO/Printf.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Criterion/IO/Printf.o )
+
+Criterion/IO/Printf.hs:37:39: Warning:
+    Variable ‘a’ is implicitly quantified due to a context
+    Use explicit forall syntax instead.
+    This will become an error in GHC 7.12.
+    In the type ‘PrintfArg a => a -> PrintfCont’
+    In the definition of data constructor ‘PrintfCont’
+[ 8 of 13] Compiling Criterion.Analysis ( Criterion/Analysis.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Criterion/Analysis.o )
+
+Criterion/Analysis.hs:42:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[ 9 of 13] Compiling Criterion.Main.Options ( Criterion/Main/Options.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Criterion/Main/Options.o )
+
+Criterion/Main/Options.hs:32:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[10 of 13] Compiling Criterion.IO     ( Criterion/IO.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Criterion/IO.o )
+[11 of 13] Compiling Criterion.Internal ( Criterion/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Criterion/Internal.o )
+[12 of 13] Compiling Criterion.Main   ( Criterion/Main.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Criterion/Main.o )
+[13 of 13] Compiling Criterion        ( Criterion.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Criterion.o )
+In-place registering criterion-1.1.0.0...
+Installing library in
+/home/remy/repo-inbox/aeson/.stack-work/install/x86_64-linux/nightly-2015-09-19/7.10.2/lib/x86_64-linux-ghc-7.10.2/criterion-1.1.0.0-3Cli0wn5eHm0Y5UYs1IIfO
+Registering criterion-1.1.0.0...

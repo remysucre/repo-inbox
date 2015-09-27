@@ -1,0 +1,282 @@
+Configuring aeson-0.10.0.0...
+Preprocessing library aeson-0.10.0.0...
+
+Data/Aeson/TH.hs:2:24: Warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+
+Data/Aeson/Types/Generic.hs:2:45: Warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+
+Data/Aeson/Types/Instances.hs:3:5: Warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+[ 1 of 16] Compiling Data.Aeson.Functions ( Data/Aeson/Functions.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Functions.o )
+[ 2 of 16] Compiling Data.Aeson.Internal.Time ( Data/Aeson/Internal/Time.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Internal/Time.o )
+[ 3 of 16] Compiling Data.Aeson.Types.Internal ( Data/Aeson/Types/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Types/Internal.o )
+
+Data/Aeson/Types/Internal.hs:62:1: Warning:
+    The import of ‘Data.Foldable’ is redundant
+      except perhaps to import instances from ‘Data.Foldable’
+    To import instances alone, use: import Data.Foldable()
+
+Data/Aeson/Types/Internal.hs:65:1: Warning:
+    The import of ‘Monoid’ from module ‘Data.Monoid’ is redundant
+
+Data/Aeson/Types/Internal.hs:71:1: Warning:
+    The import of ‘Data.Traversable’ is redundant
+      except perhaps to import instances from ‘Data.Traversable’
+    To import instances alone, use: import Data.Traversable()
+[ 4 of 16] Compiling Data.Aeson.Encode.Builder ( Data/Aeson/Encode/Builder.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Encode/Builder.o )
+[ 5 of 16] Compiling Data.Aeson.Types.Class ( Data/Aeson/Types/Class.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Types/Class.o )
+[ 6 of 16] Compiling Data.Aeson.Encode.Functions ( Data/Aeson/Encode/Functions.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Encode/Functions.o )
+
+Data/Aeson/Encode/Functions.hs:17:1: Warning:
+    The import of ‘Data.Foldable’ is redundant
+      except perhaps to import instances from ‘Data.Foldable’
+    To import instances alone, use: import Data.Foldable()
+
+Data/Aeson/Encode/Functions.hs:18:1: Warning:
+    The import of ‘mempty’ from module ‘Data.Monoid’ is redundant
+[ 7 of 16] Compiling Data.Aeson.Parser.Time ( Data/Aeson/Parser/Time.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Parser/Time.o )
+
+Data/Aeson/Parser/Time.hs:24:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 8 of 16] Compiling Data.Aeson.Types.Instances ( Data/Aeson/Types/Instances.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Types/Instances.o )
+
+Data/Aeson/Types/Instances.hs:58:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Data/Aeson/Types/Instances.hs:65:1: Warning:
+    The import of ‘Foldable’ from module ‘Data.Foldable’ is redundant
+
+Data/Aeson/Types/Instances.hs:70:1: Warning:
+    The import of ‘mempty’ from module ‘Data.Monoid’ is redundant
+
+Data/Aeson/Types/Instances.hs:77:1: Warning:
+    The import of ‘traverse’
+    from module ‘Data.Traversable’ is redundant
+
+Data/Aeson/Types/Instances.hs:79:1: Warning:
+    The import of ‘Word’ from module ‘Data.Word’ is redundant
+[ 9 of 16] Compiling Data.Aeson.Internal ( Data/Aeson/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Internal.o )
+[10 of 16] Compiling Data.Aeson.Types.Generic ( Data/Aeson/Types/Generic.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Types/Generic.o )
+
+Data/Aeson/Types/Generic.hs:22:1: Warning:
+    The import of ‘<*>, pure, <$>’
+    from module ‘Control.Applicative’ is redundant
+
+Data/Aeson/Types/Generic.hs:33:1: Warning:
+    The import of ‘mempty’ from module ‘Data.Monoid’ is redundant
+[11 of 16] Compiling Data.Aeson.Types ( Data/Aeson/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Types.o )
+[12 of 16] Compiling Data.Aeson.Parser.Internal ( Data/Aeson/Parser/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Parser/Internal.o )
+
+Data/Aeson/Parser/Internal.hs:34:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[13 of 16] Compiling Data.Aeson.Parser ( Data/Aeson/Parser.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Parser.o )
+[14 of 16] Compiling Data.Aeson.Encode ( Data/Aeson/Encode.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/Encode.o )
+[15 of 16] Compiling Data.Aeson       ( Data/Aeson.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson.o )
+[16 of 16] Compiling Data.Aeson.TH    ( Data/Aeson/TH.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Data/Aeson/TH.o )
+
+Data/Aeson/TH.hs:103:1: Warning:
+    The import of ‘fail, return, mapM, liftM2’
+    from module ‘Control.Monad’ is redundant
+In-place registering aeson-0.10.0.0...
+Preprocessing test suite 'tests' for aeson-0.10.0.0...
+[ 1 of 12] Compiling Options          ( tests/Options.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/tests/tests-tmp/Options.o )
+[ 2 of 12] Compiling Functions        ( tests/Functions.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/tests/tests-tmp/Functions.o )
+[ 3 of 12] Compiling Types            ( tests/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/tests/tests-tmp/Types.o )
+[ 4 of 12] Compiling Encoders         ( tests/Encoders.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/tests/tests-tmp/Encoders.o )
+[ 5 of 12] Compiling Instances        ( tests/Instances.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/tests/tests-tmp/Instances.o )
+
+tests/Instances.hs:105:10: Warning:
+    No explicit implementation for
+      ‘toJSON’
+    In the instance declaration for ‘ToJSON OneConstructor’
+
+tests/Instances.hs:111:10: Warning:
+    No explicit implementation for
+      ‘toJSON’
+    In the instance declaration for ‘ToJSON (Product2 a b)’
+
+tests/Instances.hs:120:10: Warning:
+    No explicit implementation for
+      ‘toJSON’
+    In the instance declaration for ‘ToJSON (Product6 a b c d e f)’
+
+tests/Instances.hs:130:10: Warning:
+    No explicit implementation for
+      ‘toJSON’
+    In the instance declaration for ‘ToJSON (Sum4 a b c d)’
+[ 6 of 12] Compiling DataFamilies.Types ( tests/DataFamilies/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/tests/tests-tmp/DataFamilies/Types.o )
+[ 7 of 12] Compiling DataFamilies.Encoders ( tests/DataFamilies/Encoders.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/tests/tests-tmp/DataFamilies/Encoders.o )
+[ 8 of 12] Compiling DataFamilies.Instances ( tests/DataFamilies/Instances.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/tests/tests-tmp/DataFamilies/Instances.o )
+[ 9 of 12] Compiling UnitTests        ( tests/UnitTests.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/tests/tests-tmp/UnitTests.o )
+
+tests/UnitTests.hs:35:41: Warning:
+    In the use of ‘camelTo’
+    (imported from Data.Aeson.Types, but defined in aeson-0.10.0.0@aeson_2OtVPmtvnn29jbGaZqemCu:Data.Aeson.Types.Internal):
+    Deprecated: "Use camelTo2 for better results"
+
+tests/UnitTests.hs:52:60: Warning:
+    In the use of ‘camelTo’
+    (imported from Data.Aeson.Types, but defined in aeson-0.10.0.0@aeson_2OtVPmtvnn29jbGaZqemCu:Data.Aeson.Types.Internal):
+    Deprecated: "Use camelTo2 for better results"
+
+tests/UnitTests.hs:61:11: Warning:
+    This binding for ‘c’ shadows the existing binding
+      bound at tests/UnitTests.hs:58:11
+
+tests/UnitTests.hs:61:13: Warning:
+    This binding for ‘s’ shadows the existing binding
+      bound at tests/UnitTests.hs:58:13
+
+tests/UnitTests.hs:126:12: Warning:
+    In the use of ‘parseTime’
+    (imported from Data.Time.Format, but defined in time-1.5.0.1:Data.Time.Format.Parse):
+    Deprecated: "use "parseTimeM True" instead"
+[10 of 12] Compiling Properties       ( tests/Properties.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/tests/tests-tmp/Properties.o )
+[11 of 12] Compiling DataFamilies.Properties ( tests/DataFamilies/Properties.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/tests/tests-tmp/DataFamilies/Properties.o )
+[12 of 12] Compiling Main             ( tests/Tests.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/tests/tests-tmp/Main.o )
+Linking .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/tests/tests ...
+data families:
+  template-haskell:
+    toJSON:
+      Nullary:
+        string: [OK, passed 100 tests]
+        2ElemArray: [OK, passed 100 tests]
+        TaggedObject: [OK, passed 100 tests]
+        ObjectWithSingleField: [OK, passed 100 tests]
+        roundTrip:
+          string: [OK, passed 100 tests]
+          2ElemArray: [OK, passed 100 tests]
+          TaggedObject: [OK, passed 100 tests]
+          ObjectWithSingleField: [OK, passed 100 tests]
+      SomeType:
+        2ElemArray: [OK, passed 100 tests]
+        TaggedObject: [OK, passed 100 tests]
+        ObjectWithSingleField: [OK, passed 100 tests]
+        roundTrip:
+          2ElemArray: [OK, passed 100 tests]
+          TaggedObject: [OK, passed 100 tests]
+          ObjectWithSingleField: [OK, passed 100 tests]
+        Approx:
+          string: [OK, passed 100 tests]
+          ObjectWithSingleField: [OK, passed 100 tests]
+          roundTrip:
+            string: [OK, passed 100 tests]
+            ObjectWithSingleField: [OK, passed 100 tests]
+    toEncoding:
+      NullaryString: [OK, passed 100 tests]
+      Nullary2ElemArray: [OK, passed 100 tests]
+      NullaryTaggedObject: [OK, passed 100 tests]
+      NullaryObjectWithSingleField: [OK, passed 100 tests]
+      ApproxUnwrap: [OK, passed 100 tests]
+      ApproxDefault: [OK, passed 100 tests]
+      SomeType2ElemArray: [OK, passed 100 tests]
+      SomeTypeTaggedObject: [OK, passed 100 tests]
+      SomeTypeObjectWithSingleField: [OK, passed 100 tests]
+properties:
+  encode:
+    encodeDouble: [OK, passed 100 tests]
+    encodeInteger: [OK, passed 100 tests]
+  roundTrip:
+    Bool: [OK, passed 100 tests]
+    Double: [OK, passed 100 tests]
+    Int: [OK, passed 100 tests]
+    Integer: [OK, passed 100 tests]
+    String: [OK, passed 100 tests]
+    Text: [OK, passed 100 tests]
+    Foo: [OK, passed 100 tests]
+    Day: [OK, passed 100 tests]
+    DotNetTime: [OK, passed 100 tests]
+    LocalTime: [OK, passed 100 tests]
+    UTCTime: [OK, passed 100 tests]
+    ZonedTime: [OK, passed 100 tests]
+    NominalDiffTime: [OK, passed 100 tests]
+    ghcGenerics:
+      OneConstructor: [OK, passed 100 tests]
+      Product2: [OK, passed 100 tests]
+      Product6: [OK, passed 100 tests]
+      Sum4: [OK, passed 100 tests]
+  toFromJSON:
+    Integer: [OK, passed 100 tests]
+    Double: [OK, passed 100 tests]
+    Maybe Integer: [OK, passed 100 tests]
+    Either Integer Double: [OK, passed 100 tests]
+    Either Integer Integer: [OK, passed 100 tests]
+  failure messages:
+    modify failure: [OK, passed 100 tests]
+  template-haskell:
+    toJSON:
+      Nullary:
+        string: [OK, passed 100 tests]
+        2ElemArray: [OK, passed 100 tests]
+        TaggedObject: [OK, passed 100 tests]
+        ObjectWithSingleField: [OK, passed 100 tests]
+        roundTrip:
+          string: [OK, passed 100 tests]
+          2ElemArray: [OK, passed 100 tests]
+          TaggedObject: [OK, passed 100 tests]
+          ObjectWithSingleField: [OK, passed 100 tests]
+      SomeType:
+        2ElemArray: [OK, passed 100 tests]
+        TaggedObject: [OK, passed 100 tests]
+        ObjectWithSingleField: [OK, passed 100 tests]
+        roundTrip:
+          2ElemArray: [OK, passed 100 tests]
+          TaggedObject: [OK, passed 100 tests]
+          ObjectWithSingleField: [OK, passed 100 tests]
+        Approx:
+          string: [OK, passed 100 tests]
+          ObjectWithSingleField: [OK, passed 100 tests]
+          roundTrip:
+            string: [OK, passed 100 tests]
+            ObjectWithSingleField: [OK, passed 100 tests]
+    toEncoding:
+      NullaryString: [OK, passed 100 tests]
+      Nullary2ElemArray: [OK, passed 100 tests]
+      NullaryTaggedObject: [OK, passed 100 tests]
+      NullaryObjectWithSingleField: [OK, passed 100 tests]
+      ApproxUnwrap: [OK, passed 100 tests]
+      ApproxDefault: [OK, passed 100 tests]
+      SomeType2ElemArray: [OK, passed 100 tests]
+      SomeTypeTaggedObject: [OK, passed 100 tests]
+      SomeTypeObjectWithSingleField: [OK, passed 100 tests]
+unit:
+  camelCase:
+    camelTo: [OK]
+    camelTo: [OK]
+    camelTo: [OK]
+    camelTo: [OK]
+    camelTo2: [OK]
+    camelTo2: [OK]
+    camelTo2: [OK]
+    camelTo2: [OK]
+  encoding:
+    goodProducer: [OK]
+  utctime:
+    good: [OK]
+    bad: [OK]
+encoders:
+  benchmarks/json-data/example.json: [OK]
+  benchmarks/json-data/integers.json: [OK]
+  benchmarks/json-data/jp100.json: [OK]
+  benchmarks/json-data/numbers.json: [OK]
+  benchmarks/json-data/twitter10.json: [OK]
+  benchmarks/json-data/twitter20.json: [OK]
+  benchmarks/json-data/geometry.json: [OK]
+  benchmarks/json-data/jp10.json: [OK]
+  benchmarks/json-data/jp50.json: [OK]
+  benchmarks/json-data/twitter1.json: [OK]
+  benchmarks/json-data/twitter100.json: [OK]
+  benchmarks/json-data/twitter50.json: [OK]
+
+         Properties   Test Cases   Total        
+ Passed  79           23           102          
+ Failed  0            0            0            
+ Total   79           23           102          

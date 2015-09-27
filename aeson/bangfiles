@@ -1,0 +1,11 @@
+./benchmarks/JsonParse.hs
+./benchmarks/AesonParse.hs
+./benchmarks/ReadFile.hs
+./benchmarks/Compare/JsonBench.hs
+./benchmarks/AesonEncode.hs
+./Data/Aeson/Parser/Time.hs
+./Data/Aeson/Parser/Internal.hs
+./Data/Aeson/Parser.hs
+./Data/Aeson/Encode.hs
+./Data/Aeson/Encode/Builder.hs
+./Data/Aeson/Types/Instances.hs
