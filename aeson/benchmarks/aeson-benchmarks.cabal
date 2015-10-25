@@ -155,3 +155,28 @@ executable aeson-benchmark-dates
     aeson-benchmarks,
     text,
     time
+
+executable rembench
+  main-is: Rembench.hs
+  ghc-options: -Wall -O2 -rtsopts
+  build-depends:
+    aeson-benchmarks,
+    attoparsec,
+    base,
+    bytestring,
+    time
+
+executable strict-bench
+  main-is: StrictBench.hs
+  ghc-options: -Wall -O2 -rtsopts
+  build-depends:
+    aeson-benchmarks,
+    attoparsec,
+    base,
+    bytestring,
+    time, 
+    criterion, 
+    transformers, 
+    text, 
+    vector, 
+    unordered-containers

@@ -113,11 +113,11 @@ object_ = {-# SCC "object_" #-} Object <$> objectValues jstring value
 
 object_' :: Parser Value
 object_' = {-# SCC "object_'" #-} do
-  !vals <- objectValues jstring' value'
+  vals <- objectValues jstring' value'
   return (Object vals)
  where
   jstring' = do
-    !s <- jstring
+    s <- jstring
     return s
 
 objectValues :: Parser Text -> Parser Value -> Parser (H.HashMap Text Value)
@@ -131,7 +131,7 @@ objectValues str val = do
   loop m0 = do
     k <- str <* skipSpace <* char ':'
     v <- val <* skipSpace
-    let !m = H.insert k v m0
+    let m = H.insert k v m0
     ch <- A.satisfy $ \w -> w == COMMA || w == CLOSE_CURLY
     if ch == COMMA
       then skipSpace >> loop m
@@ -143,7 +143,7 @@ array_ = {-# SCC "array_" #-} Array <$> arrayValues value
 
 array_' :: Parser Value
 array_' = {-# SCC "array_'" #-} do
-  !vals <- arrayValues value'
+  vals <- arrayValues value'
   return (Array vals)
 
 arrayValues :: Parser Value -> Parser (Vector Value)
@@ -194,7 +194,7 @@ value' = do
   w <- A.peekWord8'
   case w of
     DOUBLE_QUOTE  -> do
-                     !s <- A.anyWord8 *> jstring_
+                     s <- A.anyWord8 *> jstring_
                      return (String s)
     OPEN_CURLY    -> A.anyWord8 *> object_'
     OPEN_SQUARE   -> A.anyWord8 *> array_'
@@ -203,7 +203,7 @@ value' = do
     C_n           -> string "null" *> pure Null
     _              | w >= 48 && w <= 57 || w == 45
                   -> do
-                     !n <- scientific
+                     n <- scientific
                      return (Number n)
       | otherwise -> fail "not a valid json value"
 
@@ -246,7 +246,7 @@ data S = S Int# Int#
                     in Just (S a' (a' || b))
       where backslash = BACKSLASH
 
-data S = S !Bool !Bool
+data S = S Bool Bool
 #endif
 
 unescape :: ByteString -> Either String ByteString
@@ -270,8 +270,8 @@ unescape s = unsafePerformIO $ do
     h <- Z.takeWhile (/=BACKSLASH)
     let rest = do
           start <- Z.take 2
-          let !slash = B.unsafeHead start
-              !t = B.unsafeIndex start 1
+          let slash = B.unsafeHead start
+              t = B.unsafeIndex start 1
               escape = case B.elemIndex t "\"\\/ntbrfu" of
                          Just i -> i
                          _      -> 255
@@ -287,7 +287,7 @@ unescape s = unsafePerformIO $ do
                      else do
                        b <- Z.string "\\u" *> hexQuad
                        if a <= 0xdbff && b >= 0xdc00 && b <= 0xdfff
-                         then let !c = ((a - 0xd800) `shiftL` 10) +
+                         then let c = ((a - 0xd800) `shiftL` 10) +
                                        (b - 0xdc00) + 0x10000
                               in copy h ptr >>= charUtf8 (chr c) >>= go
                          else fail "invalid UTF-16 surrogates"
