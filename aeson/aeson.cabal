@@ -8,9 +8,9 @@ copyright:       (c) 2011-2015 Bryan O'Sullivan
 author:          Bryan O'Sullivan <bos@serpentine.com>
 maintainer:      Bryan O'Sullivan <bos@serpentine.com>
 stability:       experimental
-tested-with:     GHC == 7.4, GHC == 7.6, GHC == 7.8, GHC == 7.10
+tested-with:     GHC == 7.4.2, GHC == 7.6.3, GHC == 7.8.4, GHC == 7.10.2
 synopsis:        Fast JSON parsing and encoding
-cabal-version:   >= 1.8
+cabal-version:   >= 1.8.0.4
 homepage:        https://github.com/bos/aeson
 bug-reports:     https://github.com/bos/aeson/issues
 build-type:      Simple
@@ -112,11 +112,15 @@ library
 
   ghc-options: -O2 -Wall
 
+  include-dirs: include
+
 test-suite tests
   type:           exitcode-stdio-1.0
   hs-source-dirs: tests
   main-is:        Tests.hs
   other-modules:
+    DataFamilies.Properties
+    DataFamilies.Instances
     DataFamilies.Encoders
     DataFamilies.Types
     Encoders

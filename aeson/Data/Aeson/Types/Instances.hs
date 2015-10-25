@@ -1,8 +1,11 @@
 {-# LANGUAGE CPP, BangPatterns, DeriveDataTypeable, FlexibleContexts,
-    FlexibleInstances, GeneralizedNewtypeDeriving, IncoherentInstances,
-    OverlappingInstances, OverloadedStrings, UndecidableInstances,
+    FlexibleInstances, GeneralizedNewtypeDeriving,
+    OverloadedStrings, UndecidableInstances,
     ViewPatterns #-}
 {-# LANGUAGE DefaultSignatures #-}
+
+#include "overlapping-compat.h"
+
 {-# OPTIONS_GHC -fno-warn-orphans #-}
 
 -- TODO: Drop this when we remove support for Data.Attoparsec.Number
@@ -55,28 +58,27 @@ module Data.Aeson.Types.Instances
     , typeMismatch
     ) where
 
-import Control.Applicative ((<$>), (<*>), pure)
 import Data.Aeson.Encode.Functions (brackets, builder, encode, foldable, list)
 import Data.Aeson.Functions (hashMapKey, mapHashKeyVal, mapKey, mapKeyVal)
 import Data.Aeson.Types.Class
 import Data.Aeson.Types.Internal
 import Data.Attoparsec.Number (Number(..))
 import Data.Fixed (Fixed, HasResolution)
-import Data.Foldable (Foldable, toList)
+import Data.Foldable (toList)
 import Data.Functor.Identity (Identity(..))
 import Data.Hashable (Hashable(..))
 import Data.Int (Int8, Int16, Int32, Int64)
 import Data.Maybe (fromMaybe)
-import Data.Monoid ((<>), mempty)
+import Data.Monoid ((<>))
 import Data.Monoid (Dual(..), First(..), Last(..))
 import Data.Ratio (Ratio, (%), numerator, denominator)
 import Data.Scientific (Scientific)
 import Data.Text (Text, pack, unpack)
 import Data.Time (Day, LocalTime, NominalDiffTime, UTCTime, ZonedTime)
 import Data.Time.Format (FormatTime, formatTime, parseTime)
-import Data.Traversable as Tr (sequence, traverse)
+import Data.Traversable as Tr (sequence)
 import Data.Vector (Vector)
-import Data.Word (Word, Word8, Word16, Word32, Word64)
+import Data.Word (Word8, Word16, Word32, Word64)
 import Foreign.Storable (Storable)
 import Prelude hiding (foldr)
 import qualified Data.Aeson.Encode.Builder as E
@@ -101,6 +103,14 @@ import qualified Data.Vector.Mutable as VM (unsafeNew, unsafeWrite)
 import qualified Data.Vector.Primitive as VP
 import qualified Data.Vector.Storable as VS
 import qualified Data.Vector.Unboxed as VU
+
+#if !MIN_VERSION_base(4,8,0)
+import Control.Applicative ((<$>), (<*>), pure)
+import Data.Foldable (Foldable)
+import Data.Monoid (mempty)
+import Data.Traversable as Tr (traverse)
+import Data.Word (Word)
+#endif
 
 #if MIN_VERSION_time(1,5,0)
 import Data.Time.Format (defaultTimeLocale)
@@ -142,9 +152,9 @@ instance (ToJSON a, ToJSON b) => ToJSON (Either a b) where
     {-# INLINE toJSON #-}
 
     toEncoding (Left a) = Encoding $
-      B.shortByteString "{\"left\":" <> builder a <> B.char7 '}'
+      B.shortByteString "{\"Left\":" <> builder a <> B.char7 '}'
     toEncoding (Right a) = Encoding $
-      B.shortByteString "{\"right\":" <> builder a <> B.char7 '}'
+      B.shortByteString "{\"Right\":" <> builder a <> B.char7 '}'
     {-# INLINE toEncoding #-}
 
 instance (FromJSON a, FromJSON b) => FromJSON (Either a b) where
@@ -441,19 +451,19 @@ instance FromJSON LT.Text where
     parseJSON = withText "Lazy Text" $ pure . LT.fromStrict
     {-# INLINE parseJSON #-}
 
-instance (ToJSON a) => ToJSON [a] where
+instance OVERLAPPABLE_ (ToJSON a) => ToJSON [a] where
     toJSON = Array . V.fromList . map toJSON
     {-# INLINE toJSON #-}
 
     toEncoding xs = list xs
     {-# INLINE toEncoding #-}
 
-instance (FromJSON a) => FromJSON [a] where
+instance OVERLAPPABLE_ (FromJSON a) => FromJSON [a] where
     parseJSON = withArray "[a]" $ Tr.sequence .
                 zipWith parseIndexedJSON [0..] . V.toList
     {-# INLINE parseJSON #-}
 
-instance (Foldable t, ToJSON a) => ToJSON (t a) where
+instance OVERLAPPABLE_ (Foldable t, ToJSON a) => ToJSON (t a) where
     toJSON = toJSON . toList
     {-# INLINE toJSON #-}
 
@@ -713,14 +723,14 @@ instance FromJSON DotNetTime where
 
 instance ToJSON Day where
     toJSON       = stringEncoding
-    toEncoding z = Encoding (E.day z)
+    toEncoding z = Encoding (E.quote $ E.day z)
 
 instance FromJSON Day where
     parseJSON = withText "Day" (Time.run Time.day)
 
 instance ToJSON LocalTime where
     toJSON       = stringEncoding
-    toEncoding z = Encoding (E.localTime z)
+    toEncoding z = Encoding (E.quote $ E.localTime z)
 
 instance FromJSON LocalTime where
     parseJSON = withText "LocalTime" (Time.run Time.localTime)
@@ -728,7 +738,7 @@ instance FromJSON LocalTime where
 instance ToJSON ZonedTime where
     toJSON = stringEncoding
 
-    toEncoding z = Encoding (E.zonedTime z)
+    toEncoding z = Encoding (E.quote $ E.zonedTime z)
 
 formatMillis :: (FormatTime t) => t -> String
 formatMillis = take 3 . formatTime defaultTimeLocale "%q"
@@ -739,11 +749,11 @@ instance FromJSON ZonedTime where
 instance ToJSON UTCTime where
     toJSON = stringEncoding
 
-    toEncoding t = Encoding (E.utcTime t)
+    toEncoding t = Encoding (E.quote $ E.utcTime t)
 
 -- | Encode something to a JSON string.
 stringEncoding :: (ToJSON a) => a -> Value
-stringEncoding = String . T.decodeLatin1 . L.toStrict . encode
+stringEncoding = String . T.dropAround (== '"') . T.decodeLatin1 . L.toStrict . encode
 {-# INLINE stringEncoding #-}
 
 instance FromJSON UTCTime where

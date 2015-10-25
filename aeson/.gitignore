@@ -1,0 +1,13 @@
+dist
+.cabal-sandbox/
+cabal.sandbox.config
+
+*.o
+*.hi
+*.nix
+
+benchmarks/AesonEncode
+
+tests/qc
+
+cabal.sandbox.config

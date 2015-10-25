@@ -1,6 +1,8 @@
-{-# LANGUAGE CPP, FlexibleInstances, IncoherentInstances, NamedFieldPuns,
-    NoImplicitPrelude, OverlappingInstances, TemplateHaskell,
+{-# LANGUAGE CPP, FlexibleInstances, NamedFieldPuns,
+    NoImplicitPrelude, TemplateHaskell,
     UndecidableInstances #-}
+
+#include "overlapping-compat.h"
 
 {-|
 Module:      Data.Aeson.TH
@@ -88,7 +90,6 @@ module Data.Aeson.TH
     ) where
 
 import Control.Applicative ( pure, (<$>), (<*>) )
-import Control.Monad       ( return, mapM, liftM2, fail )
 import Data.Aeson ( toJSON, Object, (.=), (.:), (.:?)
                   , ToJSON, toEncoding, toJSON
                   , FromJSON, parseJSON
@@ -100,7 +101,7 @@ import Data.Aeson.Types ( Value(..), Parser
                         , defaultTaggedObject
                         )
 import Data.Aeson.Types.Internal (Encoding(..))
-import Control.Monad       ( return, mapM, liftM2, fail, join )
+import Control.Monad       ( join, liftM2, return, mapM, fail )
 import Data.Bool           ( Bool(False, True), otherwise, (&&), not )
 import Data.Either         ( Either(Left, Right) )
 import Data.Eq             ( (==) )
@@ -505,11 +506,16 @@ argsToEncoding opts multiCons (RecC conName ts) = case (unwrapUnaryRecords opts,
         (maybes, rest) = partition isMaybe argCons
 
         maybeToPair (arg, (field, _, _)) =
-            infixApp (infixE (Just $ toFieldName field)
-                             [|(.=)|]
-                             Nothing)
-                     [|(<$>)|]
-                     (varE arg)
+            infixApp
+              (infixApp
+                (infixE
+                  (Just $ toFieldName field <^> [|E.char7 ':'|])
+                  [|(<>)|]
+                  Nothing)
+                [|(.)|]
+                [|E.builder|])
+              [|(<$>)|]
+              (varE arg)
 
         toPair (arg, (field, _, _)) =
           toFieldName field <:> [|E.builder|] `appE` varE arg
@@ -947,7 +953,7 @@ parseTypeMismatch tName conName expected actual =
 class (FromJSON a) => LookupField a where
     lookupField :: String -> String -> Object -> T.Text -> Parser a
 
-instance (FromJSON a) => LookupField a where
+instance OVERLAPPABLE_ (FromJSON a) => LookupField a where
     lookupField tName rec obj key =
         case H.lookup key obj of
           Nothing -> unknownFieldFail tName rec (T.unpack key)

@@ -17,7 +17,7 @@ main = do
   forM_ args $ \arg -> bracket (openFile arg ReadMode) hClose $ \h -> do
     putStrLn $ arg ++ ":"
     start <- getCurrentTime
-    let loop good bad
+    let loop !good !bad
             | good+bad >= count = return (good, bad)
             | otherwise = do
           hSeek h AbsoluteSeek 0

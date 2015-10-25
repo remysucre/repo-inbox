@@ -1,9 +1,11 @@
-{-# LANGUAGE DefaultSignatures, EmptyDataDecls, FlexibleInstances,
-    FunctionalDependencies, KindSignatures, OverlappingInstances,
+{-# LANGUAGE CPP, DefaultSignatures, EmptyDataDecls, FlexibleInstances,
+    FunctionalDependencies, KindSignatures,
     ScopedTypeVariables, TypeOperators, UndecidableInstances,
     ViewPatterns, NamedFieldPuns, FlexibleContexts, PatternGuards,
     RecordWildCards #-}
 {-# OPTIONS_GHC -fno-warn-orphans #-}
+
+#include "overlapping-compat.h"
 
 -- |
 -- Module:      Data.Aeson.Types.Generic
@@ -19,7 +21,7 @@
 
 module Data.Aeson.Types.Generic ( ) where
 
-import Control.Applicative ((<*>), (<$>), (<|>), pure)
+import Control.Applicative ((<|>))
 import Control.Monad ((<=<), join)
 import Control.Monad.ST (ST)
 import Data.Aeson.Encode.Builder (emptyArray_)
@@ -30,17 +32,22 @@ import Data.Bits (unsafeShiftR)
 import Data.ByteString.Builder as B
 import Data.DList (DList, toList, empty)
 import Data.Maybe (fromMaybe)
-import Data.Monoid ((<>), mempty)
+import Data.Monoid ((<>))
 import Data.Text (Text, pack, unpack)
 import GHC.Generics
 import qualified Data.HashMap.Strict as H
 import qualified Data.Vector as V
 import qualified Data.Vector.Mutable as VM
 
+#if !MIN_VERSION_base(4,8,0)
+import Control.Applicative ((<*>), (<$>), pure)
+import Data.Monoid (mempty)
+#endif
+
 --------------------------------------------------------------------------------
 -- Generic toJSON
 
-instance (GToJSON a) => GToJSON (M1 i c a) where
+instance OVERLAPPABLE_ (GToJSON a) => GToJSON (M1 i c a) where
     -- Meta-information, which is not handled elsewhere, is ignored:
     gToJSON opts = gToJSON opts . unM1
     {-# INLINE gToJSON #-}
@@ -333,7 +340,8 @@ instance (Selector s, GToJSON a) => RecordTo (S1 s a) where
     recordToEncoding = fieldToEncoding
     {-# INLINE recordToEncoding #-}
 
-instance (Selector s, ToJSON a) => RecordTo (S1 s (K1 i (Maybe a))) where
+instance OVERLAPPING_ (Selector s, ToJSON a) =>
+  RecordTo (S1 s (K1 i (Maybe a))) where
     recordToPairs opts (M1 k1) | omitNothingFields opts
                                , K1 Nothing <- k1 = empty
     recordToPairs opts m1 = fieldToPair opts m1
@@ -384,7 +392,7 @@ instance ( WriteProduct a
                                    encodeProduct opts b
     {-# INLINE encodeProduct #-}
 
-instance (GToJSON a) => WriteProduct a where
+instance OVERLAPPABLE_ (GToJSON a) => WriteProduct a where
     writeProduct opts mv ix _ = VM.unsafeWrite mv ix . gToJSON opts
     {-# INLINE writeProduct #-}
 
@@ -430,7 +438,7 @@ gbuilder opts = fromEncoding . gToEncoding opts
 --------------------------------------------------------------------------------
 -- Generic parseJSON
 
-instance (GFromJSON a) => GFromJSON (M1 i c a) where
+instance OVERLAPPABLE_ (GFromJSON a) => GFromJSON (M1 i c a) where
     -- Meta-information, which is not handled elsewhere, is just added to the
     -- parsed value:
     gParseJSON opts = fmap M1 . gParseJSON opts
@@ -655,7 +663,8 @@ instance (Selector s, GFromJSON a) => FromRecord (S1 s a) where
           label = fieldLabelModifier opts $ selName (undefined :: t s a p)
     {-# INLINE parseRecord #-}
 
-instance (Selector s, FromJSON a) => FromRecord (S1 s (K1 i (Maybe a))) where
+instance OVERLAPPING_ (Selector s, FromJSON a) =>
+  FromRecord (S1 s (K1 i (Maybe a))) where
     parseRecord _ (Just lab) obj = (M1 . K1) . join <$> obj .:? lab
     parseRecord opts Nothing obj = (M1 . K1) . join <$> obj .:? pack label
         where
@@ -724,7 +733,7 @@ class IsRecord (f :: * -> *) isRecord | f -> isRecord
 
 instance (IsRecord f isRecord) => IsRecord (f :*: g) isRecord
   where isUnary = const False
-instance IsRecord (M1 S NoSelector f) False
+instance OVERLAPPING_ IsRecord (M1 S NoSelector f) False
 instance (IsRecord f isRecord) => IsRecord (M1 S c f) isRecord
 instance IsRecord (K1 i c) True
 instance IsRecord U1 False

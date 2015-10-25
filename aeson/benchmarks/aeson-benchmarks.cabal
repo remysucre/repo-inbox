@@ -12,6 +12,7 @@ flag old-locale
 
 library
   hs-source-dirs: .. .
+  include-dirs:   ../include
 
   exposed-modules:
     Data.Aeson

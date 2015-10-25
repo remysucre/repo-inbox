@@ -1,11 +1,14 @@
-{-# LANGUAGE CPP, DeriveGeneric, OverloadedStrings, ScopedTypeVariables #-}
+{-# LANGUAGE CPP, DeriveGeneric, OverloadedStrings, ScopedTypeVariables, TemplateHaskell #-}
+
+{-# OPTIONS_GHC -fno-warn-deprecations #-}
 
 module UnitTests (ioTests, tests) where
 
 import Control.Monad (forM)
 import Data.Aeson (decode, eitherDecode, encode, genericToJSON, genericToEncoding)
+import Data.Aeson.TH ( deriveJSON )
 import Data.Aeson.Encode (encodeToTextBuilder)
-import Data.Aeson.Types (ToJSON(..), Value, camelTo, camelTo2, defaultOptions)
+import Data.Aeson.Types (ToJSON(..), FromJSON, Value, camelTo, camelTo2, defaultOptions, omitNothingFields)
 import Data.Char (toUpper)
 import Data.Time (UTCTime)
 import Data.Time.Format (parseTime)
@@ -58,7 +61,7 @@ camelFrom :: Char -> String -> String
 camelFrom c s = let (p:ps) = split c s
                 in concat $ p : map capitalize ps
   where
-    split c s = map L.unpack $ L.split c $ L.pack s
+    split c' s' = map L.unpack $ L.split c' $ L.pack s'
     capitalize t = toUpper (head t) : tail t
 
 data Wibble = Wibble {
@@ -184,3 +187,13 @@ encoderComparisonTests = do
     , "twitter100.json"
     , "twitter50.json"
     ]
+
+-- A regression test for: https://github.com/bos/aeson/issues/293
+data MyRecord = MyRecord {_field1 :: Maybe Int, _field2 :: Maybe Bool}
+deriveJSON defaultOptions{omitNothingFields=True} ''MyRecord
+
+data MyRecord2 = MyRecord2 {_field3 :: Maybe Int, _field4 :: Maybe Bool}
+  deriving Generic
+
+instance ToJSON   MyRecord2
+instance FromJSON MyRecord2
