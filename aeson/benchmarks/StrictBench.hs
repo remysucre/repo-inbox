@@ -433,4 +433,4 @@ anotherDecode n s = (liftM2 (++)) (myDecode s) (anotherDecode (n - 1) s)
 
 main = do 
   fc <- L.readFile "json-data/buffer-builder.json"
-  defaultMain [bench "something" $ nf (anotherDecode 10) fc]
+  defaultMain [bench "something" $ nf (anotherDecode 3) fc]
