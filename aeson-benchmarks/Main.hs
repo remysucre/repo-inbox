@@ -509,9 +509,10 @@ charUtf8 ch ptr
 
 main :: IO ()
 main = do
-  (bs:cnt:args) <- getArgs
-  let count = read cnt :: Int
-      blkSize = read bs
+  -- (bs:cnt:args) <- getArgs
+  let count = 3700
+      blkSize = 65536
+      args = ["json-data/jp100.json"]
   forM_ args $ \arg -> bracket (openFile arg ReadMode) hClose $ \h -> do
     putStrLn $ arg ++ ":"
     start <- getCurrentTime
