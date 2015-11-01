@@ -3,7 +3,6 @@
 {-# LANGUAGE MagicHash #-}
 #endif
 
-#define BANG
 
 -- |
 -- Module:      Data.Aeson.Parser.Internal
@@ -35,7 +34,7 @@ module Data.Aeson.Parser.Internal
 -}
 import Control.Monad.IO.Class (liftIO)
 import Data.Aeson.Types.Internal (IResult(..), JSONPath, Result(..), Value(..))
-import Data.Aeson.Types.Instances (fromJSON)
+--import Data.Aeson.Types.Instances (fromJSON)
 import Data.Attoparsec.ByteString.Char8 (Parser, char, endOfInput, scientific,
                                          skipSpace, string)
 import Data.Bits ((.|.), shiftL)
@@ -63,7 +62,7 @@ import qualified Data.HashMap.Strict as H
 
 import Control.Monad
 import Control.Exception
-import Criterion.Main
+-- import Criterion.Main
 import System.Environment
 import System.IO
 import Data.Attoparsec.ByteString (parseWith)

@@ -10,60 +10,13 @@ flag old-locale
                If true then depend on time < 1.5 together with old-locale.
   default: False
 
-library
+executable aeson-benchmarks
   hs-source-dirs: .
   include-dirs:   include
-
-  exposed-modules:
-    Data.Aeson
-    Data.Aeson.Encode
-    Data.Aeson.Encode.Builder
-    Data.Aeson.Encode.Functions
-    Data.Aeson.Functions
-    Data.Aeson.Internal
-    Data.Aeson.Internal.Time
-    Data.Aeson.Parser
-    Data.Aeson.Parser.Internal
-    Data.Aeson.Parser.Time
-    Data.Aeson.TH
-    Data.Aeson.Types
-    Data.Aeson.Types.Class
-    Data.Aeson.Types.Generic
-    Data.Aeson.Types.Instances
-    Data.Aeson.Types.Internal
-
-  build-depends:
-    attoparsec >= 0.13.0.1,
-    base == 4.*,
-    bytestring >= 0.10.4.0,
-    containers,
-    deepseq,
-    dlist >= 0.2,
-    ghc-prim >= 0.2,
-    hashable >= 1.1.2.0,
-    mtl,
-    scientific >= 0.3.1 && < 0.4,
-    syb,
-    template-haskell >= 2.4,
-    text >= 1.1.1.0,
-    time,
-    transformers,
-    unordered-containers >= 0.2.3.0,
-    vector >= 0.7.1
-
-  if flag(old-locale)
-    build-depends: time < 1.5, old-locale
-  else
-    build-depends: time >= 1.5
-
-  ghc-options: -O2 -Wall
+  main-is: Main.hs
+  ghc-options: -O2 -rtsopts
   cpp-options: -DGENERICS
-
-executable strict-bench
-  main-is: StrictBench.hs
-  ghc-options: -Wall -O2 -rtsopts
   build-depends:
-    aeson-benchmarks,
     attoparsec,
     base,
     bytestring,
