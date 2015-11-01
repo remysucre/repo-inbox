@@ -3,6 +3,8 @@
 {-# LANGUAGE MagicHash #-}
 #endif
 
+#define BANG
+
 -- |
 -- Module:      Data.Aeson.Parser.Internal
 -- Copyright:   (c) 2011-2015 Bryan O'Sullivan
@@ -60,8 +62,12 @@ import qualified Data.ByteString.Unsafe as B
 import qualified Data.HashMap.Strict as H
 
 import Control.Monad
+import Control.Exception
 import Criterion.Main
 import System.Environment
+import System.IO
+import Data.Attoparsec.ByteString (parseWith)
+import Data.Time.Clock
 
 #if !MIN_VERSION_base(4,8,0)
 import Control.Applicative ((*>), (<$>), (<*), pure)
@@ -116,6 +122,8 @@ json' = value'
 object_ :: Parser Value
 object_ = {-# SCC "object_" #-} Object <$> objectValues jstring value
 
+#ifdef BANG
+
 object_' :: Parser Value
 object_' = {-# SCC "object_'" #-} do
   !vals <- objectValues jstring' value'
@@ -125,6 +133,21 @@ object_' = {-# SCC "object_'" #-} do
     !s <- jstring
     return s
 
+
+#else
+
+object_' :: Parser Value
+object_' = {-# SCC "object_'" #-} do
+  vals <- objectValues jstring' value'
+  return (Object vals)
+ where
+  jstring' = do
+    s <- jstring
+    return s
+
+#endif
+
+#ifdef BANG
 objectValues :: Parser Text -> Parser Value -> Parser (H.HashMap Text Value)
 objectValues str val = do
   skipSpace
@@ -142,14 +165,45 @@ objectValues str val = do
       then skipSpace >> loop m
       else return m
 {-# INLINE objectValues #-}
+#else
+objectValues :: Parser Text -> Parser Value -> Parser (H.HashMap Text Value)
+objectValues str val = do
+  skipSpace
+  w <- A.peekWord8'
+  if w == CLOSE_CURLY
+    then A.anyWord8 >> return H.empty
+    else loop H.empty
+ where
+  loop m0 = do
+    k <- str <* skipSpace <* char ':'
+    v <- val <* skipSpace
+    -- let !m = H.insert k v m0
+    let m = H.insert k v m0
+    ch <- A.satisfy $ \w -> w == COMMA || w == CLOSE_CURLY
+    if ch == COMMA
+      then skipSpace >> loop m
+      else return m
+
+#endif
 
 array_ :: Parser Value
 array_ = {-# SCC "array_" #-} Array <$> arrayValues value
 
+
+#ifdef BANG
 array_' :: Parser Value
 array_' = {-# SCC "array_'" #-} do
   !vals <- arrayValues value'
   return (Array vals)
+#else
+array_' :: Parser Value
+array_' = {-# SCC "array_'" #-} do
+  vals <- arrayValues value'
+  -- !vals <- arrayValues value'
+  return (Array vals)
+
+
+#endif
 
 arrayValues :: Parser Value -> Parser (Vector Value)
 arrayValues val = do
@@ -193,6 +247,8 @@ value = do
       | otherwise -> fail "not a valid json value"
 
 -- | Strict version of 'value'. See also 'json''.
+
+#ifdef BANG
 value' :: Parser Value
 value' = do
   skipSpace
@@ -211,7 +267,29 @@ value' = do
                      !n <- scientific
                      return (Number n)
       | otherwise -> fail "not a valid json value"
+#else
+value' :: Parser Value
+value' = do
+  skipSpace
+  w <- A.peekWord8'
+  case w of
+    DOUBLE_QUOTE  -> do
+                     -- !s <- A.anyWord8 *> jstring_
+                     s <- A.anyWord8 *> jstring_
+                     return (String s)
+    OPEN_CURLY    -> A.anyWord8 *> object_'
+    OPEN_SQUARE   -> A.anyWord8 *> array_'
+    C_f           -> string "false" *> pure (Bool False)
+    C_t           -> string "true" *> pure (Bool True)
+    C_n           -> string "null" *> pure Null
+    _              | w >= 48 && w <= 57 || w == 45
+                  -> do
+                     -- !n <- scientific
+                     n <- scientific
+                     return (Number n)
+      | otherwise -> fail "not a valid json value"
 
+#endif 
 -- | Parse a quoted JSON string.
 jstring :: Parser Text
 jstring = A.word8 DOUBLE_QUOTE *> jstring_
@@ -275,8 +353,13 @@ unescape s = unsafePerformIO $ do
     h <- Z.takeWhile (/=BACKSLASH)
     let rest = do
           start <- Z.take 2
+#ifdef BANG
           let !slash = B.unsafeHead start
               !t = B.unsafeIndex start 1
+#else
+          let slash = B.unsafeHead start
+              t = B.unsafeIndex start 1
+#endif
               escape = case B.elemIndex t "\"\\/ntbrfu" of
                          Just i -> i
                          _      -> 255
@@ -292,7 +375,11 @@ unescape s = unsafePerformIO $ do
                      else do
                        b <- Z.string "\\u" *> hexQuad
                        if a <= 0xdbff && b >= 0xdc00 && b <= 0xdfff
+#ifdef BANG
                          then let !c = ((a - 0xd800) `shiftL` 10) +
+#else
+                         then let c = ((a - 0xd800) `shiftL` 10) +
+#endif
                                        (b - 0xdc00) + 0x10000
                               in copy h ptr >>= charUtf8 (chr c) >>= go
                          else fail "invalid UTF-16 surrogates"
@@ -418,6 +505,33 @@ charUtf8 ch ptr
 -- ===== START HERE =====
 -- ======================
 
+
+
+
+main :: IO ()
+main = do
+  (bs:cnt:args) <- getArgs
+  let count = read cnt :: Int
+      blkSize = read bs
+  forM_ args $ \arg -> bracket (openFile arg ReadMode) hClose $ \h -> do
+    putStrLn $ arg ++ ":"
+    start <- getCurrentTime
+    let loop !good !bad
+            | good+bad >= count = return (good, bad)
+            | otherwise = do
+          hSeek h AbsoluteSeek 0
+          let refill = B.hGet h blkSize
+          result <- parseWith refill json' =<< refill
+          case result of
+            A.Done _ _ -> loop (good+1) bad
+            _        -> loop good (bad+1)
+    (good, _) <- loop 0 0
+    delta <- flip diffUTCTime start `fmap` getCurrentTime
+    putStrLn $ "  " ++ show good ++ " good, " ++ show delta
+    let rate = fromIntegral count / realToFrac delta :: Double
+    putStrLn $ "  " ++ show (round rate :: Int) ++ " per second"
+
+{-
 myDecode = decodeWith jsonEOF' fromJSON
 {-
 paaarse = do
@@ -454,3 +568,4 @@ main = do
   print $ map (anotherDecode 0) fcs
   -- defaultMain [bench "something" $ nf (map (anotherDecode 10)) fcs]
   -- defaultMain [bench "something" $ nf (anotherDecode 10) fc]
+  -}
