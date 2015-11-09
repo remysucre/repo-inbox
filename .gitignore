@@ -16,4 +16,4 @@ cabal.sandbox.config
 *.hp
 *.trace
 *stack*
-citylot.json
+citylots.json
