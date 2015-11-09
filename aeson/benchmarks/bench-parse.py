@@ -7,7 +7,7 @@ result_re = re.compile(r'^\s*(\d+) good, (\d+\.\d+)s$', re.M)
 if len(sys.argv) > 1:
     parser_exe = sys.argv[1]
 else:
-    parser_exe = ('dist/build/aeson-benchmark-aeson-parse/' +
+    parser_exe = ('.stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/aeson-benchmark-aeson-parse/' +
                   'aeson-benchmark-aeson-parse')
 
 def run(count, filename):
