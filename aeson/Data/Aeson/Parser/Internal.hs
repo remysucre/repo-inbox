@@ -148,24 +148,22 @@ array_' :: Parser Value
 array_' = {-# SCC "array_'" #-} do
   !vals <- arrayValues value'
   -- vals <- arrayValues value'
-  return $! (Array vals)
+  return $ (Array vals)
 
 arrayValues :: Parser Value -> Parser (Vector Value)
-arrayValues val = {-# SCC "arrayValues'" #-} do
+arrayValues val = {-# SCC "arrayValues" #-} do
   skipSpace
   w <- A.peekWord8'
   if w == CLOSE_SQUARE
     then A.anyWord8 >> return Vector.empty
     else loop []
   where
-    -- loop acc = do
-    loop !acc = {-# "loopacc" #-} do
-      -- v <- val <* skipSpace
-      !v <- {-# SCC "bangv" #-} val <* skipSpace
-      ch <- {-# SCC "ch" #-} A.satisfy $ \w -> w == COMMA || w == CLOSE_SQUARE
+    loop acc = do
+      v <- val <* skipSpace
+      ch <-  A.satisfy $ \w -> w == COMMA || w == CLOSE_SQUARE
       if ch == COMMA
-        then {-# "skip" #-} skipSpace >> loop (v:acc)
-        else {-# "return" #-} return $! (Vector.reverse (Vector.fromList (v:acc)))
+        then  skipSpace >> loop (v:acc)
+        else  return $! (Vector.reverse (Vector.fromList (v:acc)))
 {-# INLINE arrayValues #-}
 
 -- | Parse any JSON value.  You should usually 'json' in preference to

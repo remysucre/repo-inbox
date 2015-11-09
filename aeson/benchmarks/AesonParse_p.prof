@@ -1,15 +1,16 @@
-	Mon Nov  9 12:16 2015 Time and Allocation Profiling Report  (Final)
+	Mon Nov  9 12:44 2015 Time and Allocation Profiling Report  (Final)
 
 	   AesonParse_p +RTS -p -RTS 105532 1 json-data/citylots.json
 
-	total time  =       25.93 secs   (25928 ticks @ 1000 us, 1 processor)
-	total alloc = 31,641,678,552 bytes  (excludes profiling overheads)
+	total time  =       26.06 secs   (26058 ticks @ 1000 us, 1 processor)
+	total alloc = 31,690,300,328 bytes  (excludes profiling overheads)
 
 COST CENTRE MODULE                     %time %alloc
 
-array_'     Data.Aeson.Parser.Internal  78.9   75.6
-jstring_    Data.Aeson.Parser.Internal  19.8   22.7
-object_'    Data.Aeson.Parser.Internal   0.9    1.1
+arrayValues Data.Aeson.Parser.Internal  80.1   74.6
+jstring_    Data.Aeson.Parser.Internal  17.8   22.7
+array_'     Data.Aeson.Parser.Internal   1.0    1.0
+object_'    Data.Aeson.Parser.Internal   0.7    1.1
 
 
                                                                          individual     inherited
@@ -21,11 +22,12 @@ MAIN                      MAIN                         116           0    0.0   
   main.count              Main                         239           1    0.0    0.0     0.0    0.0
   main.\                  Main                         234           1    0.0    0.0   100.0  100.0
    main.\.\               Main                         235           1    0.0    0.0   100.0  100.0
-    main.\.\.rate         Main                         250           1    0.0    0.0     0.0    0.0
+    main.\.\.rate         Main                         252           1    0.0    0.0     0.0    0.0
     main.\.\.loop         Main                         238           2    0.0    0.0   100.0  100.0
-     object_'             Data.Aeson.Parser.Internal   245           0    0.9    1.1    99.6   99.4
-      jstring_            Data.Aeson.Parser.Internal   247           0   19.8   22.7    98.8   98.3
-       array_'            Data.Aeson.Parser.Internal   249           0   78.9   75.6    78.9   75.6
+     object_'             Data.Aeson.Parser.Internal   245           0    0.7    1.1    99.6   99.4
+      jstring_            Data.Aeson.Parser.Internal   247           0   17.8   22.7    98.9   98.3
+       array_'            Data.Aeson.Parser.Internal   249           0    1.0    1.0    81.1   75.6
+        arrayValues       Data.Aeson.Parser.Internal   251           0   80.1   74.6    80.1   74.6
      main.\.\.loop.refill Main                         241           1    0.4    0.6     0.4    0.6
  CAF                      GHC.IO.FD                    217           0    0.0    0.0     0.0    0.0
  CAF                      GHC.IO.Encoding.Iconv        215           0    0.0    0.0     0.0    0.0
@@ -37,6 +39,7 @@ MAIN                      MAIN                         116           0    0.0   
  CAF                      Data.Time.Clock.UTC          129           0    0.0    0.0     0.0    0.0
  CAF                      Data.Aeson.Parser.Internal   124           0    0.0    0.0     0.0    0.0
   array_'                 Data.Aeson.Parser.Internal   248           1    0.0    0.0     0.0    0.0
+   arrayValues            Data.Aeson.Parser.Internal   250           1    0.0    0.0     0.0    0.0
   jstring_                Data.Aeson.Parser.Internal   246           1    0.0    0.0     0.0    0.0
   object_'                Data.Aeson.Parser.Internal   244           1    0.0    0.0     0.0    0.0
  CAF                      Main                         123           0    0.0    0.0     0.0    0.0
