@@ -1,49 +1,47 @@
-	Mon Nov  9 10:00 2015 Time and Allocation Profiling Report  (Final)
+	Mon Nov  9 10:42 2015 Time and Allocation Profiling Report  (Final)
 
-	   AesonParse_p +RTS -p -RTS 65532 1 json-data/citylots.json
+	   AesonParse_p +RTS -hc -p -RTS 65532 1 json-data/citylots.json
 
-	total time  =       24.98 secs   (24985 ticks @ 1000 us, 1 processor)
-	total alloc = 31,589,051,336 bytes  (excludes profiling overheads)
+	total time  =       24.70 secs   (24696 ticks @ 1000 us, 1 processor)
+	total alloc = 30,366,166,944 bytes  (excludes profiling overheads)
 
-COST CENTRE  MODULE                     %time %alloc
+COST CENTRE MODULE                     %time %alloc
 
-arrayValues' Data.Aeson.Parser.Internal  76.3   75.8
-jstring_     Data.Aeson.Parser.Internal  21.2   21.8
-object_      Data.Aeson.Parser.Internal   1.0    1.0
+array_      Data.Aeson.Parser.Internal  77.0   75.7
+jstring_    Data.Aeson.Parser.Internal  21.4   22.7
+object_     Data.Aeson.Parser.Internal   0.9    1.0
 
 
                                                                          individual     inherited
 COST CENTRE               MODULE                       no.     entries  %time %alloc   %time %alloc
 
-MAIN                      MAIN                         126           0    0.0    0.0   100.0  100.0
- main                     Main                         253           0    0.0    0.0   100.0  100.0
-  main.blkSize            Main                         262           1    0.0    0.0     0.0    0.0
-  main.count              Main                         259           1    0.0    0.0     0.0    0.0
-  main.\                  Main                         254           1    0.0    0.0   100.0  100.0
-   main.\.\               Main                         255           1    0.1    0.0   100.0  100.0
-    main.\.\.rate         Main                         272           1    0.0    0.0     0.0    0.0
-    main.\.\.loop         Main                         258           2    0.0    0.0    99.9  100.0
-     object_              Data.Aeson.Parser.Internal   265           0    1.0    1.0    99.0   99.4
-      jstring_            Data.Aeson.Parser.Internal   267     2217825   21.2   21.8    98.0   98.4
-       array_             Data.Aeson.Parser.Internal   269           0    0.5    0.8    76.8   76.6
-        arrayValues'      Data.Aeson.Parser.Internal   271           0   76.3   75.8    76.3   75.8
-     main.\.\.loop.refill Main                         261           1    0.9    0.6     0.9    0.6
- CAF                      Main                         251           0    0.0    0.0     0.0    0.0
-  main                    Main                         252           1    0.0    0.0     0.0    0.0
-   main.blkSize           Main                         263           0    0.0    0.0     0.0    0.0
-   main.count             Main                         260           0    0.0    0.0     0.0    0.0
-   main.\                 Main                         256           0    0.0    0.0     0.0    0.0
-    main.\.\              Main                         257           0    0.0    0.0     0.0    0.0
- CAF                      Data.Aeson.Parser.Internal   250           0    0.0    0.0     0.0    0.0
-  array_                  Data.Aeson.Parser.Internal   268           1    0.0    0.0     0.0    0.0
-   arrayValues'           Data.Aeson.Parser.Internal   270           1    0.0    0.0     0.0    0.0
-  jstring_                Data.Aeson.Parser.Internal   266           1    0.0    0.0     0.0    0.0
-  object_                 Data.Aeson.Parser.Internal   264           1    0.0    0.0     0.0    0.0
- CAF                      Data.Time.Clock.UTC          231           0    0.0    0.0     0.0    0.0
- CAF                      GHC.IO.Encoding              177           0    0.0    0.0     0.0    0.0
- CAF                      GHC.IO.Handle.Text           173           0    0.0    0.0     0.0    0.0
- CAF                      Text.Read.Lex                169           0    0.0    0.0     0.0    0.0
- CAF                      GHC.Conc.Signal              166           0    0.0    0.0     0.0    0.0
- CAF                      GHC.IO.FD                    164           0    0.0    0.0     0.0    0.0
- CAF                      GHC.IO.Handle.FD             163           0    0.0    0.0     0.0    0.0
- CAF                      GHC.IO.Encoding.Iconv        136           0    0.0    0.0     0.0    0.0
+MAIN                      MAIN                         116           0    0.0    0.0   100.0  100.0
+ main                     Main                         233           0    0.0    0.0   100.0  100.0
+  main.blkSize            Main                         242           1    0.0    0.0     0.0    0.0
+  main.count              Main                         239           1    0.0    0.0     0.0    0.0
+  main.\                  Main                         234           1    0.0    0.0   100.0  100.0
+   main.\.\               Main                         235           1    0.0    0.0   100.0  100.0
+    main.\.\.rate         Main                         250           1    0.0    0.0     0.0    0.0
+    main.\.\.loop         Main                         238           2    0.0    0.0   100.0  100.0
+     object_              Data.Aeson.Parser.Internal   245           0    0.9    1.0    99.2   99.4
+      jstring_            Data.Aeson.Parser.Internal   247     2217825   21.4   22.7    98.3   98.3
+       array_             Data.Aeson.Parser.Internal   249           0   77.0   75.7    77.0   75.7
+     main.\.\.loop.refill Main                         241           1    0.8    0.6     0.8    0.6
+ CAF                      GHC.IO.FD                    217           0    0.0    0.0     0.0    0.0
+ CAF                      GHC.IO.Encoding.Iconv        215           0    0.0    0.0     0.0    0.0
+ CAF                      Text.Read.Lex                209           0    0.0    0.0     0.0    0.0
+ CAF                      GHC.IO.Handle.FD             202           0    0.0    0.0     0.0    0.0
+ CAF                      GHC.Conc.Signal              198           0    0.0    0.0     0.0    0.0
+ CAF                      GHC.IO.Handle.Text           191           0    0.0    0.0     0.0    0.0
+ CAF                      GHC.IO.Encoding              188           0    0.0    0.0     0.0    0.0
+ CAF                      Data.Time.Clock.UTC          129           0    0.0    0.0     0.0    0.0
+ CAF                      Data.Aeson.Parser.Internal   124           0    0.0    0.0     0.0    0.0
+  array_                  Data.Aeson.Parser.Internal   248           1    0.0    0.0     0.0    0.0
+  jstring_                Data.Aeson.Parser.Internal   246           1    0.0    0.0     0.0    0.0
+  object_                 Data.Aeson.Parser.Internal   244           1    0.0    0.0     0.0    0.0
+ CAF                      Main                         123           0    0.0    0.0     0.0    0.0
+  main                    Main                         232           1    0.0    0.0     0.0    0.0
+   main.blkSize           Main                         243           0    0.0    0.0     0.0    0.0
+   main.count             Main                         240           0    0.0    0.0     0.0    0.0
+   main.\                 Main                         236           0    0.0    0.0     0.0    0.0
+    main.\.\              Main                         237           0    0.0    0.0     0.0    0.0
