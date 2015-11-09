@@ -1,1 +1,1 @@
-./AesonParse_p 65532 1 json-data/citylots.json +RTS -hc -p
+./AesonParse_p 105532 1 $1 +RTS -p

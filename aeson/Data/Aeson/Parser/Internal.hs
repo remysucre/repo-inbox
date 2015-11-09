@@ -159,13 +159,13 @@ arrayValues val = {-# SCC "arrayValues'" #-} do
     else loop []
   where
     -- loop acc = do
-    loop !acc = do
+    loop !acc = {-# "loopacc" #-} do
       -- v <- val <* skipSpace
-      !v <- val <* skipSpace
-      ch <- A.satisfy $ \w -> w == COMMA || w == CLOSE_SQUARE
+      !v <- {-# SCC "bangv" #-} val <* skipSpace
+      ch <- {-# SCC "ch" #-} A.satisfy $ \w -> w == COMMA || w == CLOSE_SQUARE
       if ch == COMMA
-        then skipSpace >> loop (v:acc)
-        else return $! (Vector.reverse (Vector.fromList (v:acc)))
+        then {-# "skip" #-} skipSpace >> loop (v:acc)
+        else {-# "return" #-} return $! (Vector.reverse (Vector.fromList (v:acc)))
 {-# INLINE arrayValues #-}
 
 -- | Parse any JSON value.  You should usually 'json' in preference to
