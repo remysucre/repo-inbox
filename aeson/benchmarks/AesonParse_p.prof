@@ -1,0 +1,50 @@
+	Mon Nov  9 09:47 2015 Time and Allocation Profiling Report  (Final)
+
+	   AesonParse_p +RTS -p -RTS 65532 1 json-data/citylots.json
+
+	total time  =       24.24 secs   (24241 ticks @ 1000 us, 1 processor)
+	total alloc = 30,341,855,968 bytes  (excludes profiling overheads)
+
+COST CENTRE          MODULE                     %time %alloc
+
+arrayValues'         Data.Aeson.Parser.Internal  74.8   74.9
+jstring_             Data.Aeson.Parser.Internal  22.3   22.7
+main.\.\.loop.refill Main                         1.2    0.6
+object_              Data.Aeson.Parser.Internal   0.9    1.0
+
+
+                                                                         individual     inherited
+COST CENTRE               MODULE                       no.     entries  %time %alloc   %time %alloc
+
+MAIN                      MAIN                         126           0    0.0    0.0   100.0  100.0
+ main                     Main                         253           0    0.0    0.0   100.0  100.0
+  main.blkSize            Main                         262           1    0.0    0.0     0.0    0.0
+  main.count              Main                         259           1    0.0    0.0     0.0    0.0
+  main.\                  Main                         254           1    0.0    0.0   100.0  100.0
+   main.\.\               Main                         255           1    0.1    0.0   100.0  100.0
+    main.\.\.rate         Main                         272           1    0.0    0.0     0.0    0.0
+    main.\.\.loop         Main                         258           2    0.0    0.0    99.9  100.0
+     object_              Data.Aeson.Parser.Internal   265           0    0.9    1.0    98.7   99.4
+      jstring_            Data.Aeson.Parser.Internal   267     2217825   22.3   22.7    97.8   98.3
+       array_             Data.Aeson.Parser.Internal   269           0    0.6    0.8    75.5   75.7
+        arrayValues'      Data.Aeson.Parser.Internal   271           0   74.8   74.9    74.8   74.9
+     main.\.\.loop.refill Main                         261           1    1.2    0.6     1.2    0.6
+ CAF                      Main                         251           0    0.0    0.0     0.0    0.0
+  main                    Main                         252           1    0.0    0.0     0.0    0.0
+   main.blkSize           Main                         263           0    0.0    0.0     0.0    0.0
+   main.count             Main                         260           0    0.0    0.0     0.0    0.0
+   main.\                 Main                         256           0    0.0    0.0     0.0    0.0
+    main.\.\              Main                         257           0    0.0    0.0     0.0    0.0
+ CAF                      Data.Aeson.Parser.Internal   250           0    0.0    0.0     0.0    0.0
+  array_                  Data.Aeson.Parser.Internal   268           1    0.0    0.0     0.0    0.0
+   arrayValues'           Data.Aeson.Parser.Internal   270           1    0.0    0.0     0.0    0.0
+  jstring_                Data.Aeson.Parser.Internal   266           1    0.0    0.0     0.0    0.0
+  object_                 Data.Aeson.Parser.Internal   264           1    0.0    0.0     0.0    0.0
+ CAF                      Data.Time.Clock.UTC          231           0    0.0    0.0     0.0    0.0
+ CAF                      GHC.IO.Encoding              177           0    0.0    0.0     0.0    0.0
+ CAF                      GHC.IO.Handle.Text           173           0    0.0    0.0     0.0    0.0
+ CAF                      Text.Read.Lex                169           0    0.0    0.0     0.0    0.0
+ CAF                      GHC.Conc.Signal              166           0    0.0    0.0     0.0    0.0
+ CAF                      GHC.IO.FD                    164           0    0.0    0.0     0.0    0.0
+ CAF                      GHC.IO.Handle.FD             163           0    0.0    0.0     0.0    0.0
+ CAF                      GHC.IO.Encoding.Iconv        136           0    0.0    0.0     0.0    0.0

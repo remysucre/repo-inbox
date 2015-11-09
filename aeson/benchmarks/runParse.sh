@@ -1,1 +1,1 @@
-./AesonParse 65532 1 json-data/citylots.json
+./AesonParse_p 65532 1 json-data/citylots.json +RTS -p

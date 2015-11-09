@@ -145,21 +145,23 @@ array_ :: Parser Value
 array_ = {-# SCC "array_" #-} Array <$> arrayValues value
 
 array_' :: Parser Value
-array_' = {-# SCC "array_nb" #-} do
+array_' = {-# SCC "array_'" #-} do
   !vals <- arrayValues value'
   -- vals <- arrayValues value'
-  return (Array vals)
+  return $! (Array vals)
 
 arrayValues :: Parser Value -> Parser (Vector Value)
-arrayValues val = do
+arrayValues val = {-# SCC "arrayValues'" #-} do
   skipSpace
   w <- A.peekWord8'
   if w == CLOSE_SQUARE
     then A.anyWord8 >> return Vector.empty
     else loop []
   where
-    loop acc = do
-      v <- val <* skipSpace
+    -- loop acc = do
+    loop !acc = do
+      -- v <- val <* skipSpace
+      !v <- val <* skipSpace
       ch <- A.satisfy $ \w -> w == COMMA || w == CLOSE_SQUARE
       if ch == COMMA
         then skipSpace >> loop (v:acc)
