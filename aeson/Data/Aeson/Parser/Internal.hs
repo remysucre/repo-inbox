@@ -165,7 +165,7 @@ arrayValues val = {-# SCC "arrayValues'" #-} do
       ch <- A.satisfy $ \w -> w == COMMA || w == CLOSE_SQUARE
       if ch == COMMA
         then skipSpace >> loop (v:acc)
-        else return (Vector.reverse (Vector.fromList (v:acc)))
+        else return $! (Vector.reverse (Vector.fromList (v:acc)))
 {-# INLINE arrayValues #-}
 
 -- | Parse any JSON value.  You should usually 'json' in preference to
