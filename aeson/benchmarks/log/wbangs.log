@@ -1,0 +1,56 @@
+    json-data/twitter1.json :: 60000 times
+      2.381 seconds, 25197 parses/sec, 20.546 MB/sec
+    json-data/twitter1.json :: 60000 times
+      2.372 seconds, 25294 parses/sec, 20.625 MB/sec
+    json-data/twitter1.json :: 60000 times
+      2.395 seconds, 25057 parses/sec, 20.432 MB/sec
+0.8 KB: 25295 msg\/sec (20.6 MB\/sec)
+    json-data/twitter10.json :: 13000 times
+      2.915 seconds, 4459 parses/sec, 28.046 MB/sec
+    json-data/twitter10.json :: 13000 times
+      2.913 seconds, 4463 parses/sec, 28.066 MB/sec
+    json-data/twitter10.json :: 13000 times
+      2.924 seconds, 4445 parses/sec, 27.956 MB/sec
+6.4 KB: 4463 msg\/sec (28.1 MB\/sec)
+    json-data/twitter20.json :: 7500 times
+      3.551 seconds, 2111 parses/sec, 24.306 MB/sec
+    json-data/twitter20.json :: 7500 times
+      3.669 seconds, 2044 parses/sec, 23.528 MB/sec
+    json-data/twitter20.json :: 7500 times
+      3.532 seconds, 2123 parses/sec, 24.439 MB/sec
+11.8 KB: 2123 msg\/sec (24.4 MB\/sec)
+    json-data/twitter50.json :: 2500 times
+      3.300 seconds, 757 parses/sec, 23.080 MB/sec
+    json-data/twitter50.json :: 2500 times
+      3.266 seconds, 765 parses/sec, 23.321 MB/sec
+    json-data/twitter50.json :: 2500 times
+      3.319 seconds, 753 parses/sec, 22.950 MB/sec
+31.2 KB: 765 msg\/sec (23.3 MB\/sec)
+    json-data/twitter100.json :: 1000 times
+      2.687 seconds, 372 parses/sec, 22.361 MB/sec
+    json-data/twitter100.json :: 1000 times
+      2.678 seconds, 373 parses/sec, 22.434 MB/sec
+    json-data/twitter100.json :: 1000 times
+      2.699 seconds, 370 parses/sec, 22.264 MB/sec
+61.5 KB: 373 msg\/sec (22.4 MB\/sec)
+    json-data/jp10.json :: 4000 times
+      1.969 seconds, 2031 parses/sec, 29.032 MB/sec
+    json-data/jp10.json :: 4000 times
+      1.970 seconds, 2030 parses/sec, 29.014 MB/sec
+    json-data/jp10.json :: 4000 times
+      1.959 seconds, 2041 parses/sec, 29.173 MB/sec
+14.6 KB: 2042 msg\/sec (29.2 MB\/sec)
+    json-data/jp50.json :: 1200 times
+      2.041 seconds, 587 parses/sec, 25.309 MB/sec
+    json-data/jp50.json :: 1200 times
+      1.954 seconds, 614 parses/sec, 26.443 MB/sec
+    json-data/jp50.json :: 1200 times
+      1.962 seconds, 611 parses/sec, 26.333 MB/sec
+44.1 KB: 614 msg\/sec (26.4 MB\/sec)
+    json-data/jp100.json :: 700 times
+      2.265 seconds, 309 parses/sec, 25.018 MB/sec
+    json-data/jp100.json :: 700 times
+      2.282 seconds, 306 parses/sec, 24.827 MB/sec
+    json-data/jp100.json :: 700 times
+      2.262 seconds, 309 parses/sec, 25.052 MB/sec
+82.9 KB: 309 msg\/sec (25.1 MB\/sec)
