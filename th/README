@@ -1,0 +1,9 @@
+build: cabal build
+run: cabal run filename
+example: cabal run profDef.hs
+
+this program tries to load functions from a Haskell source file, 
+do some transformations to the functions, splice them back in 
+and call them. 
+what I have now will parse a source file into TH types and print
+out the first declaration. 
