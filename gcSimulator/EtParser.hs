@@ -2,7 +2,7 @@ module EtParser where
 
 
 import qualified Data.ByteString.Lazy.Char8 as L
---import qualified Data.IntSet as S
+import qualified Data.Set as S
 import qualified Data.Char as C
 --import qualified Graph as G
 import qualified Data.Bits as Bits
@@ -83,6 +83,14 @@ readRecord s
 	
 				return (Exit mid rid tid, rest''')
 
+	| firstChar == 'X' = do
+				(mid, rest') <- readHex $ trim rest
+				(rid, rest'') <- readHex $ trim rest'
+				(_, rest''') <- readHex $ trim rest''
+				(tid, rest'''') <- readHex $ trim rest'''
+	
+				return (Exit mid rid tid, rest''')
+
 	| firstChar == 'U' = do
 				{--This is complicated because Updates can have am optional field id.
 				   So they can look like:
@@ -103,19 +111,34 @@ readRecord s
 					Just (tid,rest5) -> return  (Update old origin new (Just fidOrTid) tid, rest5)
 					Nothing          -> return  (Update old origin new Nothing fidOrTid, rest'''')
 
-	| firstChar == 'A' =  do
+	| firstChar `S.member` S.fromList ['A', 'I', 'N', 'P', 'V'] =  do
 				(oid,rest') <- readHex $ trim  rest
 				(size,rest'') <- readHex $   trim rest'
 				(ty,rest''') <- readString $! trim rest''
-				(tid, rest'''') <- readHex $ trim rest'''
+				(x, rest'''') <- readHex $! trim rest'''
+				(y, rest''''') <- readHex $! trim rest''''
+				(tid, rest'''''') <- readHex $ trim rest'''''
 				
-				return (Alloc oid size ty tid, rest'''')
+				return (Alloc oid size ty tid, rest'''''')
 	| firstChar == 'D' = do
 				(oid,rest') <- readHex $ trim rest
+				(_,rest'') <- readHex $ trim rest'
 				
-				return (Death oid, rest')
+				return (Death oid, rest'')
 
-	
+-- TODO REALLY TERRIBLE
+
+	| firstChar == 'T' = do
+				(_,rest') <- readHex $ trim rest
+				(_,rest'') <- readHex $ trim rest'
+				(oid,rest''') <- readHex $ trim rest''
+				return (Death oid, rest'')
+				
+	| firstChar == 'H' = do
+				(_,rest') <- readHex $ trim rest
+				(_,rest'') <- readHex $ trim rest'
+				(oid,rest''') <- readHex $ trim rest''
+				return (Death oid, rest'')
 
 	| otherwise        = error $ "EtParser: Bad starting character" ++ [firstChar]
 	where

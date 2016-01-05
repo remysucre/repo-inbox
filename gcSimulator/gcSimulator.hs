@@ -1,4 +1,4 @@
-import EtParserNoFields
+import EtParser
 import qualified Data.ByteString.Lazy.Char8 as L
 import qualified Data.IntSet as S
 import qualified Data.IntMap as M
@@ -87,7 +87,7 @@ simStep (m,!marks) (Death oid) 		  = (m{nursery=nursery', heap=heap'} , marks)
 					nursery' = S.delete oid (nursery m)
 					heap'    = G.delNode oid (heap m)
 
-simStep (m,!marks) (Update old origin new tid) = (m{heap=heap'}, marks)
+simStep (m,!marks) (Update old origin new tid _) = (m{heap=heap'}, marks)
 				   where
 					!heap' = G.insEdge origin new $! G.delEdge origin old (heap m)
 
