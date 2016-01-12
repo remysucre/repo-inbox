@@ -1,0 +1,58 @@
+Preprocessing benchmark 'benchmarks' for cassava-0.4.4.0...
+Running 1 benchmarks...
+Benchmark benchmarks: RUNNING...
+benchmarking positional/decode/presidents/without conversion
+time                 142.8 μs   (142.7 μs .. 143.0 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 142.9 μs   (142.7 μs .. 143.2 μs)
+std dev              733.8 ns   (512.7 ns .. 1.273 μs)
+
+benchmarking positional/decode/presidents/with conversion
+time                 307.8 μs   (307.4 μs .. 308.1 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 307.5 μs   (306.9 μs .. 308.1 μs)
+std dev              1.954 μs   (1.600 μs .. 2.362 μs)
+
+benchmarking positional/decode/streaming/presidents/without conversion
+time                 226.4 μs   (226.2 μs .. 226.6 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 226.6 μs   (226.4 μs .. 226.8 μs)
+std dev              717.1 ns   (574.6 ns .. 903.2 ns)
+
+benchmarking positional/decode/streaming/presidents/with conversion
+time                 307.0 μs   (306.7 μs .. 307.3 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 307.4 μs   (307.1 μs .. 307.7 μs)
+std dev              1.060 μs   (874.7 ns .. 1.329 μs)
+
+benchmarking positional/encode/presidents/with conversion
+time                 332.1 μs   (331.0 μs .. 332.9 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 332.1 μs   (331.4 μs .. 333.0 μs)
+std dev              2.532 μs   (2.130 μs .. 3.288 μs)
+
+benchmarking named/decode/presidents/without conversion
+time                 447.0 μs   (446.6 μs .. 447.5 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 447.4 μs   (446.9 μs .. 447.9 μs)
+std dev              1.819 μs   (1.497 μs .. 2.476 μs)
+
+benchmarking named/decode/presidents/with conversion
+time                 462.6 μs   (462.2 μs .. 463.0 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 462.4 μs   (461.7 μs .. 463.0 μs)
+std dev              2.039 μs   (1.500 μs .. 2.809 μs)
+
+benchmarking named/encode/presidents/with conversion
+time                 384.1 μs   (383.6 μs .. 384.8 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 384.1 μs   (383.5 μs .. 384.6 μs)
+std dev              1.894 μs   (1.457 μs .. 2.493 μs)
+
+benchmarking comparison/lazy-csv
+time                 282.9 μs   (282.6 μs .. 283.1 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 283.0 μs   (282.8 μs .. 283.2 μs)
+std dev              693.3 ns   (571.7 ns .. 880.5 ns)
+
+Benchmark benchmarks: FINISH
