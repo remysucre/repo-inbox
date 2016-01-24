@@ -1,0 +1,4158 @@
+NoFib Results
+
+--------------------------------------------------------------------------------
+        Program           Size    Allocs   Runtime   Elapsed  TotalMem
+--------------------------------------------------------------------------------
+           anna           0.0%      0.0%     0.136     0.146      0.0%
+           ansi           0.0%      0.0%     0.000     0.001      0.0%
+           atom           0.0%      0.0%    -10.6%    -10.6%      0.0%
+         awards           0.0%      0.0%     0.000     0.001      0.0%
+         banner           0.0%      0.0%     0.000     0.001      0.0%
+     bernouilli           0.0%      0.0%     -7.5%     -7.6%      0.0%
+   binary-trees          +0.0%    +71.7%    +67.1%    +66.9%    -55.2%
+          boyer           0.0%      0.0%     0.056     0.057      0.0%
+         boyer2           0.0%      0.0%     0.009     0.010      0.0%
+           bspt           0.0%      0.0%     0.010     0.011      0.0%
+      cacheprof           0.0%     -0.2%     -6.9%     -5.8%     -2.6%
+       calendar           0.0%      0.0%     0.001     0.002      0.0%
+       cichelli           0.0%      0.0%     0.111     0.112      0.0%
+        circsim           0.0%      0.0%    -10.2%    -10.3%      0.0%
+       clausify           0.0%      0.0%     0.049     0.050      0.0%
+  comp_lab_zift           0.0%      0.0%     -6.9%     -7.0%      0.0%
+       compress           0.0%      0.0%     -1.0%     +0.6%      0.0%
+      compress2           0.0%      0.0%     -7.9%     -6.7%      0.0%
+    constraints           0.0%      0.0%     -6.4%     -6.5%      0.0%
+   cryptarithm1           0.0%      0.0%     -3.0%     -3.1%      0.0%
+   cryptarithm2           0.0%      0.0%     0.010     0.011      0.0%
+            cse           0.0%      0.0%     0.002     0.003      0.0%
+          eliza           0.0%      0.0%     0.001     0.005      0.0%
+          event           0.0%      0.0%     -9.9%    -10.0%      0.0%
+         exp3_8           0.0%      0.0%    -15.7%    -15.6%      0.0%
+         expert           0.0%      0.0%     0.001     0.002      0.0%
+ fannkuch-redux          +1.4%   +439.9%   +386.2%   +386.1% +521860.0
+          fasta          +0.0%     +0.0%    -21.4%    -21.7%      0.0%
+            fem           0.0%      0.0%     0.027     0.030      0.0%
+            fft           0.0%      0.0%     0.045     0.046      0.0%
+           fft2           0.0%      0.0%     0.070     0.071      0.0%
+       fibheaps           0.0%      0.0%     0.034     0.035      0.0%
+           fish           0.0%      0.0%     0.013     0.014      0.0%
+          fluid           0.0%      0.0%     0.010     0.017      0.0%
+         fulsom           0.0%      0.0%     -1.2%     -1.4%      0.0%
+         gamteb           0.0%      0.0%     0.049     0.050      0.0%
+            gcd           0.0%      0.0%     0.060     0.061      0.0%
+    gen_regexps           0.0%      0.0%     0.000     0.001      0.0%
+         genfft           0.0%      0.0%     0.042     0.043      0.0%
+             gg           0.0%      0.0%     0.013     0.020      0.0%
+           grep           0.0%      0.0%     0.000     0.001      0.0%
+         hidden           0.0%      0.0%    -10.8%    -10.9%      0.0%
+            hpg           0.0%      0.0%     +7.9%     +7.8%      0.0%
+            ida           0.0%      0.0%     0.105     0.106      0.0%
+          infer           0.0%      0.0%     0.071     0.073      0.0%
+        integer           0.0%      0.0%     -8.4%     -8.4%      0.0%
+      integrate           0.0%      0.0%     0.201     0.201      0.0%
+   k-nucleotide          -0.5%   +126.6%     +8.7%    +11.3%      0.0%
+          kahan           0.0%      0.0%     -5.5%     -5.6%      0.0%
+        knights           0.0%      0.0%     0.005     0.006      0.0%
+           lcss           0.0%      0.0%    -12.3%    -12.4%      0.0%
+           life           0.0%      0.0%     -3.8%     -3.8%      0.0%
+           lift           0.0%      0.0%     0.001     0.002      0.0%
+      listcompr           0.0%      0.0%     0.115     0.116      0.0%
+       listcopy           0.0%      0.0%     0.126     0.127      0.0%
+       maillist           0.0%      0.0%    -66.7%    -23.9%      0.0%
+         mandel           0.0%      0.0%     0.098     0.099      0.0%
+        mandel2           0.0%      0.0%     0.010     0.010      0.0%
+        minimax           0.0%      0.0%     0.003     0.004      0.0%
+        mkhprog           0.0%      0.0%     0.002     0.003      0.0%
+     multiplier           0.0%      0.0%     -4.9%     -4.8%      0.0%
+         n-body          +0.1%     +0.0%    -14.1%    -14.1%      0.0%
+       nucleic2           0.0%      0.0%     0.097     0.098      0.0%
+           para           0.0%      0.0%    -10.8%    -11.2%      0.0%
+      paraffins           0.0%      0.0%     0.152     0.153      0.0%
+         parser           0.0%      0.0%     0.034     0.036      0.0%
+        parstof           0.0%      0.0%     0.006     0.006      0.0%
+            pic           0.0%      0.0%     0.008     0.009      0.0%
+       pidigits           0.0%      0.0%    +15.3%    +15.2%      0.0%
+          power           0.0%      0.0%    -15.1%    -15.0%      0.0%
+         pretty           0.0%      0.0%     0.000     0.001      0.0%
+         primes           0.0%      0.0%     0.081     0.081      0.0%
+      primetest           0.0%      0.0%     0.139     0.144      0.0%
+         prolog           0.0%      0.0%     0.002     0.003      0.0%
+         puzzle           0.0%      0.0%     0.184     0.185      0.0%
+         queens           0.0%      0.0%     0.015     0.016      0.0%
+        reptile           0.0%      0.0%     0.012     0.013      0.0%
+reverse-complem          +0.1%     +0.0%     0.165     0.166      0.0%
+        rewrite           0.0%      0.0%     0.019     0.020      0.0%
+           rfib           0.0%      0.0%     0.019     0.020      0.0%
+            rsa           0.0%      0.0%     0.035     0.036      0.0%
+            scc           0.0%      0.0%     0.000     0.000      0.0%
+          sched           0.0%      0.0%     0.025     0.026      0.0%
+            scs           0.0%      0.0%    -11.1%    -10.7%      0.0%
+         simple           0.0%      0.0%    -18.1%    -18.0%      0.0%
+          solid           0.0%      0.0%    -10.1%    -10.2%      0.0%
+        sorting           0.0%      0.0%     0.002     0.003      0.0%
+  spectral-norm          +0.3% +15342378   +306.6%   +306.4%   +100.0%
+         sphere           0.0%      0.0%     0.065     0.066      0.0%
+         symalg           0.0%      0.0%     0.012     0.014      0.0%
+            tak           0.0%      0.0%     0.016     0.017      0.0%
+      transform           0.0%      0.0%     -4.3%     -4.0%      0.0%
+       treejoin           0.0%      0.0%    -16.3%    -12.6%      0.0%
+      typecheck           0.0%      0.0%     -1.0%     -1.1%      0.0%
+        veritas           0.0%      0.0%     0.002     0.004      0.0%
+           wang           0.0%      0.0%     0.167     0.168      0.0%
+      wave4main           0.0%      0.0%    +12.1%    +12.0%      0.0%
+   wheel-sieve1           0.0%      0.0%    -29.5%    -29.6%      0.0%
+   wheel-sieve2           0.0%      0.0%    -16.9%    -16.9%      0.0%
+           x2n1           0.0%      0.0%     0.003     0.004      0.0%
+--------------------------------------------------------------------------------
+            Min          -0.5%     -0.2%    -66.7%    -29.6%    -55.2%
+            Max          +1.4% +15342378   +386.2%   +386.1% +521860.0
+ Geometric Mean          +0.0%    +16.2%     -1.2%     +1.3%     +8.8%
+
+Binary Sizes
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna              1980348             0.0%
+           ansi               994593             0.0%
+           atom              1005364             0.0%
+         awards               989169             0.0%
+         banner               889020             0.0%
+     bernouilli               978593             0.0%
+   binary-trees              1045468            +0.0%
+          boyer               950721             0.0%
+         boyer2               892620             0.0%
+           bspt              1138313             0.0%
+      cacheprof              1340289             0.0%
+       calendar               941185             0.0%
+       cichelli               904588             0.0%
+        circsim              1029297             0.0%
+       clausify               945745             0.0%
+  comp_lab_zift               990353             0.0%
+       compress               993505             0.0%
+      compress2               982120             0.0%
+    constraints               959793             0.0%
+   cryptarithm1               834092             0.0%
+   cryptarithm2               869580             0.0%
+            cse               872268             0.0%
+          eliza               915404             0.0%
+          event               941313             0.0%
+         exp3_8               932833             0.0%
+         expert              1001953             0.0%
+ fannkuch-redux               935185            +1.4%
+          fasta               916993            +0.0%
+            fem              1103304             0.0%
+            fft              1017181             0.0%
+           fft2              1067142             0.0%
+       fibheaps               951297             0.0%
+           fish               863708             0.0%
+          fluid              1491637             0.0%
+         fulsom              1207483             0.0%
+         gamteb              1104679             0.0%
+            gcd               963393             0.0%
+    gen_regexps               869884             0.0%
+         genfft               949713             0.0%
+             gg              1191044             0.0%
+           grep               952044             0.0%
+         hidden              1209699             0.0%
+            hpg              1202196             0.0%
+            ida               960929             0.0%
+          infer              1066241             0.0%
+        integer               939500             0.0%
+      integrate              1011044             0.0%
+   k-nucleotide              1114324            -0.5%
+          kahan               993460             0.0%
+        knights               955325             0.0%
+           lcss               937249             0.0%
+           life               891521             0.0%
+           lift               973231             0.0%
+      listcompr               851644             0.0%
+       listcopy               852028             0.0%
+       maillist               900620             0.0%
+         mandel              1049855             0.0%
+        mandel2               851836             0.0%
+        minimax               894716             0.0%
+        mkhprog               897388             0.0%
+     multiplier               974561             0.0%
+         n-body              1039113            +0.1%
+       nucleic2              1122642             0.0%
+           para               980972             0.0%
+      paraffins               941697             0.0%
+         parser              1097900             0.0%
+        parstof               997068             0.0%
+            pic              1077079             0.0%
+       pidigits               967697             0.0%
+          power              1031409             0.0%
+         pretty               953876             0.0%
+         primes               927873             0.0%
+      primetest              1015148             0.0%
+         prolog               956525             0.0%
+         puzzle               870652             0.0%
+         queens               923489             0.0%
+        reptile              1142001             0.0%
+reverse-complem               818305            +0.1%
+        rewrite               990289             0.0%
+           rfib              1017759             0.0%
+            rsa              1005228             0.0%
+            scc               830348             0.0%
+          sched               940641             0.0%
+            scs              1333533             0.0%
+         simple              1318829             0.0%
+          solid              1046393             0.0%
+        sorting               886476             0.0%
+  spectral-norm              1030583            +0.3%
+         sphere              1039384             0.0%
+         symalg              1191663             0.0%
+            tak               922145             0.0%
+      transform              1097585             0.0%
+       treejoin               889996             0.0%
+      typecheck               966145             0.0%
+        veritas              1811937             0.0%
+           wang              1017700             0.0%
+      wave4main               961799             0.0%
+   wheel-sieve1               937297             0.0%
+   wheel-sieve2               935825             0.0%
+           x2n1               959637             0.0%
+        -1 s.d.                -----            -0.1%
+        +1 s.d.                -----            +0.2%
+        Average                -----            +0.0%
+
+Allocations
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna             68651816             0.0%
+           ansi               128160             0.0%
+           atom            538653336             0.0%
+         awards               281232             0.0%
+         banner               265112             0.0%
+     bernouilli            294647992             0.0%
+   binary-trees            956517120           +71.7%
+          boyer             59086816             0.0%
+         boyer2              3884352             0.0%
+           bspt             11425960             0.0%
+      cacheprof            497523248            -0.2%
+       calendar               837032             0.0%
+       cichelli             80312600             0.0%
+        circsim           1304441976             0.0%
+       clausify             31940320             0.0%
+  comp_lab_zift            287964856             0.0%
+       compress            285030056             0.0%
+      compress2             91006312             0.0%
+    constraints           2110003104             0.0%
+   cryptarithm1           2051819352             0.0%
+   cryptarithm2             13094064             0.0%
+            cse              1256944             0.0%
+          eliza               695808             0.0%
+          event            129689272             0.0%
+         exp3_8            597583688             0.0%
+         expert               365200             0.0%
+ fannkuch-redux            870985256          +439.9%
+          fasta            287447472            +0.0%
+            fem             51979040             0.0%
+            fft             21639488             0.0%
+           fft2             45033848             0.0%
+       fibheaps             42421760             0.0%
+           fish             18184056             0.0%
+          fluid              8243792             0.0%
+         fulsom            310606248             0.0%
+         gamteb             52207912             0.0%
+            gcd             68192064             0.0%
+    gen_regexps               205600             0.0%
+         genfft             64991816             0.0%
+             gg              9110624             0.0%
+           grep                72008             0.0%
+         hidden           1121169072             0.0%
+            hpg             86457496             0.0%
+            ida            127250024             0.0%
+          infer             29442352             0.0%
+        integer           3478175104             0.0%
+      integrate            186063688             0.0%
+   k-nucleotide           3973238808          +126.6%
+          kahan              1906232             0.0%
+        knights              1948848             0.0%
+           lcss            330732688             0.0%
+           life            503153696             0.0%
+           lift               824976             0.0%
+      listcompr            312096064             0.0%
+       listcopy            342144080             0.0%
+       maillist             90489136             0.0%
+         mandel             97509480             0.0%
+        mandel2              1041560             0.0%
+        minimax              5522744             0.0%
+        mkhprog              3369504             0.0%
+     multiplier            259451600             0.0%
+         n-body           1600179984            +0.0%
+       nucleic2             87267400             0.0%
+           para            512738152             0.0%
+      paraffins             55573000             0.0%
+         parser             31621160             0.0%
+        parstof              3094120             0.0%
+            pic              3501704             0.0%
+       pidigits           3129281672             0.0%
+          power            157402560             0.0%
+         pretty               145688             0.0%
+         primes            108526296             0.0%
+      primetest             78063456             0.0%
+         prolog              1583432             0.0%
+         puzzle            161440360             0.0%
+         queens              4887720             0.0%
+        reptile             17209560             0.0%
+reverse-complem             90637904            +0.0%
+        rewrite             14526992             0.0%
+           rfib               113176             0.0%
+            rsa             19406728             0.0%
+            scc                58872             0.0%
+          sched             39808576             0.0%
+            scs            973758848             0.0%
+         simple            203549880             0.0%
+          solid            189207328             0.0%
+        sorting              1271856             0.0%
+  spectral-norm               236440     +15342378.0%
+         sphere             91876488             0.0%
+         symalg              1485496             0.0%
+            tak               104816             0.0%
+      transform            688275720             0.0%
+       treejoin            106043048             0.0%
+      typecheck            317597928             0.0%
+        veritas              1444392             0.0%
+           wang             92717976             0.0%
+      wave4main            121106232             0.0%
+   wheel-sieve1             24351072             0.0%
+   wheel-sieve2             88763080             0.0%
+           x2n1               383480             0.0%
+        -1 s.d.                -----           -65.0%
+        +1 s.d.                -----          +285.9%
+        Average                -----           +16.2%
+
+Run Time
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna                0.158            0.136
+           ansi                0.001            0.000
+           atom                0.691           -10.6%
+         awards                0.002            0.000
+         banner                0.002            0.000
+     bernouilli                0.268            -7.5%
+   binary-trees                1.286           +67.1%
+          boyer                0.068            0.056
+         boyer2                0.020            0.009
+           bspt                0.019            0.010
+      cacheprof                0.596            -6.9%
+       calendar                0.003            0.001
+       cichelli                0.121            0.111
+        circsim                1.454           -10.2%
+       clausify                0.058            0.049
+  comp_lab_zift                0.279            -6.9%
+       compress                0.248            -1.0%
+      compress2                0.245            -7.9%
+    constraints                4.244            -6.4%
+   cryptarithm1                0.851            -3.0%
+   cryptarithm2                0.020            0.010
+            cse                0.006            0.002
+          eliza                0.004            0.001
+          event                0.227            -9.9%
+         exp3_8                0.305           -15.7%
+         expert                0.003            0.001
+ fannkuch-redux                6.442          +386.2%
+          fasta                0.795           -21.4%
+            fem                0.035            0.027
+            fft                0.058            0.045
+           fft2                0.077            0.070
+       fibheaps                0.044            0.034
+           fish                0.024            0.013
+          fluid                0.018            0.010
+         fulsom                0.403            -1.2%
+         gamteb                0.061            0.049
+            gcd                0.071            0.060
+    gen_regexps                0.002            0.000
+         genfft                0.054            0.042
+             gg                0.021            0.013
+           grep                0.001            0.000
+         hidden                0.683           -10.8%
+            hpg                0.228            +7.9%
+            ida                0.119            0.105
+          infer                0.093            0.071
+        integer                3.133            -8.4%
+      integrate                0.194            0.201
+   k-nucleotide                9.716            +8.7%
+          kahan                0.498            -5.5%
+        knights                0.012            0.005
+           lcss                0.699           -12.3%
+           life                0.382            -3.8%
+           lift                0.004            0.001
+      listcompr                0.130            0.115
+       listcopy                0.135            0.126
+       maillist                0.573           -66.7%
+         mandel                0.108            0.098
+        mandel2                0.012            0.010
+        minimax                0.009            0.003
+        mkhprog                0.007            0.002
+     multiplier                0.202            -4.9%
+         n-body                2.914           -14.1%
+       nucleic2                0.096            0.097
+           para                0.440           -10.8%
+      paraffins                0.184            0.152
+         parser                0.045            0.034
+        parstof                0.016            0.006
+            pic                0.018            0.008
+       pidigits                0.748           +15.3%
+          power                0.643           -15.1%
+         pretty                0.001            0.000
+         primes                0.108            0.081
+      primetest                0.141            0.139
+         prolog                0.007            0.002
+         puzzle                0.199            0.184
+         queens                0.023            0.015
+        reptile                0.022            0.012
+reverse-complem                0.186            0.165
+        rewrite                0.028            0.019
+           rfib                0.030            0.019
+            rsa                0.042            0.035
+            scc                0.001            0.000
+          sched                0.030            0.025
+            scs                0.835           -11.1%
+         simple                0.379           -18.1%
+          solid                0.211           -10.1%
+        sorting                0.006            0.002
+  spectral-norm                2.965          +306.6%
+         sphere                0.079            0.065
+         symalg                0.019            0.012
+            tak                0.024            0.016
+      transform                0.500            -4.3%
+       treejoin                0.248           -16.3%
+      typecheck                0.312            -1.0%
+        veritas                0.006            0.002
+           wang                0.189            0.167
+      wave4main                0.387           +12.1%
+   wheel-sieve1                0.602           -29.5%
+   wheel-sieve2                0.341           -16.9%
+           x2n1                0.010            0.003
+        -1 s.d.                -----           -34.6%
+        +1 s.d.                -----           +49.5%
+        Average                -----            -1.2%
+
+Elapsed Time
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna                0.160            0.146
+           ansi                0.002            0.001
+           atom                0.692           -10.6%
+         awards                0.003            0.001
+         banner                0.003            0.001
+     bernouilli                0.269            -7.6%
+   binary-trees                1.289           +66.9%
+          boyer                0.069            0.057
+         boyer2                0.020            0.010
+           bspt                0.019            0.011
+      cacheprof                0.600            -5.8%
+       calendar                0.004            0.002
+       cichelli                0.121            0.112
+        circsim                1.457           -10.3%
+       clausify                0.059            0.050
+  comp_lab_zift                0.281            -7.0%
+       compress                0.250            +0.6%
+      compress2                0.245            -6.7%
+    constraints                4.248            -6.5%
+   cryptarithm1                0.851            -3.1%
+   cryptarithm2                0.020            0.011
+            cse                0.007            0.003
+          eliza                0.004            0.005
+          event                0.228           -10.0%
+         exp3_8                0.306           -15.6%
+         expert                0.004            0.002
+ fannkuch-redux                6.446          +386.1%
+          fasta                0.799           -21.7%
+            fem                0.035            0.030
+            fft                0.059            0.046
+           fft2                0.079            0.071
+       fibheaps                0.052            0.035
+           fish                0.024            0.014
+          fluid                0.020            0.017
+         fulsom                0.404            -1.4%
+         gamteb                0.062            0.050
+            gcd                0.072            0.061
+    gen_regexps                0.003            0.001
+         genfft                0.055            0.043
+             gg                0.022            0.020
+           grep                0.002            0.001
+         hidden                0.685           -10.9%
+            hpg                0.229            +7.8%
+            ida                0.120            0.106
+          infer                0.094            0.073
+        integer                3.136            -8.4%
+      integrate                0.195            0.201
+   k-nucleotide                9.722           +11.3%
+          kahan                0.499            -5.6%
+        knights                0.013            0.006
+           lcss                0.701           -12.4%
+           life                0.383            -3.8%
+           lift                0.004            0.002
+      listcompr                0.131            0.116
+       listcopy                0.136            0.127
+       maillist                4.811           -23.9%
+         mandel                0.109            0.099
+        mandel2                0.013            0.010
+        minimax                0.010            0.004
+        mkhprog                0.008            0.003
+     multiplier                0.202            -4.8%
+         n-body                2.917           -14.1%
+       nucleic2                0.097            0.098
+           para                0.443           -11.2%
+      paraffins                0.186            0.153
+         parser                0.045            0.036
+        parstof                0.016            0.006
+            pic                0.019            0.009
+       pidigits                0.749           +15.2%
+          power                0.644           -15.0%
+         pretty                0.002            0.001
+         primes                0.109            0.081
+      primetest                0.142            0.144
+         prolog                0.008            0.003
+         puzzle                0.200            0.185
+         queens                0.023            0.016
+        reptile                0.022            0.013
+reverse-complem                0.187            0.166
+        rewrite                0.029            0.020
+           rfib                0.031            0.020
+            rsa                0.042            0.036
+            scc                0.001            0.000
+          sched                0.033            0.026
+            scs                0.838           -10.7%
+         simple                0.380           -18.0%
+          solid                0.212           -10.2%
+        sorting                0.007            0.003
+  spectral-norm                2.967          +306.4%
+         sphere                0.080            0.066
+         symalg                0.020            0.014
+            tak                0.025            0.017
+      transform                0.501            -4.0%
+       treejoin                0.250           -12.6%
+      typecheck                0.313            -1.1%
+        veritas                0.007            0.004
+           wang                0.191            0.168
+      wave4main                0.388           +12.0%
+   wheel-sieve1                0.604           -29.6%
+   wheel-sieve2                0.343           -16.9%
+           x2n1                0.011            0.004
+        -1 s.d.                -----           -30.4%
+        +1 s.d.                -----           +47.3%
+        Average                -----            +1.3%
+
+Mutator Time
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna                0.122            0.107
+           ansi                0.000            0.000
+           atom                0.298            -7.5%
+         awards                0.001            0.000
+         banner                0.001            0.000
+     bernouilli                0.155            0.159
+   binary-trees                0.708           +67.0%
+          boyer                0.039            0.030
+         boyer2                0.011            0.006
+           bspt                0.009            0.005
+      cacheprof                0.398            -5.2%
+       calendar                0.002            0.001
+       cichelli                0.095            0.088
+        circsim                0.793           -14.1%
+       clausify                0.037            0.033
+  comp_lab_zift                0.151            0.140
+       compress                0.148            0.151
+      compress2                0.045            0.038
+    constraints                1.405           -13.5%
+   cryptarithm1                0.822            -2.6%
+   cryptarithm2                0.018            0.009
+            cse                0.003            0.001
+          eliza                0.002            0.001
+          event                0.105            0.091
+         exp3_8                0.254           -16.1%
+         expert                0.002            0.001
+ fannkuch-redux                6.433           +44.7%
+          fasta                0.789           -21.1%
+            fem                0.026            0.021
+            fft                0.019            0.015
+           fft2                0.049            0.046
+       fibheaps                0.023            0.020
+           fish                0.021            0.012
+          fluid                0.015            0.008
+         fulsom                0.162            0.155
+         gamteb                0.048            0.039
+            gcd                0.068            0.059
+    gen_regexps                0.001            0.000
+         genfft                0.029            0.024
+             gg                0.010            0.007
+           grep                0.000            0.000
+         hidden                0.651           -10.0%
+            hpg                0.208            +9.7%
+            ida                0.084            0.075
+          infer                0.055            0.036
+        integer                3.100            -8.3%
+      integrate                0.190            0.199
+   k-nucleotide                9.679            +8.4%
+          kahan                0.497            -5.4%
+        knights                0.010            0.004
+           lcss                0.162            0.134
+           life                0.189            0.192
+           lift                0.002            0.001
+      listcompr                0.123            0.110
+       listcopy                0.128            0.121
+       maillist                0.550           -66.7%
+         mandel                0.101            0.093
+        mandel2                0.011            0.010
+        minimax                0.007            0.003
+        mkhprog                0.005            0.002
+     multiplier                0.154            0.143
+         n-body                2.903           -14.1%
+       nucleic2                0.088            0.092
+           para                0.321           -10.1%
+      paraffins                0.041            0.028
+         parser                0.028            0.021
+        parstof                0.009            0.004
+            pic                0.007            0.004
+       pidigits                0.698           +17.6%
+          power                0.246           -17.1%
+         pretty                0.000            0.000
+         primes                0.074            0.055
+      primetest                0.137            0.137
+         prolog                0.005            0.002
+         puzzle                0.173            0.161
+         queens                0.021            0.015
+        reptile                0.011            0.007
+reverse-complem                0.183            0.164
+        rewrite                0.025            0.018
+           rfib                0.029            0.019
+            rsa                0.039            0.034
+            scc                0.000            0.000
+          sched                0.027            0.023
+            scs                0.507           -14.0%
+         simple                0.249           -19.8%
+          solid                0.104            0.090
+        sorting                0.003            0.001
+  spectral-norm                2.964          +233.5%
+         sphere                0.072            0.060
+         symalg                0.017            0.011
+            tak                0.023            0.016
+      transform                0.375            -0.4%
+       treejoin                0.090            0.075
+      typecheck                0.296            -0.5%
+        veritas                0.003            0.001
+           wang                0.051            0.042
+      wave4main                0.232           +26.9%
+   wheel-sieve1                0.557           -31.5%
+   wheel-sieve2                0.079            0.062
+           x2n1                0.009            0.003
+        -1 s.d.                -----           -33.0%
+        +1 s.d.                -----           +40.8%
+        Average                -----            -2.9%
+
+Mutator Elapsed Time
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna                0.124            0.116
+           ansi                0.001            0.001
+           atom                0.298            -7.4%
+         awards                0.002            0.001
+         banner                0.002            0.001
+     bernouilli                0.156            0.160
+   binary-trees                0.710           +66.8%
+          boyer                0.039            0.030
+         boyer2                0.011            0.007
+           bspt                0.009            0.006
+      cacheprof                0.402            -3.6%
+       calendar                0.003            0.002
+       cichelli                0.095            0.088
+        circsim                0.795           -14.3%
+       clausify                0.038            0.034
+  comp_lab_zift                0.152            0.141
+       compress                0.149            0.156
+      compress2                0.046            0.042
+    constraints                1.406           -13.6%
+   cryptarithm1                0.823            -2.7%
+   cryptarithm2                0.018            0.010
+            cse                0.004            0.002
+          eliza                0.002            0.005
+          event                0.106            0.092
+         exp3_8                0.254           -16.1%
+         expert                0.003            0.002
+ fannkuch-redux                6.437           +44.6%
+          fasta                0.793           -21.4%
+            fem                0.026            0.024
+            fft                0.020            0.016
+           fft2                0.050            0.047
+       fibheaps                0.024            0.021
+           fish                0.021            0.013
+          fluid                0.016            0.015
+         fulsom                0.163            0.156
+         gamteb                0.049            0.040
+            gcd                0.069            0.060
+    gen_regexps                0.002            0.001
+         genfft                0.030            0.025
+             gg                0.011            0.014
+           grep                0.001            0.001
+         hidden                0.654           -10.1%
+            hpg                0.209            +9.6%
+            ida                0.085            0.076
+          infer                0.056            0.038
+        integer                3.103            -8.3%
+      integrate                0.191            0.199
+   k-nucleotide                9.686           +11.0%
+          kahan                0.498            -5.4%
+        knights                0.011            0.005
+           lcss                0.163            0.135
+           life                0.190            0.193
+           lift                0.003            0.002
+      listcompr                0.124            0.111
+       listcopy                0.128            0.122
+       maillist                4.788           -23.7%
+         mandel                0.102            0.094
+        mandel2                0.011            0.010
+        minimax                0.008            0.004
+        mkhprog                0.006            0.003
+     multiplier                0.154            0.143
+         n-body                2.906           -14.2%
+       nucleic2                0.090            0.093
+           para                0.324           -10.7%
+      paraffins                0.043            0.029
+         parser                0.028            0.023
+        parstof                0.009            0.004
+            pic                0.008            0.005
+       pidigits                0.700           +17.3%
+          power                0.247           -16.8%
+         pretty                0.001            0.001
+         primes                0.075            0.056
+      primetest                0.139            0.142
+         prolog                0.006            0.003
+         puzzle                0.174            0.162
+         queens                0.022            0.016
+        reptile                0.011            0.008
+reverse-complem                0.184            0.165
+        rewrite                0.026            0.019
+           rfib                0.030            0.020
+            rsa                0.039            0.035
+            scc                0.000            0.000
+          sched                0.029            0.024
+            scs                0.509           -13.4%
+         simple                0.249           -19.5%
+          solid                0.104            0.090
+        sorting                0.003            0.002
+  spectral-norm                2.966          +233.3%
+         sphere                0.073            0.061
+         symalg                0.018            0.013
+            tak                0.024            0.017
+      transform                0.376             0.0%
+       treejoin                0.093            0.086
+      typecheck                0.297            -0.5%
+        veritas                0.004            0.003
+           wang                0.052            0.043
+      wave4main                0.232           +26.7%
+   wheel-sieve1                0.558           -31.5%
+   wheel-sieve2                0.080            0.063
+           x2n1                0.010            0.004
+        -1 s.d.                -----           -26.2%
+        +1 s.d.                -----           +36.6%
+        Average                -----            +0.4%
+
+GC Time
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna                0.035            0.029
+           ansi                0.000            0.000
+           atom                0.393           -12.8%
+         awards                0.000            0.000
+         banner                0.000            0.000
+     bernouilli                0.112            0.089
+   binary-trees                0.577           +67.4%
+          boyer                0.029            0.026
+         boyer2                0.008            0.003
+           bspt                0.009            0.005
+      cacheprof                0.197            0.178
+       calendar                0.001            0.000
+       cichelli                0.025            0.023
+        circsim                0.660            -5.3%
+       clausify                0.019            0.016
+  comp_lab_zift                0.127            0.120
+       compress                0.099            0.095
+      compress2                0.198            0.187
+    constraints                2.837            -2.8%
+   cryptarithm1                0.027            0.024
+   cryptarithm2                0.001            0.001
+            cse                0.002            0.001
+          eliza                0.001            0.000
+          event                0.121            0.113
+         exp3_8                0.051            0.045
+         expert                0.000            0.000
+ fannkuch-redux                0.008           22.011
+          fasta                0.005            0.003
+            fem                0.009            0.006
+            fft                0.038            0.030
+           fft2                0.028            0.024
+       fibheaps                0.020            0.014
+           fish                0.002            0.001
+          fluid                0.003            0.002
+         fulsom                0.240            +1.3%
+         gamteb                0.012            0.010
+            gcd                0.002            0.001
+    gen_regexps                0.000            0.000
+         genfft                0.025            0.018
+             gg                0.010            0.006
+           grep                0.000            0.000
+         hidden                0.030            0.023
+            hpg                0.019            0.018
+            ida                0.034            0.030
+          infer                0.037            0.035
+        integer                0.032            0.028
+      integrate                0.003            0.002
+   k-nucleotide                0.036            0.067
+          kahan                0.000            0.000
+        knights                0.001            0.001
+           lcss                0.537           -10.7%
+           life                0.191            0.175
+           lift                0.001            0.000
+      listcompr                0.006            0.005
+       listcopy                0.007            0.005
+       maillist                0.022            0.008
+         mandel                0.005            0.005
+        mandel2                0.001            0.000
+        minimax                0.001            0.000
+        mkhprog                0.001            0.000
+     multiplier                0.047            0.050
+         n-body                0.010            0.010
+       nucleic2                0.006            0.005
+           para                0.118            0.104
+      paraffins                0.142            0.124
+         parser                0.016            0.013
+        parstof                0.005            0.002
+            pic                0.010            0.004
+       pidigits                0.049            0.042
+          power                0.396           -13.7%
+         pretty                0.000            0.000
+         primes                0.033            0.026
+      primetest                0.002            0.002
+         prolog                0.001            0.000
+         puzzle                0.025            0.023
+         queens                0.000            0.000
+        reptile                0.010            0.005
+reverse-complem                0.002            0.001
+        rewrite                0.002            0.001
+           rfib                0.000            0.000
+            rsa                0.002            0.001
+            scc                0.000            0.000
+          sched                0.003            0.002
+            scs                0.328            -6.3%
+         simple                0.129            0.110
+          solid                0.107            0.100
+        sorting                0.003            0.001
+  spectral-norm                0.000            2.172
+         sphere                0.006            0.005
+         symalg                0.001            0.001
+            tak                0.000            0.000
+      transform                0.124            0.105
+       treejoin                0.156            0.132
+      typecheck                0.015            0.014
+        veritas                0.002            0.001
+           wang                0.137            0.125
+      wave4main                0.154            0.140
+   wheel-sieve1                0.045            0.043
+   wheel-sieve2                0.261           -15.0%
+           x2n1                0.000            0.000
+        -1 s.d.                -----           -19.5%
+        +1 s.d.                -----           +19.4%
+        Average                -----            -2.0%
+
+GC Elapsed Time
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna                0.036            0.030
+           ansi                0.000            0.000
+           atom                0.393           -12.8%
+         awards                0.000            0.000
+         banner                0.000            0.000
+     bernouilli                0.113            0.089
+   binary-trees                0.578           +67.2%
+          boyer                0.029            0.026
+         boyer2                0.008            0.003
+           bspt                0.009            0.005
+      cacheprof                0.197            0.178
+       calendar                0.001            0.000
+       cichelli                0.025            0.023
+        circsim                0.661            -5.4%
+       clausify                0.019            0.016
+  comp_lab_zift                0.128            0.120
+       compress                0.100            0.095
+      compress2                0.198            0.187
+    constraints                2.840            -2.9%
+   cryptarithm1                0.027            0.024
+   cryptarithm2                0.001            0.001
+            cse                0.002            0.001
+          eliza                0.001            0.000
+          event                0.121            0.113
+         exp3_8                0.051            0.045
+         expert                0.000            0.000
+ fannkuch-redux                0.008           22.021
+          fasta                0.005            0.003
+            fem                0.009            0.006
+            fft                0.038            0.030
+           fft2                0.028            0.024
+       fibheaps                0.020            0.014
+           fish                0.002            0.001
+          fluid                0.003            0.002
+         fulsom                0.240            +1.3%
+         gamteb                0.012            0.010
+            gcd                0.002            0.001
+    gen_regexps                0.000            0.000
+         genfft                0.025            0.018
+             gg                0.010            0.006
+           grep                0.000            0.000
+         hidden                0.030            0.023
+            hpg                0.019            0.018
+            ida                0.034            0.030
+          infer                0.037            0.035
+        integer                0.032            0.028
+      integrate                0.003            0.002
+   k-nucleotide                0.035            0.067
+          kahan                0.000            0.000
+        knights                0.001            0.001
+           lcss                0.537           -10.8%
+           life                0.192            0.175
+           lift                0.001            0.000
+      listcompr                0.006            0.005
+       listcopy                0.007            0.005
+       maillist                0.022            0.008
+         mandel                0.006            0.005
+        mandel2                0.001            0.000
+        minimax                0.001            0.000
+        mkhprog                0.001            0.000
+     multiplier                0.047            0.050
+         n-body                0.010            0.010
+       nucleic2                0.006            0.005
+           para                0.118            0.104
+      paraffins                0.143            0.124
+         parser                0.016            0.013
+        parstof                0.005            0.002
+            pic                0.010            0.004
+       pidigits                0.048            0.041
+          power                0.396           -13.7%
+         pretty                0.000            0.000
+         primes                0.033            0.026
+      primetest                0.002            0.002
+         prolog                0.001            0.000
+         puzzle                0.025            0.023
+         queens                0.000            0.000
+        reptile                0.010            0.005
+reverse-complem                0.002            0.001
+        rewrite                0.002            0.001
+           rfib                0.000            0.000
+            rsa                0.002            0.001
+            scc                0.000            0.000
+          sched                0.003            0.002
+            scs                0.328            -6.4%
+         simple                0.129            0.110
+          solid                0.107            0.100
+        sorting                0.003            0.001
+  spectral-norm                0.000            2.173
+         sphere                0.006            0.005
+         symalg                0.001            0.001
+            tak                0.000            0.000
+      transform                0.124            0.105
+       treejoin                0.156            0.132
+      typecheck                0.015            0.014
+        veritas                0.002            0.001
+           wang                0.138            0.125
+      wave4main                0.154            0.140
+   wheel-sieve1                0.045            0.043
+   wheel-sieve2                0.262           -15.1%
+           x2n1                0.000            0.000
+        -1 s.d.                -----           -19.6%
+        +1 s.d.                -----           +19.3%
+        Average                -----            -2.1%
+
+GC(0) Count
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna                  124             0.0%
+           ansi                    0             0.0%
+           atom                  803             0.0%
+         awards                    0             0.0%
+         banner                    0             0.0%
+     bernouilli                  499             0.0%
+   binary-trees                  367          +557.2%
+          boyer                  105             0.0%
+         boyer2                    6             0.0%
+           bspt                   19             0.0%
+      cacheprof                  938            -0.1%
+       calendar                    1             0.0%
+       cichelli                  150             0.0%
+        circsim                 1072             0.0%
+       clausify                   54             0.0%
+  comp_lab_zift                  537             0.0%
+       compress                  524             0.0%
+      compress2                  165             0.0%
+    constraints                 4030             0.0%
+   cryptarithm1                 3927             0.0%
+   cryptarithm2                   24             0.0%
+            cse                    1             0.0%
+          eliza                    1             0.0%
+          event                  234             0.0%
+         exp3_8                  753             0.0%
+         expert                    0             0.0%
+ fannkuch-redux                 1666          +437.5%
+          fasta                  552             0.0%
+            fem                   97             0.0%
+            fft                   37             0.0%
+           fft2                   80             0.0%
+       fibheaps                   78             0.0%
+           fish                   34             0.0%
+          fluid                   14             0.0%
+         fulsom                  580             0.0%
+         gamteb                   96             0.0%
+            gcd                  129             0.0%
+    gen_regexps                    0             0.0%
+         genfft                  116             0.0%
+             gg                   14             0.0%
+           grep                    0             0.0%
+         hidden                 2157             0.0%
+            hpg                  161             0.0%
+            ida                  240             0.0%
+          infer                   53             0.0%
+        integer                 6726             0.0%
+      integrate                    1             0.0%
+   k-nucleotide                 7557          +128.2%
+          kahan                    2             0.0%
+        knights                    2             0.0%
+           lcss                  632             0.0%
+           life                  901             0.0%
+           lift                    1             0.0%
+      listcompr                  597             0.0%
+       listcopy                  655             0.0%
+       maillist                  139             0.0%
+         mandel                  184             0.0%
+        mandel2                    1             0.0%
+        minimax                    9             0.0%
+        mkhprog                    5             0.0%
+     multiplier                  497             0.0%
+         n-body                 3050             0.0%
+       nucleic2                  185             0.0%
+           para                  955             0.0%
+      paraffins                   53             0.0%
+         parser                   57             0.0%
+        parstof                    4             0.0%
+            pic                    5             0.0%
+       pidigits                 5824             0.0%
+          power                  239             0.0%
+         pretty                    0             0.0%
+         primes                  122             0.0%
+      primetest                  150             0.0%
+         prolog                    1             0.0%
+         puzzle                  306             0.0%
+         queens                    8             0.0%
+        reptile                   30             0.0%
+reverse-complem                  173             0.0%
+        rewrite                   26             0.0%
+           rfib                    0             0.0%
+            rsa                   36             0.0%
+            scc                    0             0.0%
+          sched                   76             0.0%
+            scs                 1837             0.0%
+         simple                  112            +0.9%
+          solid                  335             0.0%
+        sorting                    2             0.0%
+  spectral-norm                    0             0.0%
+         sphere                  174             0.0%
+         symalg                    1             0.0%
+            tak                    0             0.0%
+      transform                 1288             0.0%
+       treejoin                   19             0.0%
+      typecheck                  608             0.0%
+        veritas                    1             0.0%
+           wang                  171             0.0%
+      wave4main                  203             0.0%
+   wheel-sieve1                   41             0.0%
+   wheel-sieve2                  163             0.0%
+           x2n1                    0             0.0%
+        -1 s.d.                -----           -19.6%
+        +1 s.d.                -----           +35.8%
+        Average                -----            +4.5%
+
+GC(0) Time
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna                0.023            0.019
+           ansi                0.000            0.000
+           atom                0.338           -13.2%
+         awards                0.000            0.000
+         banner                0.000            0.000
+     bernouilli                0.085            0.068
+   binary-trees                0.386           +85.3%
+          boyer                0.025            0.023
+         boyer2                0.006            0.003
+           bspt                0.006            0.003
+      cacheprof                0.095            0.083
+       calendar                0.000            0.000
+       cichelli                0.015            0.013
+        circsim                0.432            -5.4%
+       clausify                0.018            0.016
+  comp_lab_zift                0.078            0.073
+       compress                0.082            0.079
+      compress2                0.115            0.105
+    constraints                1.598            -0.0%
+   cryptarithm1                0.027            0.024
+   cryptarithm2                0.001            0.000
+            cse                0.001            0.000
+          eliza                0.000            0.000
+          event                0.065            0.058
+         exp3_8                0.050            0.044
+         expert                0.000            0.000
+ fannkuch-redux                0.007            8.696
+          fasta                0.005            0.003
+            fem                0.007            0.005
+            fft                0.020            0.014
+           fft2                0.019            0.015
+       fibheaps                0.014            0.010
+           fish                0.001            0.001
+          fluid                0.002            0.001
+         fulsom                0.134            0.130
+         gamteb                0.008            0.006
+            gcd                0.001            0.001
+    gen_regexps                0.000            0.000
+         genfft                0.023            0.017
+             gg                0.007            0.004
+           grep                0.000            0.000
+         hidden                0.026            0.019
+            hpg                0.013            0.012
+            ida                0.029            0.026
+          infer                0.023            0.019
+        integer                0.032            0.028
+      integrate                0.003            0.002
+   k-nucleotide                0.031            0.062
+          kahan                0.000            0.000
+        knights                0.001            0.000
+           lcss                0.299           -12.9%
+           life                0.173            0.158
+           lift                0.001            0.000
+      listcompr                0.006            0.004
+       listcopy                0.007            0.005
+       maillist                0.021            0.007
+         mandel                0.005            0.004
+        mandel2                0.001            0.000
+        minimax                0.001            0.000
+        mkhprog                0.000            0.000
+     multiplier                0.046            0.049
+         n-body                0.010            0.010
+       nucleic2                0.006            0.005
+           para                0.111            0.099
+      paraffins                0.066            0.056
+         parser                0.010            0.008
+        parstof                0.003            0.002
+            pic                0.005            0.002
+       pidigits                0.048            0.041
+          power                0.197            0.169
+         pretty                0.000            0.000
+         primes                0.030            0.024
+      primetest                0.002            0.002
+         prolog                0.000            0.000
+         puzzle                0.023            0.022
+         queens                0.000            0.000
+        reptile                0.007            0.003
+reverse-complem                0.001            0.001
+        rewrite                0.001            0.000
+           rfib                0.000            0.000
+            rsa                0.002            0.001
+            scc                0.000            0.000
+          sched                0.003            0.002
+            scs                0.214            -9.4%
+         simple                0.078            0.064
+          solid                0.068            0.066
+        sorting                0.002            0.001
+  spectral-norm                0.000            2.172
+         sphere                0.005            0.004
+         symalg                0.000            0.000
+            tak                0.000            0.000
+      transform                0.108            0.090
+       treejoin                0.093            0.079
+      typecheck                0.014            0.014
+        veritas                0.000            0.000
+           wang                0.067            0.058
+      wave4main                0.080            0.068
+   wheel-sieve1                0.016            0.015
+   wheel-sieve2                0.085            0.071
+           x2n1                0.000            0.000
+        -1 s.d.                -----           -21.0%
+        +1 s.d.                -----           +34.6%
+        Average                -----            +3.1%
+
+GC(0) Elapsed Time
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna                0.024            0.020
+           ansi                0.000            0.000
+           atom                0.339           -13.3%
+         awards                0.000            0.000
+         banner                0.000            0.000
+     bernouilli                0.086            0.068
+   binary-trees                0.387           +84.9%
+          boyer                0.025            0.023
+         boyer2                0.006            0.003
+           bspt                0.006            0.003
+      cacheprof                0.095            0.083
+       calendar                0.000            0.000
+       cichelli                0.015            0.013
+        circsim                0.432            -5.4%
+       clausify                0.018            0.016
+  comp_lab_zift                0.078            0.073
+       compress                0.082            0.079
+      compress2                0.116            0.105
+    constraints                1.600            -0.1%
+   cryptarithm1                0.026            0.024
+   cryptarithm2                0.001            0.000
+            cse                0.001            0.000
+          eliza                0.000            0.000
+          event                0.065            0.058
+         exp3_8                0.050            0.044
+         expert                0.000            0.000
+ fannkuch-redux                0.007            8.699
+          fasta                0.005            0.003
+            fem                0.007            0.005
+            fft                0.020            0.014
+           fft2                0.019            0.015
+       fibheaps                0.014            0.010
+           fish                0.001            0.001
+          fluid                0.002            0.001
+         fulsom                0.134            0.130
+         gamteb                0.008            0.006
+            gcd                0.001            0.001
+    gen_regexps                0.000            0.000
+         genfft                0.023            0.017
+             gg                0.007            0.004
+           grep                0.000            0.000
+         hidden                0.025            0.019
+            hpg                0.013            0.012
+            ida                0.029            0.026
+          infer                0.023            0.019
+        integer                0.031            0.028
+      integrate                0.003            0.002
+   k-nucleotide                0.030            0.061
+          kahan                0.000            0.000
+        knights                0.001            0.000
+           lcss                0.299           -13.0%
+           life                0.173            0.159
+           lift                0.001            0.000
+      listcompr                0.006            0.004
+       listcopy                0.006            0.005
+       maillist                0.021            0.007
+         mandel                0.005            0.004
+        mandel2                0.001            0.000
+        minimax                0.001            0.000
+        mkhprog                0.000            0.000
+     multiplier                0.046            0.049
+         n-body                0.010            0.009
+       nucleic2                0.006            0.005
+           para                0.111            0.099
+      paraffins                0.066            0.056
+         parser                0.010            0.008
+        parstof                0.003            0.002
+            pic                0.005            0.002
+       pidigits                0.047            0.041
+          power                0.197            0.169
+         pretty                0.000            0.000
+         primes                0.030            0.024
+      primetest                0.002            0.002
+         prolog                0.000            0.000
+         puzzle                0.023            0.022
+         queens                0.000            0.000
+        reptile                0.007            0.003
+reverse-complem                0.001            0.001
+        rewrite                0.001            0.000
+           rfib                0.000            0.000
+            rsa                0.002            0.001
+            scc                0.000            0.000
+          sched                0.003            0.002
+            scs                0.214            -9.4%
+         simple                0.078            0.064
+          solid                0.068            0.066
+        sorting                0.002            0.001
+  spectral-norm                0.000            2.173
+         sphere                0.005            0.004
+         symalg                0.000            0.000
+            tak                0.000            0.000
+      transform                0.107            0.090
+       treejoin                0.093            0.079
+      typecheck                0.014            0.014
+        veritas                0.000            0.000
+           wang                0.067            0.058
+      wave4main                0.080            0.068
+   wheel-sieve1                0.016            0.015
+   wheel-sieve2                0.085            0.071
+           x2n1                0.000            0.000
+        -1 s.d.                -----           -21.1%
+        +1 s.d.                -----           +34.4%
+        Average                -----            +3.0%
+
+GC(1) Count
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna                    8             0.0%
+           ansi                    1             0.0%
+           atom                  109             0.0%
+         awards                    1             0.0%
+         banner                    1             0.0%
+     bernouilli                   93             0.0%
+   binary-trees                   18          +655.6%
+          boyer                    9             0.0%
+         boyer2                    2             0.0%
+           bspt                    3             0.0%
+      cacheprof                   14            -7.1%
+       calendar                    1             0.0%
+       cichelli                    5             0.0%
+        circsim                    7             0.0%
+       clausify                    8             0.0%
+  comp_lab_zift                   18             0.0%
+       compress                   23             0.0%
+      compress2                   10             0.0%
+    constraints                   25             0.0%
+   cryptarithm1                    2             0.0%
+   cryptarithm2                    2             0.0%
+            cse                    2             0.0%
+          eliza                    1             0.0%
+          event                    9             0.0%
+         exp3_8                    2             0.0%
+         expert                    1             0.0%
+ fannkuch-redux                    2          +800.0%
+          fasta                    2             0.0%
+            fem                    3             0.0%
+            fft                    5             0.0%
+           fft2                    7             0.0%
+       fibheaps                    4             0.0%
+           fish                    2             0.0%
+          fluid                    2             0.0%
+         fulsom                   26             0.0%
+         gamteb                    4             0.0%
+            gcd                    2             0.0%
+    gen_regexps                    1             0.0%
+         genfft                    9             0.0%
+             gg                    4             0.0%
+           grep                    1             0.0%
+         hidden                    4             0.0%
+            hpg                    6             0.0%
+            ida                    6             0.0%
+          infer                    5             0.0%
+        integer                    3             0.0%
+      integrate                    2             0.0%
+   k-nucleotide                    6             0.0%
+          kahan                    2             0.0%
+        knights                    2             0.0%
+           lcss                   18             0.0%
+           life                   67            -1.5%
+           lift                    1             0.0%
+      listcompr                    2             0.0%
+       listcopy                    2             0.0%
+       maillist                    2             0.0%
+         mandel                    3             0.0%
+        mandel2                    1             0.0%
+        minimax                    2             0.0%
+        mkhprog                    2             0.0%
+     multiplier                    2             0.0%
+         n-body                    2             0.0%
+       nucleic2                    2             0.0%
+           para                   30             0.0%
+      paraffins                    3             0.0%
+         parser                    4             0.0%
+        parstof                    2             0.0%
+            pic                    2             0.0%
+       pidigits                    7             0.0%
+          power                   55             0.0%
+         pretty                    1             0.0%
+         primes                   10             0.0%
+      primetest                    2             0.0%
+         prolog                    2             0.0%
+         puzzle                    9             0.0%
+         queens                    2             0.0%
+        reptile                    3             0.0%
+reverse-complem                    2             0.0%
+        rewrite                    2             0.0%
+           rfib                    1             0.0%
+            rsa                    2             0.0%
+            scc                    1             0.0%
+          sched                    2             0.0%
+            scs                   56             0.0%
+         simple                    4             0.0%
+          solid                   33             0.0%
+        sorting                    1             0.0%
+  spectral-norm                    1          +100.0%
+         sphere                    3             0.0%
+         symalg                    1             0.0%
+            tak                    1             0.0%
+      transform                   35             0.0%
+       treejoin                    6             0.0%
+      typecheck                    2             0.0%
+        veritas                    2             0.0%
+           wang                   10             0.0%
+      wave4main                   19            +5.3%
+   wheel-sieve1                    6             0.0%
+   wheel-sieve2                    7             0.0%
+           x2n1                    1             0.0%
+        -1 s.d.                -----           -22.4%
+        +1 s.d.                -----           +42.1%
+        Average                -----            +5.0%
+
+GC(1) Time
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna                0.011            0.010
+           ansi                0.000            0.000
+           atom                0.054            0.049
+         awards                0.000            0.000
+         banner                0.000            0.000
+     bernouilli                0.027            0.021
+   binary-trees                0.191            0.251
+          boyer                0.004            0.003
+         boyer2                0.002            0.001
+           bspt                0.002            0.002
+      cacheprof                0.102            0.095
+       calendar                0.000            0.000
+       cichelli                0.010            0.010
+        circsim                0.228            -5.1%
+       clausify                0.001            0.001
+  comp_lab_zift                0.049            0.047
+       compress                0.017            0.016
+      compress2                0.083            0.083
+    constraints                1.240            -6.5%
+   cryptarithm1                0.001            0.000
+   cryptarithm2                0.000            0.000
+            cse                0.001            0.000
+          eliza                0.000            0.000
+          event                0.055            0.055
+         exp3_8                0.000            0.000
+         expert                0.000            0.000
+ fannkuch-redux                0.000           13.315
+          fasta                0.001            0.000
+            fem                0.001            0.001
+            fft                0.018            0.016
+           fft2                0.010            0.009
+       fibheaps                0.006            0.005
+           fish                0.000            0.000
+          fluid                0.001            0.000
+         fulsom                0.106            0.113
+         gamteb                0.005            0.004
+            gcd                0.000            0.000
+    gen_regexps                0.000            0.000
+         genfft                0.001            0.001
+             gg                0.004            0.002
+           grep                0.000            0.000
+         hidden                0.005            0.003
+            hpg                0.006            0.006
+            ida                0.005            0.004
+          infer                0.015            0.016
+        integer                0.001            0.000
+      integrate                0.000            0.000
+   k-nucleotide                0.005            0.005
+          kahan                0.000            0.000
+        knights                0.001            0.000
+           lcss                0.238            -8.0%
+           life                0.019            0.016
+           lift                0.000            0.000
+      listcompr                0.000            0.000
+       listcopy                0.000            0.000
+       maillist                0.001            0.000
+         mandel                0.001            0.000
+        mandel2                0.000            0.000
+        minimax                0.001            0.000
+        mkhprog                0.001            0.000
+     multiplier                0.000            0.000
+         n-body                0.000            0.000
+       nucleic2                0.001            0.000
+           para                0.007            0.005
+      paraffins                0.076            0.067
+         parser                0.007            0.006
+        parstof                0.002            0.001
+            pic                0.005            0.002
+       pidigits                0.001            0.001
+          power                0.199            0.173
+         pretty                0.000            0.000
+         primes                0.003            0.002
+      primetest                0.001            0.000
+         prolog                0.001            0.000
+         puzzle                0.001            0.001
+         queens                0.000            0.000
+        reptile                0.003            0.002
+reverse-complem                0.001            0.000
+        rewrite                0.001            0.000
+           rfib                0.000            0.000
+            rsa                0.001            0.000
+            scc                0.000            0.000
+          sched                0.000            0.000
+            scs                0.113            0.113
+         simple                0.051            0.046
+          solid                0.038            0.034
+        sorting                0.000            0.000
+  spectral-norm                0.000            0.001
+         sphere                0.001            0.000
+         symalg                0.000            0.000
+            tak                0.000            0.000
+      transform                0.017            0.015
+       treejoin                0.063            0.053
+      typecheck                0.001            0.000
+        veritas                0.002            0.001
+           wang                0.071            0.067
+      wave4main                0.075            0.072
+   wheel-sieve1                0.028            0.028
+   wheel-sieve2                0.176            0.151
+           x2n1                0.000            0.000
+        -1 s.d.                -----            -7.7%
+        +1 s.d.                -----            -5.3%
+        Average                -----            -6.5%
+
+GC(1) Elapsed Time
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna                0.012            0.010
+           ansi                0.000            0.000
+           atom                0.054            0.049
+         awards                0.000            0.000
+         banner                0.000            0.000
+     bernouilli                0.027            0.021
+   binary-trees                0.191            0.251
+          boyer                0.004            0.003
+         boyer2                0.002            0.001
+           bspt                0.002            0.002
+      cacheprof                0.102            0.095
+       calendar                0.000            0.000
+       cichelli                0.010            0.010
+        circsim                0.229            -5.2%
+       clausify                0.001            0.001
+  comp_lab_zift                0.049            0.047
+       compress                0.017            0.016
+      compress2                0.083            0.083
+    constraints                1.241            -6.6%
+   cryptarithm1                0.001            0.000
+   cryptarithm2                0.000            0.000
+            cse                0.001            0.000
+          eliza                0.000            0.000
+          event                0.055            0.055
+         exp3_8                0.000            0.000
+         expert                0.000            0.000
+ fannkuch-redux                0.000           13.322
+          fasta                0.001            0.000
+            fem                0.001            0.001
+            fft                0.018            0.016
+           fft2                0.010            0.009
+       fibheaps                0.006            0.005
+           fish                0.000            0.000
+          fluid                0.001            0.000
+         fulsom                0.106            0.113
+         gamteb                0.005            0.004
+            gcd                0.000            0.000
+    gen_regexps                0.000            0.000
+         genfft                0.001            0.001
+             gg                0.004            0.002
+           grep                0.000            0.000
+         hidden                0.005            0.003
+            hpg                0.006            0.006
+            ida                0.005            0.004
+          infer                0.015            0.016
+        integer                0.001            0.000
+      integrate                0.000            0.000
+   k-nucleotide                0.005            0.005
+          kahan                0.000            0.000
+        knights                0.001            0.000
+           lcss                0.238            -8.2%
+           life                0.019            0.016
+           lift                0.000            0.000
+      listcompr                0.000            0.000
+       listcopy                0.000            0.000
+       maillist                0.001            0.000
+         mandel                0.001            0.000
+        mandel2                0.000            0.000
+        minimax                0.001            0.000
+        mkhprog                0.001            0.000
+     multiplier                0.000            0.000
+         n-body                0.000            0.000
+       nucleic2                0.001            0.000
+           para                0.007            0.005
+      paraffins                0.076            0.067
+         parser                0.007            0.006
+        parstof                0.002            0.001
+            pic                0.005            0.002
+       pidigits                0.001            0.001
+          power                0.200            0.173
+         pretty                0.000            0.000
+         primes                0.003            0.002
+      primetest                0.001            0.000
+         prolog                0.001            0.000
+         puzzle                0.001            0.001
+         queens                0.000            0.000
+        reptile                0.003            0.002
+reverse-complem                0.001            0.000
+        rewrite                0.001            0.000
+           rfib                0.000            0.000
+            rsa                0.001            0.000
+            scc                0.000            0.000
+          sched                0.000            0.000
+            scs                0.114            0.113
+         simple                0.051            0.046
+          solid                0.038            0.034
+        sorting                0.000            0.000
+  spectral-norm                0.000            0.001
+         sphere                0.001            0.000
+         symalg                0.000            0.000
+            tak                0.000            0.000
+      transform                0.017            0.015
+       treejoin                0.063            0.053
+      typecheck                0.001            0.000
+        veritas                0.002            0.001
+           wang                0.071            0.067
+      wave4main                0.075            0.072
+   wheel-sieve1                0.028            0.028
+   wheel-sieve2                0.177            0.151
+           x2n1                0.000            0.000
+        -1 s.d.                -----            -7.9%
+        +1 s.d.                -----            -5.5%
+        Average                -----            -6.7%
+
+GC Work
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna             10640259            -0.1%
+           ansi                 4000             0.0%
+           atom            185684080             0.0%
+         awards                 3408             0.0%
+         banner                 4000             0.0%
+     bernouilli            100584240             0.0%
+   binary-trees            364464040          +102.1%
+          boyer              9300728             0.0%
+         boyer2              1046208             0.0%
+           bspt              1727224            -0.0%
+      cacheprof             64422499            -3.2%
+       calendar                16936             0.0%
+       cichelli             13222614            +0.0%
+        circsim            250085240             0.0%
+       clausify              7887648             0.0%
+  comp_lab_zift             50298864            -0.0%
+       compress             52160144             0.0%
+      compress2             96532312             0.0%
+    constraints           1204412080             0.0%
+   cryptarithm1              5221368             0.0%
+   cryptarithm2                93600             0.0%
+            cse               127792             0.0%
+          eliza                32992             0.0%
+          event             50388104            +0.0%
+         exp3_8             24351928             0.0%
+         expert                 4784             0.0%
+ fannkuch-redux                95315     +12695562.0%
+          fasta               115072             0.0%
+            fem              2342070            +0.7%
+            fft             16539800             0.0%
+           fft2             10302920             0.0%
+       fibheaps              6940368             0.0%
+           fish               149520             0.0%
+          fluid               454832             0.0%
+         fulsom             82335558            +0.1%
+         gamteb              3979286            -0.0%
+            gcd               103520             0.0%
+    gen_regexps                 4248             0.0%
+         genfft              8123992             0.0%
+             gg              2389800            -0.0%
+           grep                 4000             0.0%
+         hidden              3908588            -0.0%
+            hpg              6907640             0.0%
+            ida             11075464             0.0%
+          infer             18404480             0.0%
+        integer              3101552             0.0%
+      integrate                46288             0.0%
+   k-nucleotide               713411           +75.1%
+          kahan                91472             0.0%
+        knights               107552             0.0%
+           lcss            227713960             0.0%
+           life             75954552            -0.1%
+           lift                63264             0.0%
+      listcompr               855208             0.0%
+       listcopy               959472             0.0%
+       maillist              2372968             0.0%
+         mandel              1055000            -0.0%
+        mandel2                91000             0.0%
+        minimax                52224            -0.1%
+        mkhprog                34416             0.0%
+     multiplier             22824976             0.0%
+         n-body               114736             0.0%
+       nucleic2              1466312             0.0%
+           para             47486209            -0.0%
+      paraffins             59192448             0.0%
+         parser              5504176             0.0%
+        parstof               757816             0.0%
+            pic              1694041            +0.1%
+       pidigits              2830606            +0.0%
+          power            172218496             0.0%
+         pretty                 3408             0.0%
+         primes             11772592             0.0%
+      primetest               375336             0.0%
+         prolog                78480             0.0%
+         puzzle              8261296             0.0%
+         queens                21016             0.0%
+        reptile              1936328             0.0%
+reverse-complem                48232             0.0%
+        rewrite               152792             0.0%
+           rfib                 3408             0.0%
+            rsa               318984             0.0%
+            scc                 3408             0.0%
+          sched               505960             0.0%
+            scs            189032508            +0.0%
+         simple             45117808            -0.1%
+          solid             42407640             0.0%
+        sorting               236608             0.0%
+  spectral-norm                 3408     +85677664.0%
+         sphere              1248328             0.0%
+         symalg               178968             0.0%
+            tak                 3408             0.0%
+      transform             39864336             0.0%
+       treejoin             56660220            +0.0%
+      typecheck              3650436            +0.0%
+        veritas               121104             0.0%
+           wang             54220920             0.0%
+      wave4main             64852091            +0.1%
+   wheel-sieve1             20813896             0.0%
+   wheel-sieve2             81690624             0.0%
+           x2n1                 3408             0.0%
+        -1 s.d.                -----           -78.1%
+        +1 s.d.                -----          +677.5%
+        Average                -----           +30.5%
+
+GC work balance
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna                1.000             0.0%
+           ansi                1.000             0.0%
+           atom                1.000             0.0%
+         awards                1.000             0.0%
+         banner                1.000             0.0%
+     bernouilli                1.000             0.0%
+   binary-trees                1.000             0.0%
+          boyer                1.000             0.0%
+         boyer2                1.000             0.0%
+           bspt                1.000             0.0%
+      cacheprof                1.000             0.0%
+       calendar                1.000             0.0%
+       cichelli                1.000             0.0%
+        circsim                1.000             0.0%
+       clausify                1.000             0.0%
+  comp_lab_zift                1.000             0.0%
+       compress                1.000             0.0%
+      compress2                1.000             0.0%
+    constraints                1.000             0.0%
+   cryptarithm1                1.000             0.0%
+   cryptarithm2                1.000             0.0%
+            cse                1.000             0.0%
+          eliza                1.000             0.0%
+          event                1.000             0.0%
+         exp3_8                1.000             0.0%
+         expert                1.000             0.0%
+ fannkuch-redux                1.000             0.0%
+          fasta                1.000             0.0%
+            fem                1.000             0.0%
+            fft                1.000             0.0%
+           fft2                1.000             0.0%
+       fibheaps                1.000             0.0%
+           fish                1.000             0.0%
+          fluid                1.000             0.0%
+         fulsom                1.000             0.0%
+         gamteb                1.000             0.0%
+            gcd                1.000             0.0%
+    gen_regexps                1.000             0.0%
+         genfft                1.000             0.0%
+             gg                1.000             0.0%
+           grep                1.000             0.0%
+         hidden                1.000             0.0%
+            hpg                1.000             0.0%
+            ida                1.000             0.0%
+          infer                1.000             0.0%
+        integer                1.000             0.0%
+      integrate                1.000             0.0%
+   k-nucleotide                1.000             0.0%
+          kahan                1.000             0.0%
+        knights                1.000             0.0%
+           lcss                1.000             0.0%
+           life                1.000             0.0%
+           lift                1.000             0.0%
+      listcompr                1.000             0.0%
+       listcopy                1.000             0.0%
+       maillist                1.000             0.0%
+         mandel                1.000             0.0%
+        mandel2                1.000             0.0%
+        minimax                1.000             0.0%
+        mkhprog                1.000             0.0%
+     multiplier                1.000             0.0%
+         n-body                1.000             0.0%
+       nucleic2                1.000             0.0%
+           para                1.000             0.0%
+      paraffins                1.000             0.0%
+         parser                1.000             0.0%
+        parstof                1.000             0.0%
+            pic                1.000             0.0%
+       pidigits                1.000             0.0%
+          power                1.000             0.0%
+         pretty                1.000             0.0%
+         primes                1.000             0.0%
+      primetest                1.000             0.0%
+         prolog                1.000             0.0%
+         puzzle                1.000             0.0%
+         queens                1.000             0.0%
+        reptile                1.000             0.0%
+reverse-complem                1.000             0.0%
+        rewrite                1.000             0.0%
+           rfib                1.000             0.0%
+            rsa                1.000             0.0%
+            scc                1.000             0.0%
+          sched                1.000             0.0%
+            scs                1.000             0.0%
+         simple                1.000             0.0%
+          solid                1.000             0.0%
+        sorting                1.000             0.0%
+  spectral-norm                1.000             0.0%
+         sphere                1.000             0.0%
+         symalg                1.000             0.0%
+            tak                1.000             0.0%
+      transform                1.000             0.0%
+       treejoin                1.000             0.0%
+      typecheck                1.000             0.0%
+        veritas                1.000             0.0%
+           wang                1.000             0.0%
+      wave4main                1.000             0.0%
+   wheel-sieve1                1.000             0.0%
+   wheel-sieve2                1.000             0.0%
+           x2n1                1.000             0.0%
+        -1 s.d.                -----            -0.0%
+        +1 s.d.                -----             0.0%
+        Average                -----            -0.0%
+
+Instructions
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna          (no result)      (no result)
+           ansi          (no result)      (no result)
+           atom          (no result)      (no result)
+         awards          (no result)      (no result)
+         banner          (no result)      (no result)
+     bernouilli          (no result)      (no result)
+   binary-trees          (no result)      (no result)
+          boyer          (no result)      (no result)
+         boyer2          (no result)      (no result)
+           bspt          (no result)      (no result)
+      cacheprof          (no result)      (no result)
+       calendar          (no result)      (no result)
+       cichelli          (no result)      (no result)
+        circsim          (no result)      (no result)
+       clausify          (no result)      (no result)
+  comp_lab_zift          (no result)      (no result)
+       compress          (no result)      (no result)
+      compress2          (no result)      (no result)
+    constraints          (no result)      (no result)
+   cryptarithm1          (no result)      (no result)
+   cryptarithm2          (no result)      (no result)
+            cse          (no result)      (no result)
+          eliza          (no result)      (no result)
+          event          (no result)      (no result)
+         exp3_8          (no result)      (no result)
+         expert          (no result)      (no result)
+ fannkuch-redux          (no result)      (no result)
+          fasta          (no result)      (no result)
+            fem          (no result)      (no result)
+            fft          (no result)      (no result)
+           fft2          (no result)      (no result)
+       fibheaps          (no result)      (no result)
+           fish          (no result)      (no result)
+          fluid          (no result)      (no result)
+         fulsom          (no result)      (no result)
+         gamteb          (no result)      (no result)
+            gcd          (no result)      (no result)
+    gen_regexps          (no result)      (no result)
+         genfft          (no result)      (no result)
+             gg          (no result)      (no result)
+           grep          (no result)      (no result)
+         hidden          (no result)      (no result)
+            hpg          (no result)      (no result)
+            ida          (no result)      (no result)
+          infer          (no result)      (no result)
+        integer          (no result)      (no result)
+      integrate          (no result)      (no result)
+   k-nucleotide          (no result)      (no result)
+          kahan          (no result)      (no result)
+        knights          (no result)      (no result)
+           lcss          (no result)      (no result)
+           life          (no result)      (no result)
+           lift          (no result)      (no result)
+      listcompr          (no result)      (no result)
+       listcopy          (no result)      (no result)
+       maillist          (no result)      (no result)
+         mandel          (no result)      (no result)
+        mandel2          (no result)      (no result)
+        minimax          (no result)      (no result)
+        mkhprog          (no result)      (no result)
+     multiplier          (no result)      (no result)
+         n-body          (no result)      (no result)
+       nucleic2          (no result)      (no result)
+           para          (no result)      (no result)
+      paraffins          (no result)      (no result)
+         parser          (no result)      (no result)
+        parstof          (no result)      (no result)
+            pic          (no result)      (no result)
+       pidigits          (no result)      (no result)
+          power          (no result)      (no result)
+         pretty          (no result)      (no result)
+         primes          (no result)      (no result)
+      primetest          (no result)      (no result)
+         prolog          (no result)      (no result)
+         puzzle          (no result)      (no result)
+         queens          (no result)      (no result)
+        reptile          (no result)      (no result)
+reverse-complem          (no result)      (no result)
+        rewrite          (no result)      (no result)
+           rfib          (no result)      (no result)
+            rsa          (no result)      (no result)
+            scc          (no result)      (no result)
+          sched          (no result)      (no result)
+            scs          (no result)      (no result)
+         simple          (no result)      (no result)
+          solid          (no result)      (no result)
+        sorting          (no result)      (no result)
+  spectral-norm          (no result)      (no result)
+         sphere          (no result)      (no result)
+         symalg          (no result)      (no result)
+            tak          (no result)      (no result)
+      transform          (no result)      (no result)
+       treejoin          (no result)      (no result)
+      typecheck          (no result)      (no result)
+        veritas          (no result)      (no result)
+           wang          (no result)      (no result)
+      wave4main          (no result)      (no result)
+   wheel-sieve1          (no result)      (no result)
+   wheel-sieve2          (no result)      (no result)
+           x2n1          (no result)      (no result)
+        -1 s.d.                -----            -----
+        +1 s.d.                -----            -----
+        Average                -----            -----
+
+Memory Reads
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna          (no result)      (no result)
+           ansi          (no result)      (no result)
+           atom          (no result)      (no result)
+         awards          (no result)      (no result)
+         banner          (no result)      (no result)
+     bernouilli          (no result)      (no result)
+   binary-trees          (no result)      (no result)
+          boyer          (no result)      (no result)
+         boyer2          (no result)      (no result)
+           bspt          (no result)      (no result)
+      cacheprof          (no result)      (no result)
+       calendar          (no result)      (no result)
+       cichelli          (no result)      (no result)
+        circsim          (no result)      (no result)
+       clausify          (no result)      (no result)
+  comp_lab_zift          (no result)      (no result)
+       compress          (no result)      (no result)
+      compress2          (no result)      (no result)
+    constraints          (no result)      (no result)
+   cryptarithm1          (no result)      (no result)
+   cryptarithm2          (no result)      (no result)
+            cse          (no result)      (no result)
+          eliza          (no result)      (no result)
+          event          (no result)      (no result)
+         exp3_8          (no result)      (no result)
+         expert          (no result)      (no result)
+ fannkuch-redux          (no result)      (no result)
+          fasta          (no result)      (no result)
+            fem          (no result)      (no result)
+            fft          (no result)      (no result)
+           fft2          (no result)      (no result)
+       fibheaps          (no result)      (no result)
+           fish          (no result)      (no result)
+          fluid          (no result)      (no result)
+         fulsom          (no result)      (no result)
+         gamteb          (no result)      (no result)
+            gcd          (no result)      (no result)
+    gen_regexps          (no result)      (no result)
+         genfft          (no result)      (no result)
+             gg          (no result)      (no result)
+           grep          (no result)      (no result)
+         hidden          (no result)      (no result)
+            hpg          (no result)      (no result)
+            ida          (no result)      (no result)
+          infer          (no result)      (no result)
+        integer          (no result)      (no result)
+      integrate          (no result)      (no result)
+   k-nucleotide          (no result)      (no result)
+          kahan          (no result)      (no result)
+        knights          (no result)      (no result)
+           lcss          (no result)      (no result)
+           life          (no result)      (no result)
+           lift          (no result)      (no result)
+      listcompr          (no result)      (no result)
+       listcopy          (no result)      (no result)
+       maillist          (no result)      (no result)
+         mandel          (no result)      (no result)
+        mandel2          (no result)      (no result)
+        minimax          (no result)      (no result)
+        mkhprog          (no result)      (no result)
+     multiplier          (no result)      (no result)
+         n-body          (no result)      (no result)
+       nucleic2          (no result)      (no result)
+           para          (no result)      (no result)
+      paraffins          (no result)      (no result)
+         parser          (no result)      (no result)
+        parstof          (no result)      (no result)
+            pic          (no result)      (no result)
+       pidigits          (no result)      (no result)
+          power          (no result)      (no result)
+         pretty          (no result)      (no result)
+         primes          (no result)      (no result)
+      primetest          (no result)      (no result)
+         prolog          (no result)      (no result)
+         puzzle          (no result)      (no result)
+         queens          (no result)      (no result)
+        reptile          (no result)      (no result)
+reverse-complem          (no result)      (no result)
+        rewrite          (no result)      (no result)
+           rfib          (no result)      (no result)
+            rsa          (no result)      (no result)
+            scc          (no result)      (no result)
+          sched          (no result)      (no result)
+            scs          (no result)      (no result)
+         simple          (no result)      (no result)
+          solid          (no result)      (no result)
+        sorting          (no result)      (no result)
+  spectral-norm          (no result)      (no result)
+         sphere          (no result)      (no result)
+         symalg          (no result)      (no result)
+            tak          (no result)      (no result)
+      transform          (no result)      (no result)
+       treejoin          (no result)      (no result)
+      typecheck          (no result)      (no result)
+        veritas          (no result)      (no result)
+           wang          (no result)      (no result)
+      wave4main          (no result)      (no result)
+   wheel-sieve1          (no result)      (no result)
+   wheel-sieve2          (no result)      (no result)
+           x2n1          (no result)      (no result)
+        -1 s.d.                -----            -----
+        +1 s.d.                -----            -----
+        Average                -----            -----
+
+Memory Writes
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna          (no result)      (no result)
+           ansi          (no result)      (no result)
+           atom          (no result)      (no result)
+         awards          (no result)      (no result)
+         banner          (no result)      (no result)
+     bernouilli          (no result)      (no result)
+   binary-trees          (no result)      (no result)
+          boyer          (no result)      (no result)
+         boyer2          (no result)      (no result)
+           bspt          (no result)      (no result)
+      cacheprof          (no result)      (no result)
+       calendar          (no result)      (no result)
+       cichelli          (no result)      (no result)
+        circsim          (no result)      (no result)
+       clausify          (no result)      (no result)
+  comp_lab_zift          (no result)      (no result)
+       compress          (no result)      (no result)
+      compress2          (no result)      (no result)
+    constraints          (no result)      (no result)
+   cryptarithm1          (no result)      (no result)
+   cryptarithm2          (no result)      (no result)
+            cse          (no result)      (no result)
+          eliza          (no result)      (no result)
+          event          (no result)      (no result)
+         exp3_8          (no result)      (no result)
+         expert          (no result)      (no result)
+ fannkuch-redux          (no result)      (no result)
+          fasta          (no result)      (no result)
+            fem          (no result)      (no result)
+            fft          (no result)      (no result)
+           fft2          (no result)      (no result)
+       fibheaps          (no result)      (no result)
+           fish          (no result)      (no result)
+          fluid          (no result)      (no result)
+         fulsom          (no result)      (no result)
+         gamteb          (no result)      (no result)
+            gcd          (no result)      (no result)
+    gen_regexps          (no result)      (no result)
+         genfft          (no result)      (no result)
+             gg          (no result)      (no result)
+           grep          (no result)      (no result)
+         hidden          (no result)      (no result)
+            hpg          (no result)      (no result)
+            ida          (no result)      (no result)
+          infer          (no result)      (no result)
+        integer          (no result)      (no result)
+      integrate          (no result)      (no result)
+   k-nucleotide          (no result)      (no result)
+          kahan          (no result)      (no result)
+        knights          (no result)      (no result)
+           lcss          (no result)      (no result)
+           life          (no result)      (no result)
+           lift          (no result)      (no result)
+      listcompr          (no result)      (no result)
+       listcopy          (no result)      (no result)
+       maillist          (no result)      (no result)
+         mandel          (no result)      (no result)
+        mandel2          (no result)      (no result)
+        minimax          (no result)      (no result)
+        mkhprog          (no result)      (no result)
+     multiplier          (no result)      (no result)
+         n-body          (no result)      (no result)
+       nucleic2          (no result)      (no result)
+           para          (no result)      (no result)
+      paraffins          (no result)      (no result)
+         parser          (no result)      (no result)
+        parstof          (no result)      (no result)
+            pic          (no result)      (no result)
+       pidigits          (no result)      (no result)
+          power          (no result)      (no result)
+         pretty          (no result)      (no result)
+         primes          (no result)      (no result)
+      primetest          (no result)      (no result)
+         prolog          (no result)      (no result)
+         puzzle          (no result)      (no result)
+         queens          (no result)      (no result)
+        reptile          (no result)      (no result)
+reverse-complem          (no result)      (no result)
+        rewrite          (no result)      (no result)
+           rfib          (no result)      (no result)
+            rsa          (no result)      (no result)
+            scc          (no result)      (no result)
+          sched          (no result)      (no result)
+            scs          (no result)      (no result)
+         simple          (no result)      (no result)
+          solid          (no result)      (no result)
+        sorting          (no result)      (no result)
+  spectral-norm          (no result)      (no result)
+         sphere          (no result)      (no result)
+         symalg          (no result)      (no result)
+            tak          (no result)      (no result)
+      transform          (no result)      (no result)
+       treejoin          (no result)      (no result)
+      typecheck          (no result)      (no result)
+        veritas          (no result)      (no result)
+           wang          (no result)      (no result)
+      wave4main          (no result)      (no result)
+   wheel-sieve1          (no result)      (no result)
+   wheel-sieve2          (no result)      (no result)
+           x2n1          (no result)      (no result)
+        -1 s.d.                -----            -----
+        +1 s.d.                -----            -----
+        Average                -----            -----
+
+Cache Misses
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna          (no result)      (no result)
+           ansi          (no result)      (no result)
+           atom          (no result)      (no result)
+         awards          (no result)      (no result)
+         banner          (no result)      (no result)
+     bernouilli          (no result)      (no result)
+   binary-trees          (no result)      (no result)
+          boyer          (no result)      (no result)
+         boyer2          (no result)      (no result)
+           bspt          (no result)      (no result)
+      cacheprof          (no result)      (no result)
+       calendar          (no result)      (no result)
+       cichelli          (no result)      (no result)
+        circsim          (no result)      (no result)
+       clausify          (no result)      (no result)
+  comp_lab_zift          (no result)      (no result)
+       compress          (no result)      (no result)
+      compress2          (no result)      (no result)
+    constraints          (no result)      (no result)
+   cryptarithm1          (no result)      (no result)
+   cryptarithm2          (no result)      (no result)
+            cse          (no result)      (no result)
+          eliza          (no result)      (no result)
+          event          (no result)      (no result)
+         exp3_8          (no result)      (no result)
+         expert          (no result)      (no result)
+ fannkuch-redux          (no result)      (no result)
+          fasta          (no result)      (no result)
+            fem          (no result)      (no result)
+            fft          (no result)      (no result)
+           fft2          (no result)      (no result)
+       fibheaps          (no result)      (no result)
+           fish          (no result)      (no result)
+          fluid          (no result)      (no result)
+         fulsom          (no result)      (no result)
+         gamteb          (no result)      (no result)
+            gcd          (no result)      (no result)
+    gen_regexps          (no result)      (no result)
+         genfft          (no result)      (no result)
+             gg          (no result)      (no result)
+           grep          (no result)      (no result)
+         hidden          (no result)      (no result)
+            hpg          (no result)      (no result)
+            ida          (no result)      (no result)
+          infer          (no result)      (no result)
+        integer          (no result)      (no result)
+      integrate          (no result)      (no result)
+   k-nucleotide          (no result)      (no result)
+          kahan          (no result)      (no result)
+        knights          (no result)      (no result)
+           lcss          (no result)      (no result)
+           life          (no result)      (no result)
+           lift          (no result)      (no result)
+      listcompr          (no result)      (no result)
+       listcopy          (no result)      (no result)
+       maillist          (no result)      (no result)
+         mandel          (no result)      (no result)
+        mandel2          (no result)      (no result)
+        minimax          (no result)      (no result)
+        mkhprog          (no result)      (no result)
+     multiplier          (no result)      (no result)
+         n-body          (no result)      (no result)
+       nucleic2          (no result)      (no result)
+           para          (no result)      (no result)
+      paraffins          (no result)      (no result)
+         parser          (no result)      (no result)
+        parstof          (no result)      (no result)
+            pic          (no result)      (no result)
+       pidigits          (no result)      (no result)
+          power          (no result)      (no result)
+         pretty          (no result)      (no result)
+         primes          (no result)      (no result)
+      primetest          (no result)      (no result)
+         prolog          (no result)      (no result)
+         puzzle          (no result)      (no result)
+         queens          (no result)      (no result)
+        reptile          (no result)      (no result)
+reverse-complem          (no result)      (no result)
+        rewrite          (no result)      (no result)
+           rfib          (no result)      (no result)
+            rsa          (no result)      (no result)
+            scc          (no result)      (no result)
+          sched          (no result)      (no result)
+            scs          (no result)      (no result)
+         simple          (no result)      (no result)
+          solid          (no result)      (no result)
+        sorting          (no result)      (no result)
+  spectral-norm          (no result)      (no result)
+         sphere          (no result)      (no result)
+         symalg          (no result)      (no result)
+            tak          (no result)      (no result)
+      transform          (no result)      (no result)
+       treejoin          (no result)      (no result)
+      typecheck          (no result)      (no result)
+        veritas          (no result)      (no result)
+           wang          (no result)      (no result)
+      wave4main          (no result)      (no result)
+   wheel-sieve1          (no result)      (no result)
+   wheel-sieve2          (no result)      (no result)
+           x2n1          (no result)      (no result)
+        -1 s.d.                -----            -----
+        +1 s.d.                -----            -----
+        Average                -----            -----
+
+Total Memory in use
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+           anna              4194304             0.0%
+           ansi              1048576             0.0%
+           atom              3145728             0.0%
+         awards              1048576             0.0%
+         banner              1048576             0.0%
+     bernouilli              3145728             0.0%
+   binary-trees             30408704           -55.2%
+          boyer              2097152             0.0%
+         boyer2              2097152             0.0%
+           bspt              3145728             0.0%
+      cacheprof             24536678            -2.6%
+       calendar              1048576             0.0%
+       cichelli              7340032             0.0%
+        circsim             87031808             0.0%
+       clausify              2097152             0.0%
+  comp_lab_zift              7340032             0.0%
+       compress              3145728             0.0%
+      compress2             26214400             0.0%
+    constraints            134217728             0.0%
+   cryptarithm1              1048576             0.0%
+   cryptarithm2              1048576             0.0%
+            cse              1048576             0.0%
+          eliza              1048576             0.0%
+          event             24117248             0.0%
+         exp3_8              2097152             0.0%
+         expert              1048576             0.0%
+ fannkuch-redux              1048576       +521860.0%
+          fasta              2097152             0.0%
+            fem              2097152             0.0%
+            fft              9437184             0.0%
+           fft2              4194304             0.0%
+       fibheaps              3145728             0.0%
+           fish              1048576             0.0%
+          fluid              1048576             0.0%
+         fulsom             14680064             0.0%
+         gamteb              4194304             0.0%
+            gcd              1048576             0.0%
+    gen_regexps              1048576             0.0%
+         genfft              2097152             0.0%
+             gg              2097152             0.0%
+           grep              1048576             0.0%
+         hidden              3145728             0.0%
+            hpg              4194304             0.0%
+            ida              3145728             0.0%
+          infer              9437184             0.0%
+        integer              2097152             0.0%
+      integrate             99614720             0.0%
+   k-nucleotide             71303168             0.0%
+          kahan              1048576             0.0%
+        knights              1048576             0.0%
+           lcss             54525952             0.0%
+           life              2097152             0.0%
+           lift              1048576             0.0%
+      listcompr              1048576             0.0%
+       listcopy              1048576             0.0%
+       maillist              3145728             0.0%
+         mandel              2097152             0.0%
+        mandel2              1048576             0.0%
+        minimax              1048576             0.0%
+        mkhprog              1048576             0.0%
+     multiplier              1048576             0.0%
+         n-body              1048576             0.0%
+       nucleic2              2097152             0.0%
+           para              2097152             0.0%
+      paraffins             41943040             0.0%
+         parser              4194304             0.0%
+        parstof              2097152             0.0%
+            pic              2097152             0.0%
+       pidigits              4194304             0.0%
+          power             10485760             0.0%
+         pretty              1048576             0.0%
+         primes              3145728             0.0%
+      primetest              1048576             0.0%
+         prolog              1048576             0.0%
+         puzzle              2097152             0.0%
+         queens              1048576             0.0%
+        reptile              3145728             0.0%
+reverse-complem              1048576             0.0%
+        rewrite              1048576             0.0%
+           rfib              1048576             0.0%
+            rsa              1048576             0.0%
+            scc              1048576             0.0%
+          sched              1048576             0.0%
+            scs              7340032             0.0%
+         simple             30408704             0.0%
+          solid              3145728             0.0%
+        sorting              1048576             0.0%
+  spectral-norm              1048576          +100.0%
+         sphere              2097152             0.0%
+         symalg              2097152             0.0%
+            tak              1048576             0.0%
+      transform              2097152             0.0%
+       treejoin             28311552             0.0%
+      typecheck              1048576             0.0%
+        veritas              1048576             0.0%
+           wang             20971520             0.0%
+      wave4main             13631488             0.0%
+   wheel-sieve1             16777216             0.0%
+   wheel-sieve2             49283072             0.0%
+           x2n1              1048576             0.0%
+        -1 s.d.                -----           -53.9%
+        +1 s.d.                -----          +156.7%
+        Average                -----            +8.8%
+Module Sizes
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+
+anna
+       AbsConc3                37041             0.0%
+  AbstractEval2                 7489             0.0%
+   AbstractMisc                14017             0.0%
+  AbstractVals2                41079             0.0%
+          Apply                 9454             0.0%
+    BarakiConc3                20302             0.0%
+     BarakiMeet                14044             0.0%
+       BaseDefs               109117             0.0%
+   Constructors                26258             0.0%
+     Dependancy                38754             0.0%
+     DomainExpr                12484             0.0%
+    EtaAbstract                10464             0.0%
+FrontierDATAFN2                21526             0.0%
+FrontierGENERIC                22736             0.0%
+  FrontierMisc2                 9301             0.0%
+        Inverse                18012             0.0%
+    LambdaLift5                45972             0.0%
+           Main                25416             0.0%
+    MakeDomains                 6394             0.0%
+        Monster                 6064             0.0%
+        MyUtils                11403             0.0%
+        Parser2                67647             0.0%
+    PrettyPrint                18207             0.0%
+   PrintResults                19466             0.0%
+      ReadTable                17479             0.0%
+       Simplify                 7696             0.0%
+ SmallerLattice                46959             0.0%
+      StrictAn6                86921             0.0%
+ SuccsAndPreds2                37686             0.0%
+    TExpr2DExpr                 9802             0.0%
+     TypeCheck5                82767             0.0%
+          Utils                35141             0.0%
+
+ansi
+           Main                12679             0.0%
+
+atom
+           Main                11614             0.0%
+
+awards
+           Main                15067             0.0%
+          QSort                 2669             0.0%
+
+banner
+           Main                27848             0.0%
+
+bernouilli
+           Main                 6779             0.0%
+
+binary-trees
+           Main                10278            +1.4%
+
+boyer
+           Main                30773             0.0%
+
+boyer2
+        Checker                 3801             0.0%
+    Lisplikefns                17685             0.0%
+           Main                 4958             0.0%
+     Rewritefns                 6730             0.0%
+   Rulebasetext                23035             0.0%
+
+bspt
+           BSPT                39093             0.0%
+         Euclid                38757             0.0%
+      EuclidGMS                14520             0.0%
+        GeomNum                 8942             0.0%
+           Init                23251             0.0%
+          Input                37689             0.0%
+      Interface                 7888             0.0%
+      Interpret                 6028             0.0%
+        Libfuns                   81             0.0%
+         MGRlib                 7330             0.0%
+           Main                  461             0.0%
+          Merge                18177             0.0%
+         Params                 5655             0.0%
+           Prog                 1180             0.0%
+      Rationals                18929             0.0%
+         Render                 7607             0.0%
+         Stdlib                 4877             0.0%
+
+cacheprof
+       Arch_x86                82730             0.0%
+       Generics                21636             0.0%
+           Main               218801             0.0%
+
+calendar
+           Main                18158             0.0%
+
+cichelli
+          Auxil                14347             0.0%
+       Interval                   48             0.0%
+            Key                 3546             0.0%
+           Main                  381             0.0%
+           Prog                15808             0.0%
+
+circsim
+           Main                67118             0.0%
+
+clausify
+           Main                25405             0.0%
+
+comp_lab_zift
+           Main                70091             0.0%
+
+compress
+        BinConv                 5197             0.0%
+        BinTest                  965             0.0%
+         Decode                17848             0.0%
+       Defaults                  250             0.0%
+         Encode                20111             0.0%
+           Main                  701             0.0%
+        PTTrees                 1295             0.0%
+     Uncompress                  453             0.0%
+
+compress2
+         Encode                69206             0.0%
+           Main                 1353             0.0%
+  WriteRoutines                12820             0.0%
+
+constraints
+           Main                32235             0.0%
+
+cryptarithm1
+           Main                 4175             0.0%
+
+cryptarithm2
+           Main                28383             0.0%
+
+cse
+           Main                24181             0.0%
+     StateMonad                 4070             0.0%
+
+eliza
+           Main                53017             0.0%
+
+event
+           Main                20765             0.0%
+
+exp3_8
+           Main                 8363             0.0%
+
+expert
+      Knowledge                13938             0.0%
+           Main                 8237             0.0%
+          Match                 4086             0.0%
+         Result                 1690             0.0%
+         Search                11204             0.0%
+          Table                18735             0.0%
+
+fannkuch-redux
+           Main                 8906          +145.7%
+
+fasta
+           Main                 9547            +0.5%
+
+fem
+Assemble_loadve                 2412             0.0%
+Assemble_stiffn                 7521             0.0%
+         Basics                 2188             0.0%
+   DB_interface                11766             0.0%
+       Database                 6204             0.0%
+        Degrees                16806             0.0%
+   Displacement                 4412             0.0%
+      Elemforce                 2500             0.0%
+       Elemstif                 6368             0.0%
+           Main                 1389             0.0%
+         Matrix                22390             0.0%
+   Pre_assemble                 4632             0.0%
+    PrintSource                11525             0.0%
+  Printuvwforce                 4949             0.0%
+     VBlldecomp                17851             0.0%
+       VBmatrix                14034             0.0%
+         Vector                10638             0.0%
+
+fft
+           Main                23688             0.0%
+
+fft2
+Complex_Vectors                 2687             0.0%
+        Fourier                25573             0.0%
+           Main                 4496             0.0%
+
+fibheaps
+           Main                27805             0.0%
+
+fish
+           Main                35184             0.0%
+
+fluid
+      Asb_routs                 7092             0.0%
+       C_matrix                14745             0.0%
+     Chl_decomp                43654             0.0%
+     Chl_method                18270             0.0%
+      Chl_routs                91576             0.0%
+           Defs                   96             0.0%
+         Elefac                 4826             0.0%
+     Input_proc                30468             0.0%
+     Jcb_method                17042             0.0%
+       L_matrix                 6697             0.0%
+           Main                 3261             0.0%
+     Min_degree                13856             0.0%
+           Norm                 3946             0.0%
+  Rhs_Asb_routs                18800             0.0%
+        S_Array                70360             0.0%
+       S_matrix                10173             0.0%
+        TG_iter                49514             0.0%
+        Tol_cal                 2597             0.0%
+
+fulsom
+            Csg                45391             0.0%
+       Interval                37977             0.0%
+          Kolor                 8726             0.0%
+           Main                 1629             0.0%
+         Matrix                18593             0.0%
+            Oct                14921             0.0%
+     Patchlevel                  183             0.0%
+           Quad                13918             0.0%
+         Raster                11371             0.0%
+         Shapes                 2678             0.0%
+          Types                31748             0.0%
+         Vector                 3793             0.0%
+
+gamteb
+        Compton                 6209             0.0%
+         Consts                  544             0.0%
+       Distance                 5108             0.0%
+     GamtebMain                 2382             0.0%
+     GamtebType                  315             0.0%
+      InitTable                 9868             0.0%
+           Main                 1526             0.0%
+         Output                16605             0.0%
+           Pair                 5233             0.0%
+      PhotoElec                 1657             0.0%
+      RoulSplit                 2346             0.0%
+      TransPort                12828             0.0%
+          Utils                 7620             0.0%
+
+gcd
+           Main                 4927             0.0%
+
+gen_regexps
+           Main                 8441             0.0%
+
+genfft
+           Main                27096             0.0%
+
+gg
+       Activity                18606             0.0%
+           GRIP                40371             0.0%
+          Graph                53195             0.0%
+           Main                14971             0.0%
+          PSlib                21156             0.0%
+          Parse                10097             0.0%
+           Pool                12330             0.0%
+          Spark                16843             0.0%
+         StdLib                 7999             0.0%
+
+grep
+           Main                44722             0.0%
+        Parsers                 5924             0.0%
+    StringMatch                36617             0.0%
+
+hidden
+      Comparing                30382             0.0%
+          Cross                 5158             0.0%
+      EdgePlate                 2881             0.0%
+      Geometric                11828             0.0%
+           Hide                11369             0.0%
+           Main                 2149             0.0%
+       Matrices                  341             0.0%
+           Memo                17787             0.0%
+           MyIO                 3212             0.0%
+        Numbers                12412             0.0%
+     Postscript                 5089             0.0%
+          Preds                 5806             0.0%
+         Rotate                 1954             0.0%
+          Solve                 5738             0.0%
+        Vectors                12583             0.0%
+
+hpg
+         Config                 7833             0.0%
+            Env                13437             0.0%
+         GenExp                22238             0.0%
+        GenType                 8806             0.0%
+         GenVal                10318             0.0%
+           Main                24295             0.0%
+          Types                44117             0.0%
+          Utils                 3711             0.0%
+
+ida
+           Main                37078             0.0%
+
+infer
+    Environment                11173             0.0%
+      FiniteMap                 5658             0.0%
+          Infer                 8975             0.0%
+     InferMonad                 7530             0.0%
+           Main                 5417             0.0%
+         MaybeM                 1515             0.0%
+         MyList                  613             0.0%
+          Parse                15360             0.0%
+          Shows                 4136             0.0%
+          State                 1773             0.0%
+         StateX                 2671             0.0%
+   Substitution                 6726             0.0%
+           Term                25093             0.0%
+           Type                21134             0.0%
+
+integer
+           Main                 5502             0.0%
+
+integrate
+           Main                 6823             0.0%
+
+k-nucleotide
+           Main                57458            -9.3%
+
+kahan
+           Main                 3448             0.0%
+
+knights
+  ChessSetArray                20039             0.0%
+   ChessSetList                12470             0.0%
+KnightHeuristic                24502             0.0%
+           Main                 6341             0.0%
+          Queue                 2453             0.0%
+           Sort                 6057             0.0%
+
+lcss
+           Main                12991             0.0%
+
+life
+           Main                10432             0.0%
+
+lift
+     LambdaLift                48596             0.0%
+           Main                 3080             0.0%
+          Print                20683             0.0%
+           Test                 5446             0.0%
+      Utilities                14122             0.0%
+
+listcompr
+           Main                24438             0.0%
+
+listcopy
+           Main                24838             0.0%
+
+maillist
+           Main                10147             0.0%
+
+mandel
+           Main                 4367             0.0%
+         Mandel                 7126             0.0%
+ PortablePixmap                 4449             0.0%
+
+mandel2
+           Main                16606             0.0%
+
+minimax
+          Board                19312             0.0%
+           Game                 9139             0.0%
+           Main                  381             0.0%
+           Prog                 1196             0.0%
+           Tree                 4383             0.0%
+           Wins                 1312             0.0%
+
+mkhprog
+           Main                36126             0.0%
+
+multiplier
+           Main                51822             0.0%
+
+n-body
+           Main                14468            +6.9%
+
+nucleic2
+           Main                98492             0.0%
+             RA                32824             0.0%
+             RC                30680             0.0%
+             RG                 9088             0.0%
+             RU                32192             0.0%
+          Types                 2212             0.0%
+
+para
+           Main                93242             0.0%
+
+paraffins
+           Main                22251             0.0%
+
+parser
+           Main               225829             0.0%
+
+parstof
+           Main               167416             0.0%
+
+pic
+  ChargeDensity                 4158             0.0%
+         Consts                  286             0.0%
+      ElecField                 9092             0.0%
+           Main                 1525             0.0%
+            Pic                 6029             0.0%
+        PicType                    0             0.0%
+      Potential                 7690             0.0%
+   PushParticle                 7409             0.0%
+          Utils                23175             0.0%
+
+pidigits
+           Main                 7104             0.0%
+
+power
+           Main                59061             0.0%
+
+pretty
+        CharSeq                 7000             0.0%
+           Main                 3399             0.0%
+         Pretty                15950             0.0%
+
+primes
+           Main                 3455             0.0%
+
+primetest
+         IntLib                 5410             0.0%
+           Main                 2284             0.0%
+       MyRandom                 1695             0.0%
+          Prime                11816             0.0%
+
+prolog
+         Engine                 6277             0.0%
+       Interact                 3271             0.0%
+           Main                14978             0.0%
+          Parse                 6781             0.0%
+     PrologData                27910             0.0%
+          Subst                 6117             0.0%
+        Version                  128             0.0%
+
+puzzle
+           Main                39134             0.0%
+
+queens
+           Main                 3446             0.0%
+
+reptile
+    Auxprogfuns                24725             0.0%
+           Diff                  659             0.0%
+       Drawfuns                10548             0.0%
+       Geomfuns                16160             0.0%
+           Help                14818             0.0%
+     Interstate                  592             0.0%
+         Layout                31298             0.0%
+           Main                 2645             0.0%
+        Mgrfuns                10048             0.0%
+       Progfuns                42812             0.0%
+         Psfuns                 8259             0.0%
+       Rational                 7180             0.0%
+       Tilefuns                14898             0.0%
+
+reverse-complement
+           Main                 6124            +7.3%
+
+rewrite
+           Main                65541             0.0%
+
+rfib
+           Main                 2126             0.0%
+
+rsa
+           Main                 2365             0.0%
+            Rsa                 8793             0.0%
+
+scc
+        Digraph                 2945             0.0%
+           Main                 1541             0.0%
+
+sched
+           Main                21378             0.0%
+
+scs
+  LinearAlgebra                69674             0.0%
+           Main                11893             0.0%
+          Parse                52664             0.0%
+       ParseLib                14965             0.0%
+      RandomFix                 6290             0.0%
+       Simulate                73966             0.0%
+          Types                10283             0.0%
+
+simple
+           Main               274855             0.0%
+
+solid
+           Main                55122             0.0%
+
+sorting
+           Main                 3950             0.0%
+           Sort                20312             0.0%
+
+spectral-norm
+           Main                 5743           +52.8%
+
+sphere
+           Main                82383             0.0%
+
+symalg
+            Ast                 1516             0.0%
+    BasicNumber                34065             0.0%
+BasicNumberAppr                 9276             0.0%
+            Env                  933             0.0%
+           Eval                15352             0.0%
+          Lexer                 8488             0.0%
+           Main                 5058             0.0%
+             Op                 8799             0.0%
+         Parser                10782             0.0%
+          Print                 8095             0.0%
+          RealM                15767             0.0%
+
+tak
+           Main                 2855             0.0%
+
+transform
+           Main               175234             0.0%
+
+treejoin
+           Main                14447             0.0%
+
+typecheck
+           Main                45803             0.0%
+
+veritas
+     Attributes                 1524             0.0%
+           Auto                 3497             0.0%
+       Build_Tm                19076             0.0%
+     Build_itrm                29474             0.0%
+  Core_database                63723             0.0%
+  Core_datatype                23018             0.0%
+          Dcore                 4214             0.0%
+   DerivedRules                16480             0.0%
+        Display                34000             0.0%
+         Editor                 6301             0.0%
+          Edlib                10964             0.0%
+         Getops                 5343             0.0%
+        Globals                  933             0.0%
+          Goals                34350             0.0%
+         Kernel                85978             0.0%
+         Lookup                    0             0.0%
+           Main                24154             0.0%
+          Parse               119380             0.0%
+      Sub_Core1                26558             0.0%
+      Sub_Core2                25474             0.0%
+      Sub_Core3                20450             0.0%
+      Sub_Core4                30604             0.0%
+      Tacticals                 8152             0.0%
+        Tactics                23098             0.0%
+           Tags                 6444             0.0%
+     ThmTactics                70358             0.0%
+          Token                21817             0.0%
+           Tree                16397             0.0%
+      Type_defs                 3970             0.0%
+        Unparse                42686             0.0%
+         Vtslib                 2600             0.0%
+    X_interface                57974             0.0%
+
+wang
+           Main                25888             0.0%
+
+wave4main
+           Main                28816             0.0%
+
+wheel-sieve1
+           Main                 9198             0.0%
+
+wheel-sieve2
+           Main                10830             0.0%
+
+x2n1
+           Main                 5101             0.0%
+
+        -1 s.d.                -----            -4.7%
+        +1 s.d.                -----            +5.7%
+        Average                -----            +0.4%
+
+Compile Times
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+
+anna
+       AbsConc3                0.782            -3.3%
+  AbstractEval2                0.282            -6.0%
+   AbstractMisc                0.411            -7.8%
+  AbstractVals2                0.860            -9.9%
+          Apply                0.331            -2.7%
+    BarakiConc3                0.616            -8.6%
+     BarakiMeet                0.402            -9.0%
+       BaseDefs                2.843            -3.8%
+   Constructors                0.644            -8.1%
+     Dependancy                0.885            -2.5%
+     DomainExpr                0.371            -4.6%
+    EtaAbstract                0.386            +1.0%
+FrontierDATAFN2                0.561             0.0%
+FrontierGENERIC                0.545            -0.9%
+  FrontierMisc2                0.326            +1.2%
+        Inverse                0.491            -8.8%
+    LambdaLift5                1.251            -1.1%
+           Main                0.926            -5.3%
+    MakeDomains                0.316            +1.6%
+        Monster                0.402            -3.5%
+        MyUtils                0.387            -2.8%
+        Parser2                1.770            -0.8%
+    PrettyPrint                0.396            -0.8%
+   PrintResults                0.612            -0.8%
+      ReadTable                0.435            +2.1%
+       Simplify                0.334            -9.9%
+ SmallerLattice                1.211            -0.4%
+      StrictAn6                1.945            -1.1%
+ SuccsAndPreds2                0.850           -10.2%
+    TExpr2DExpr                0.452            +0.2%
+     TypeCheck5                2.240            +3.5%
+          Utils                0.991            -3.0%
+
+ansi
+           Main                0.612            -2.0%
+
+atom
+           Main                0.533            -1.5%
+
+awards
+           Main                0.900            -3.9%
+          QSort                0.167            0.171
+
+banner
+           Main                0.880            -3.5%
+
+bernouilli
+           Main                0.562           -14.6%
+
+binary-trees
+           Main                0.614            -9.8%
+
+boyer
+           Main                1.187            -2.9%
+
+boyer2
+        Checker                0.195            0.200
+    Lisplikefns                0.497            +1.6%
+           Main                0.323            +0.9%
+     Rewritefns                0.222            +3.2%
+   Rulebasetext                0.308            +0.6%
+
+bspt
+           BSPT                0.751            -0.7%
+         Euclid                0.944            -6.5%
+      EuclidGMS                0.459            +3.5%
+        GeomNum                0.328            +1.5%
+           Init                0.447            -1.6%
+          Input                0.982            +0.6%
+      Interface                0.349            -1.7%
+      Interpret                0.325            +0.3%
+        Libfuns                0.123            0.118
+         MGRlib                0.296            +0.7%
+           Main                0.302            -8.6%
+          Merge                0.449            -1.3%
+         Params                0.252            +0.8%
+           Prog                0.192            0.196
+      Rationals                0.532            +0.6%
+         Render                0.320             0.0%
+         Stdlib                0.305            -2.0%
+
+cacheprof
+       Arch_x86                1.737            +0.5%
+       Generics                0.527            +1.3%
+           Main                5.773            -2.9%
+
+calendar
+           Main                0.801            -2.7%
+
+cichelli
+          Auxil                0.474            -0.6%
+       Interval                0.114            0.117
+            Key                0.154            0.153
+           Main                0.237            -3.0%
+           Prog                0.438            +1.4%
+
+circsim
+           Main                2.158            +1.3%
+
+clausify
+           Main                0.897            -1.9%
+
+comp_lab_zift
+           Main                1.753            -2.6%
+
+compress
+        BinConv                0.268            -0.4%
+        BinTest                0.216            +0.5%
+         Decode                0.456            +0.9%
+       Defaults                0.142            0.157
+         Encode                0.515            -0.8%
+           Main                0.281            +1.1%
+        PTTrees                0.149            0.154
+     Uncompress                0.201            -1.0%
+
+compress2
+         Encode                0.928            -2.0%
+           Main                0.307            -3.9%
+  WriteRoutines                0.330            +1.2%
+
+constraints
+           Main                1.107            -2.8%
+
+cryptarithm1
+           Main                0.384           -14.8%
+
+cryptarithm2
+           Main                1.216            -6.1%
+
+cse
+           Main                0.776            -1.9%
+     StateMonad                0.196            0.197
+
+eliza
+           Main                1.066            -9.7%
+
+event
+           Main                0.842            -4.4%
+
+exp3_8
+           Main                0.482             0.0%
+
+expert
+      Knowledge                0.388            -2.6%
+           Main                0.504            -6.5%
+          Match                0.255            -1.2%
+         Result                0.149            0.151
+         Search                0.346            -1.4%
+          Table                0.465            -3.0%
+
+fannkuch-redux
+           Main                0.907            +6.9%
+
+fasta
+           Main                0.630            +0.2%
+
+fem
+Assemble_loadve                0.234            +5.6%
+Assemble_stiffn                0.314            +2.9%
+         Basics                0.231            +1.3%
+   DB_interface                0.385            +1.8%
+       Database                0.365            -1.1%
+        Degrees                0.570             0.0%
+   Displacement                0.276            -1.4%
+      Elemforce                0.212            +1.4%
+       Elemstif                0.279            +1.1%
+           Main                0.308            -1.6%
+         Matrix                0.604            +0.2%
+   Pre_assemble                0.279            +0.4%
+    PrintSource                0.412            -2.2%
+  Printuvwforce                0.281            +0.7%
+     VBlldecomp                0.514            +0.2%
+       VBmatrix                0.499            +0.4%
+         Vector                0.501            +0.2%
+
+fft
+           Main                1.180            -3.6%
+
+fft2
+Complex_Vectors                0.250            -1.6%
+        Fourier                0.679            -0.9%
+           Main                0.461            -8.0%
+
+fibheaps
+           Main                1.260            -4.4%
+
+fish
+           Main                1.077            -9.2%
+
+fluid
+      Asb_routs                0.329            +1.5%
+       C_matrix                0.388            +0.3%
+     Chl_decomp                0.942            -0.5%
+     Chl_method                0.586            +0.2%
+      Chl_routs                1.887            -1.7%
+           Defs                0.119            0.125
+         Elefac                0.224            +2.7%
+     Input_proc                0.816            +0.9%
+     Jcb_method                0.514            -0.6%
+       L_matrix                0.193            0.201
+           Main                0.341            -3.5%
+     Min_degree                0.458            +0.9%
+           Norm                0.193            0.199
+  Rhs_Asb_routs                0.522            -1.0%
+        S_Array                1.689            -1.7%
+       S_matrix                0.372            -0.5%
+        TG_iter                0.945            -1.0%
+        Tol_cal                0.250            -5.2%
+
+fulsom
+            Csg                1.208            -1.1%
+       Interval                0.818            -0.7%
+          Kolor                0.435            -1.4%
+           Main                0.398           -10.3%
+         Matrix                0.480            -3.5%
+            Oct                0.468            -1.1%
+     Patchlevel                0.120            0.120
+           Quad                0.296            -0.3%
+         Raster                0.351            +1.1%
+         Shapes                0.239            -1.7%
+          Types                0.560            -0.7%
+         Vector                0.226            -0.4%
+
+gamteb
+        Compton                0.307            +0.7%
+         Consts                0.140            0.140
+       Distance                0.280            +1.8%
+     GamtebMain                0.211            +2.8%
+     GamtebType                0.124            0.126
+      InitTable                0.417            +7.4%
+           Main                0.352            -4.3%
+         Output                0.648            +0.8%
+           Pair                0.235            +1.7%
+      PhotoElec                0.213            +0.9%
+      RoulSplit                0.202            +2.5%
+      TransPort                0.387            +0.3%
+          Utils                0.361            +2.2%
+
+gcd
+           Main                0.449            -4.0%
+
+gen_regexps
+           Main                0.508            -5.3%
+
+genfft
+           Main                1.056            -4.4%
+
+gg
+       Activity                0.618            -9.5%
+           GRIP                1.075            -6.9%
+          Graph                1.325           -10.5%
+           Main                0.680            -9.9%
+          PSlib                0.538            -2.6%
+          Parse                0.346            +1.2%
+           Pool                0.445           -12.1%
+          Spark                0.544            -2.4%
+         StdLib                0.343            -1.7%
+
+grep
+           Main                1.127            -6.2%
+        Parsers                0.327            -5.5%
+    StringMatch                0.930            -3.8%
+
+hidden
+      Comparing                0.601            -0.5%
+          Cross                0.259            +0.4%
+      EdgePlate                0.177            0.183
+      Geometric                0.325            -0.3%
+           Hide                0.458            +1.3%
+           Main                0.378            -6.1%
+       Matrices                0.125            0.129
+           Memo                0.820            -0.5%
+           MyIO                0.397            -9.8%
+        Numbers                0.416            +0.7%
+     Postscript                0.235            +1.3%
+          Preds                0.276            +1.1%
+         Rotate                0.196            0.195
+          Solve                0.240            +2.5%
+        Vectors                0.467            -1.3%
+
+hpg
+         Config                0.208            -1.9%
+            Env                0.542            -2.8%
+         GenExp                0.668            -1.9%
+        GenType                0.321            -1.2%
+         GenVal                0.378            -1.1%
+           Main                0.920            +1.0%
+          Types                0.899            -0.6%
+          Utils                0.239            +0.4%
+
+ida
+           Main                1.116            -3.8%
+
+infer
+    Environment                0.474            -3.0%
+      FiniteMap                0.295            -2.4%
+          Infer                0.303            -5.6%
+     InferMonad                0.315            -2.2%
+           Main                0.448            -4.0%
+         MaybeM                0.144            0.143
+         MyList                0.182            0.186
+          Parse                0.516            +1.4%
+          Shows                0.244            -4.5%
+          State                0.155            0.151
+         StateX                0.163            0.156
+   Substitution                0.285            -1.4%
+           Term                0.583            -0.9%
+           Type                0.609            -1.3%
+
+integer
+           Main                0.472            -4.7%
+
+integrate
+           Main                0.480            -0.6%
+
+k-nucleotide
+           Main                2.195            -4.9%
+
+kahan
+           Main                0.618           -13.8%
+
+knights
+  ChessSetArray                0.766            -2.2%
+   ChessSetList                0.532            -2.4%
+KnightHeuristic                0.712            -1.8%
+           Main                0.508            -3.7%
+          Queue                0.237           -11.4%
+           Sort                0.326            -7.1%
+
+lcss
+           Main                0.574            -1.7%
+
+life
+           Main                0.519            -1.0%
+
+lift
+     LambdaLift                1.077            -0.3%
+           Main                0.321            -3.7%
+          Print                0.505             0.0%
+           Test                0.247            +2.8%
+      Utilities                0.367            -0.8%
+
+listcompr
+           Main                0.821            -4.1%
+
+listcopy
+           Main                0.828            -3.3%
+
+maillist
+           Main                0.558            -2.2%
+
+mandel
+           Main                0.403            -7.9%
+         Mandel                0.294            +0.7%
+ PortablePixmap                0.227            +0.9%
+
+mandel2
+           Main                0.587            -0.5%
+
+minimax
+          Board                0.571            +0.9%
+           Game                0.341            +1.2%
+           Main                0.232            -1.7%
+           Prog                0.197            0.201
+           Tree                0.237             0.0%
+           Wins                0.152            0.158
+
+mkhprog
+           Main                0.988            -1.4%
+
+multiplier
+           Main                1.497            -2.7%
+
+n-body
+           Main                0.921            -4.3%
+
+nucleic2
+           Main                1.896            -4.3%
+             RA                1.184            -5.0%
+             RC                1.110            -1.6%
+             RG                0.439            -3.6%
+             RU                1.190            -0.8%
+          Types                0.160            0.133
+
+para
+           Main                2.248            -2.9%
+
+paraffins
+           Main                0.915            +0.4%
+
+parser
+           Main                5.387            -3.5%
+
+parstof
+           Main                8.894            +2.4%
+
+pic
+  ChargeDensity                0.284            +0.4%
+         Consts                0.122            0.125
+      ElecField                0.498            -2.4%
+           Main                0.358            -3.6%
+            Pic                0.349            +0.9%
+        PicType                0.123            0.128
+      Potential                0.485            +0.8%
+   PushParticle                0.340            +0.3%
+          Utils                1.020            +0.6%
+
+pidigits
+           Main                0.508            -3.0%
+
+power
+           Main                1.335            -6.4%
+
+pretty
+        CharSeq                0.235            -7.2%
+           Main                0.397           -19.9%
+         Pretty                0.475            -6.7%
+
+primes
+           Main                0.413            -4.1%
+
+primetest
+         IntLib                0.309            -0.6%
+           Main                0.347            -1.4%
+       MyRandom                0.203            +0.5%
+          Prime                0.410           -10.0%
+
+prolog
+         Engine                0.233            +1.3%
+       Interact                0.232            +1.7%
+           Main                0.594            -4.9%
+          Parse                0.303            +2.6%
+     PrologData                0.721            -0.1%
+          Subst                0.278            +2.2%
+        Version                0.115            0.118
+
+puzzle
+           Main                1.043            -5.8%
+
+queens
+           Main                0.411            -0.2%
+
+reptile
+    Auxprogfuns                0.786            -2.0%
+           Diff                0.165            0.167
+       Drawfuns                0.337            +1.2%
+       Geomfuns                0.394            +0.5%
+           Help                0.263            +1.5%
+     Interstate                0.128            0.132
+         Layout                0.689            -0.1%
+           Main                0.320            -1.9%
+        Mgrfuns                0.331            +1.5%
+       Progfuns                1.275            -1.7%
+         Psfuns                0.327            +0.9%
+       Rational                0.293            +1.0%
+       Tilefuns                0.517            +1.0%
+
+reverse-complement
+           Main                0.666            -1.7%
+
+rewrite
+           Main                1.738            -2.4%
+
+rfib
+           Main                0.375            -1.9%
+
+rsa
+           Main                0.242            +0.8%
+            Rsa                0.443            -0.5%
+
+scc
+        Digraph                0.218            -2.3%
+           Main                0.323            -0.6%
+
+sched
+           Main                0.978            -3.0%
+
+scs
+  LinearAlgebra                2.719            -2.6%
+           Main                0.549            -2.7%
+          Parse                0.948            -0.3%
+       ParseLib                0.431            -0.2%
+      RandomFix                0.289            +0.3%
+       Simulate                2.415            -2.1%
+          Types                0.346            +0.3%
+
+simple
+           Main                8.389            +2.7%
+
+solid
+           Main                5.152            -0.8%
+
+sorting
+           Main                0.346            -1.4%
+           Sort                0.481            +1.0%
+
+spectral-norm
+           Main                0.633            +4.1%
+
+sphere
+           Main                2.025            +5.6%
+
+symalg
+            Ast                0.130            0.130
+    BasicNumber                0.825            -2.8%
+BasicNumberAppr                0.404             0.0%
+            Env                0.185            0.190
+           Eval                0.442            +0.2%
+          Lexer                0.304            +1.0%
+           Main                0.380            -4.2%
+             Op                0.225            +3.6%
+         Parser                0.470            +0.9%
+          Print                0.339            -1.8%
+          RealM                0.530            -1.9%
+
+tak
+           Main                0.396            -4.8%
+
+transform
+           Main                4.200            -9.2%
+
+treejoin
+           Main                0.548             0.0%
+
+typecheck
+           Main                1.357            -4.0%
+
+veritas
+     Attributes                0.164            0.165
+           Auto                0.222            +0.5%
+       Build_Tm                0.493            -1.8%
+     Build_itrm                0.694            -1.3%
+  Core_database                1.328            +1.7%
+  Core_datatype                0.345            -1.2%
+          Dcore                0.282            -1.1%
+   DerivedRules                0.495            +0.8%
+        Display                0.865            -0.8%
+         Editor                0.267            +1.1%
+          Edlib                0.367            -0.8%
+         Getops                0.233            +1.7%
+        Globals                0.142            0.146
+          Goals                0.819            -2.3%
+         Kernel                1.790            -1.7%
+         Lookup                0.118            0.123
+           Main                0.837            -5.0%
+          Parse                2.632            +0.6%
+      Sub_Core1                0.717            -2.1%
+      Sub_Core2                0.614            -0.5%
+      Sub_Core3                0.535            +3.7%
+      Sub_Core4                0.713            -0.3%
+      Tacticals                0.313            +0.3%
+        Tactics                0.575            -6.4%
+           Tags                0.245            +2.4%
+     ThmTactics                1.709            -3.2%
+          Token                0.496            +1.6%
+           Tree                0.436            -0.7%
+      Type_defs                0.224            +6.7%
+        Unparse                0.922            -1.1%
+         Vtslib                0.238            +0.4%
+    X_interface                1.152            -0.8%
+
+wang
+           Main                0.969            -3.1%
+
+wave4main
+           Main                1.270            -3.1%
+
+wheel-sieve1
+           Main                0.486            -0.8%
+
+wheel-sieve2
+           Main                0.525            -2.5%
+
+x2n1
+           Main                0.504            -6.7%
+
+        -1 s.d.                -----            -5.4%
+        +1 s.d.                -----            +1.9%
+        Average                -----            -1.8%
+
+Compile Allocations
+
+-------------------------------------------------------------------------------
+        Program            nofib-log   nofib-stripped
+-------------------------------------------------------------------------------
+
+anna
+       AbsConc3            396735112            +0.1%
+  AbstractEval2            108943128            +0.3%
+   AbstractMisc            182013312            +0.2%
+  AbstractVals2            405056640            +0.1%
+          Apply            144066216            +0.3%
+    BarakiConc3            276288120            +0.2%
+     BarakiMeet            173729224            +0.2%
+       BaseDefs           1373085688            +0.0%
+   Constructors            282112184            +0.2%
+     Dependancy            429521904            +0.1%
+     DomainExpr            161363264            +0.2%
+    EtaAbstract            183011248            +0.2%
+FrontierDATAFN2            269479688            +0.2%
+FrontierGENERIC            261930688            +0.2%
+  FrontierMisc2            148181344            +0.3%
+        Inverse            217874720            +0.2%
+    LambdaLift5            613398640            +0.1%
+           Main            432910240            +0.1%
+    MakeDomains            139737400            +0.3%
+        Monster            148452176            +0.2%
+        MyUtils            176418944            +0.2%
+        Parser2            870369368            +0.0%
+    PrettyPrint            190789944            +0.2%
+   PrintResults            291134480            +0.1%
+      ReadTable            221349384            +0.2%
+       Simplify            132395384            +0.3%
+ SmallerLattice            603781776            +0.1%
+      StrictAn6            978372952            +0.0%
+ SuccsAndPreds2            389708480            +0.1%
+    TExpr2DExpr            189043336            +0.2%
+     TypeCheck5           1076978328            +0.0%
+          Utils            492974232            +0.1%
+
+ansi
+           Main            270796008            +0.2%
+
+atom
+           Main            236780856            +0.2%
+
+awards
+           Main            398451088            +0.1%
+          QSort             66534416            +0.6%
+
+banner
+           Main            433748832            +0.1%
+
+bernouilli
+           Main            202014696            +0.2%
+
+binary-trees
+           Main            249849040            +0.4%
+
+boyer
+           Main            632873248            +0.1%
+
+boyer2
+        Checker             84110448            +0.5%
+    Lisplikefns            255127976            +0.2%
+           Main            123213296            +0.3%
+     Rewritefns            102843544            +0.4%
+   Rulebasetext            164673752            +0.3%
+
+bspt
+           BSPT            389430560            +0.1%
+         Euclid            466280624            +0.1%
+      EuclidGMS            216744344            +0.2%
+        GeomNum            148058832            +0.3%
+           Init            224659104            +0.2%
+          Input            540317944            +0.1%
+      Interface            129333736            +0.3%
+      Interpret            142649912            +0.3%
+        Libfuns             36580648            +1.1%
+         MGRlib            130857568            +0.3%
+           Main             91599096            +0.4%
+          Merge            204824016            +0.2%
+         Params            112169632            +0.4%
+           Prog             70146824            +0.6%
+      Rationals            253668752            +0.2%
+         Render            141411232            +0.3%
+         Stdlib            126764632            +0.3%
+
+cacheprof
+       Arch_x86            938080472            +0.0%
+       Generics            270622880            +0.1%
+           Main           2800532720            +0.0%
+
+calendar
+           Main            339839904            +0.1%
+
+cichelli
+          Auxil            228093168            +0.2%
+       Interval             35326560            +1.1%
+            Key             59007848            +0.7%
+           Main             87562664            +0.4%
+           Prog            213626688            +0.2%
+
+circsim
+           Main           1057329528            +0.0%
+
+clausify
+           Main            419605616            +0.1%
+
+comp_lab_zift
+           Main            866853920            +0.0%
+
+compress
+        BinConv            108406424            +0.4%
+        BinTest             75510032            +0.6%
+         Decode            226125416            +0.2%
+       Defaults             50941952            +0.8%
+         Encode            274076408            +0.1%
+           Main             97125296            +0.4%
+        PTTrees             53197104            +0.7%
+     Uncompress             65556584            +0.6%
+
+compress2
+         Encode            456510728            +0.1%
+           Main            102890272            +0.4%
+  WriteRoutines            153245344            +0.3%
+
+constraints
+           Main            525031088            +0.1%
+
+cryptarithm1
+           Main            147488024            +0.3%
+
+cryptarithm2
+           Main            543387568            +0.1%
+
+cse
+           Main            377472344            +0.1%
+     StateMonad             81717664            +0.5%
+
+eliza
+           Main            530126792            +0.1%
+
+event
+           Main            378214064            +0.1%
+
+exp3_8
+           Main            208174992            +0.2%
+
+expert
+      Knowledge            177972368            +0.2%
+           Main            204053640            +0.2%
+          Match            100678360            +0.4%
+         Result             53096200            +0.8%
+         Search            155816504            +0.3%
+          Table            226548568            +0.2%
+
+fannkuch-redux
+           Main            350842120           +27.1%
+
+fasta
+           Main            252950360            +0.2%
+
+fem
+Assemble_loadve             88063920            +0.5%
+Assemble_stiffn            135495664            +0.3%
+         Basics             84470712            +0.4%
+   DB_interface            187287912            +0.2%
+       Database            163661168            +0.2%
+        Degrees            266036984            +0.1%
+   Displacement            109376848            +0.4%
+      Elemforce             73771480            +0.6%
+       Elemstif            121879360            +0.3%
+           Main            103501976            +0.4%
+         Matrix            294486968            +0.1%
+   Pre_assemble            113680944            +0.4%
+    PrintSource            201086792            +0.2%
+  Printuvwforce            118496400            +0.3%
+     VBlldecomp            239537648            +0.2%
+       VBmatrix            222487264            +0.2%
+         Vector            226388976            +0.2%
+
+fft
+           Main            556536360            +0.1%
+
+fft2
+Complex_Vectors             93805280            +0.4%
+        Fourier            326419104            +0.1%
+           Main            175566456            +0.2%
+
+fibheaps
+           Main            561520528            +0.1%
+
+fish
+           Main            531162608            +0.1%
+
+fluid
+      Asb_routs            147857352            +0.3%
+       C_matrix            198401520            +0.2%
+     Chl_decomp            444498864            +0.1%
+     Chl_method            268189272            +0.2%
+      Chl_routs            902583464            +0.0%
+           Defs             38552984            +1.1%
+         Elefac             88255952            +0.5%
+     Input_proc            403648328            +0.1%
+     Jcb_method            229377944            +0.2%
+       L_matrix             87907080            +0.5%
+           Main            124802256            +0.3%
+     Min_degree            224242552            +0.2%
+           Norm             80381368            +0.5%
+  Rhs_Asb_routs            231233392            +0.2%
+        S_Array            826114808            +0.1%
+       S_matrix            181141176            +0.2%
+        TG_iter            459486856            +0.1%
+        Tol_cal             89420552            +0.5%
+
+fulsom
+            Csg            581050744            +0.1%
+       Interval            419873080            +0.1%
+          Kolor            212562592            +0.2%
+           Main            138528576            +0.3%
+         Matrix            221973424            +0.2%
+            Oct            208825040            +0.2%
+     Patchlevel             37829536            +1.1%
+           Quad            127210232            +0.3%
+         Raster            165283208            +0.2%
+         Shapes            101135000            +0.4%
+          Types            272297232            +0.2%
+         Vector             87840808            +0.5%
+
+gamteb
+        Compton            140580464            +0.3%
+         Consts             48578016            +0.8%
+       Distance            122620232            +0.3%
+     GamtebMain             77667952            +0.5%
+     GamtebType             39871784            +1.0%
+      InitTable            207593840            +0.2%
+           Main            123438312            +0.3%
+         Output            308830680            +0.1%
+           Pair             92192024            +0.4%
+      PhotoElec             77428008            +0.5%
+      RoulSplit             74203040            +0.5%
+      TransPort            188730568            +0.2%
+          Utils            168655520            +0.2%
+
+gcd
+           Main            177546136            +0.3%
+
+gen_regexps
+           Main            209679128            +0.2%
+
+genfft
+           Main            461630304            +0.1%
+
+gg
+       Activity            267571520            +0.2%
+           GRIP            488989600            +0.1%
+          Graph            617361088            +0.1%
+           Main            289522376            +0.2%
+          PSlib            270939304            +0.1%
+          Parse            153415424            +0.3%
+           Pool            183604104            +0.2%
+          Spark            247709232            +0.2%
+         StdLib            148682976            +0.3%
+
+grep
+           Main            510508384            +0.1%
+        Parsers            126621192            +0.3%
+    StringMatch            440532864            +0.1%
+
+hidden
+      Comparing            282966320            +0.1%
+          Cross            102807712            +0.4%
+      EdgePlate             69567824            +0.6%
+      Geometric            146285784            +0.3%
+           Hide            199737528            +0.2%
+           Main            132430584            +0.3%
+       Matrices             40527696            +1.0%
+           Memo            401419552            +0.1%
+           MyIO            136277840            +0.3%
+        Numbers            204118408            +0.2%
+     Postscript             91974976            +0.4%
+          Preds            113660824            +0.3%
+         Rotate             66944872            +0.6%
+          Solve             97282728            +0.4%
+        Vectors            196156240            +0.2%
+
+hpg
+         Config             94160160            +0.4%
+            Env            247089752            +0.2%
+         GenExp            335256768            +0.1%
+        GenType            141995448            +0.3%
+         GenVal            168112072            +0.2%
+           Main            430544152            +0.1%
+          Types            468198176            +0.1%
+          Utils             94372704            +0.4%
+
+ida
+           Main            545718472            +0.1%
+
+infer
+    Environment            196730344            +0.2%
+      FiniteMap            116315040            +0.3%
+          Infer            121938248            +0.3%
+     InferMonad            134042984            +0.3%
+           Main            177817720            +0.2%
+         MaybeM             50994168            +0.8%
+         MyList             57165976            +0.7%
+          Parse            236642864            +0.2%
+          Shows             89545192            +0.4%
+          State             54132616            +0.7%
+         StateX             57799592            +0.7%
+   Substitution            120010944            +0.3%
+           Term            272477680            +0.2%
+           Type            284976176            +0.1%
+
+integer
+           Main            193231432            +0.2%
+
+integrate
+           Main            200478616            +0.2%
+
+k-nucleotide
+           Main           1009147912            +0.2%
+
+kahan
+           Main            216337464            +0.2%
+
+knights
+  ChessSetArray            364949072            +0.1%
+   ChessSetList            232478448            +0.2%
+KnightHeuristic            352929376            +0.1%
+           Main            208994216            +0.2%
+          Queue             75124744            +0.5%
+           Sort            131990296            +0.3%
+
+lcss
+           Main            259493160            +0.1%
+
+life
+           Main            236097464            +0.2%
+
+lift
+     LambdaLift            523448208            +0.1%
+           Main            114096624            +0.4%
+          Print            252169720            +0.2%
+           Test            112659624            +0.4%
+      Utilities            172686784            +0.2%
+
+listcompr
+           Main            392123392            +0.1%
+
+listcopy
+           Main            395985472            +0.1%
+
+maillist
+           Main            248630888            +0.2%
+
+mandel
+           Main            145304104            +0.3%
+         Mandel            128993272            +0.3%
+ PortablePixmap             84593368            +0.5%
+
+mandel2
+           Main            280153704            +0.2%
+
+minimax
+          Board            269135472            +0.1%
+           Game            154615568            +0.3%
+           Main             87122048            +0.5%
+           Prog             67713672            +0.6%
+           Tree             86753096            +0.5%
+           Wins             68936760            +0.6%
+
+mkhprog
+           Main            473336048            +0.1%
+
+multiplier
+           Main            748283208            +0.1%
+
+n-body
+           Main            391948248            +2.3%
+
+nucleic2
+           Main           1020057528            +0.0%
+             RA            641283864            +0.1%
+             RC            615427368            +0.1%
+             RG            232502464            +0.2%
+             RU            651172384            +0.1%
+          Types             45142152            +0.9%
+
+para
+           Main           1110093344            +0.0%
+
+paraffins
+           Main            416068336            +0.1%
+
+parser
+           Main           2587202240            +0.0%
+
+parstof
+           Main           5861786408            +0.0%
+
+pic
+  ChargeDensity            120616408            +0.3%
+         Consts             38689400            +1.0%
+      ElecField            220089912            +0.2%
+           Main            127307752            +0.3%
+            Pic            155752640            +0.3%
+        PicType             40916904            +1.0%
+      Potential            223660080            +0.2%
+   PushParticle            158021864            +0.3%
+          Utils            513177432            +0.1%
+
+pidigits
+           Main            214387488            +0.2%
+
+power
+           Main            637759952            +0.1%
+
+pretty
+        CharSeq             93533400            +0.4%
+           Main            115585496            +0.4%
+         Pretty            221252264            +0.2%
+
+primes
+           Main            153190240            +0.2%
+
+primetest
+         IntLib            127117976            +0.3%
+           Main            126724608            +0.3%
+       MyRandom             70826456            +0.6%
+          Prime            166432536            +0.2%
+
+prolog
+         Engine             90895976            +0.5%
+       Interact             86669072            +0.5%
+           Main            264448312            +0.2%
+          Parse            132324664            +0.3%
+     PrologData            358159864            +0.1%
+          Subst            119505008            +0.3%
+        Version             35483288            +1.1%
+
+puzzle
+           Main            532541104            +0.1%
+
+queens
+           Main            165186552            +0.3%
+
+reptile
+    Auxprogfuns            396672264            +0.1%
+           Diff             61852360            +0.6%
+       Drawfuns            156391112            +0.3%
+       Geomfuns            201267184            +0.2%
+           Help            137416504            +0.3%
+     Interstate             42656696            +1.0%
+         Layout            376237400            +0.1%
+           Main            115174304            +0.3%
+        Mgrfuns            151686944            +0.3%
+       Progfuns            626698848            +0.1%
+         Psfuns            146593400            +0.3%
+       Rational            126995976            +0.3%
+       Tilefuns            243772168            +0.2%
+
+reverse-complement
+           Main            266091576            +4.5%
+
+rewrite
+           Main            878171928            +0.0%
+
+rfib
+           Main            139595016            +0.3%
+
+rsa
+           Main             95889272            +0.4%
+            Rsa            177214608            +0.2%
+
+scc
+        Digraph             85368104            +0.5%
+           Main            112245920            +0.4%
+
+sched
+           Main            447271112            +0.1%
+
+scs
+  LinearAlgebra           1255051816            +0.0%
+           Main            238748472            +0.2%
+          Parse            476425072            +0.1%
+       ParseLib            208610024            +0.2%
+      RandomFix            121177776            +0.3%
+       Simulate           1135310192            +0.0%
+          Types            161580728            +0.3%
+
+simple
+           Main           4137289752            +0.0%
+
+solid
+           Main           3747717784            +0.0%
+
+sorting
+           Main            125158000            +0.3%
+           Sort            242223760            +0.2%
+
+spectral-norm
+           Main            262432896            +8.3%
+
+sphere
+           Main           1038506640            +0.0%
+
+symalg
+            Ast             41881680            +1.0%
+    BasicNumber            408832928            +0.1%
+BasicNumberAppr            168999664            +0.2%
+            Env             60563744            +0.7%
+           Eval            191540648            +0.2%
+          Lexer            135102688            +0.3%
+           Main            145086256            +0.3%
+             Op            116461968            +0.4%
+         Parser            204006912            +0.2%
+          Print            149546656            +0.3%
+          RealM            242149192            +0.2%
+
+tak
+           Main            146924064            +0.3%
+
+transform
+           Main           2030583144            +0.0%
+
+treejoin
+           Main            253593648            +0.2%
+
+typecheck
+           Main            654102792            +0.1%
+
+veritas
+     Attributes             63610808            +0.6%
+           Auto             81695912            +0.5%
+       Build_Tm            218332416            +0.2%
+     Build_itrm            359804328            +0.1%
+  Core_database            661594448            +0.1%
+  Core_datatype            166085712            +0.3%
+          Dcore            113043200            +0.3%
+   DerivedRules            233574040            +0.2%
+        Display            441473184            +0.1%
+         Editor            112379920            +0.4%
+          Edlib            171383240            +0.2%
+         Getops             90017496            +0.4%
+        Globals             50414312            +0.8%
+          Goals            408185800            +0.1%
+         Kernel            917756680            +0.0%
+         Lookup             40763096            +1.0%
+           Main            367067208            +0.1%
+          Parse           1289323264            +0.0%
+      Sub_Core1            372047336            +0.1%
+      Sub_Core2            304309232            +0.1%
+      Sub_Core3            259447520            +0.2%
+      Sub_Core4            359130768            +0.1%
+      Tacticals            139333272            +0.3%
+        Tactics            280795552            +0.1%
+           Tags            102603016            +0.4%
+     ThmTactics            829347896            +0.1%
+          Token            242357360            +0.2%
+           Tree            213245520            +0.2%
+      Type_defs             87203648            +0.4%
+        Unparse            491146576            +0.1%
+         Vtslib             90730336            +0.5%
+    X_interface            573864544            +0.1%
+
+wang
+           Main            437494856            +0.1%
+
+wave4main
+           Main            587551800            +0.1%
+
+wheel-sieve1
+           Main            208851848            +0.2%
+
+wheel-sieve2
+           Main            225704600            +0.2%
+
+x2n1
+           Main            200125888            +0.2%
+
+        -1 s.d.                -----            -0.9%
+        +1 s.d.                -----            +1.7%
+        Average                -----            +0.4%
