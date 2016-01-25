@@ -1,0 +1,2 @@
+./Main +RTS -thaha 
+<<ghc: 4261720 bytes, 9 GCs, 52580/60848 avg/max bytes residency (2 samples), 1M in use, 0.001 INIT (0.002 elapsed), 0.005 MUT (0.005 elapsed), 0.000 GC (0.000 elapsed) :ghc>>

@@ -1,0 +1,14 @@
+./Main +RTS -tstdin --machine-readable 
+ [("bytes allocated", "116936")
+ ,("num_GCs", "1")
+ ,("average_bytes_used", "55376")
+ ,("max_bytes_used", "55376")
+ ,("num_byte_usage_samples", "1")
+ ,("peak_megabytes_allocated", "1")
+ ,("init_cpu_seconds", "0.000")
+ ,("init_wall_seconds", "0.003")
+ ,("mutator_cpu_seconds", "0.000")
+ ,("mutator_wall_seconds", "0.001")
+ ,("GC_cpu_seconds", "0.000")
+ ,("GC_wall_seconds", "0.000")
+ ]
