@@ -1,0 +1,14 @@
+./Main +RTS -ttiming.temp --machine-readable 
+ [("bytes allocated", "4261720")
+ ,("num_GCs", "9")
+ ,("average_bytes_used", "52580")
+ ,("max_bytes_used", "60848")
+ ,("num_byte_usage_samples", "2")
+ ,("peak_megabytes_allocated", "1")
+ ,("init_cpu_seconds", "0.001")
+ ,("init_wall_seconds", "0.001")
+ ,("mutator_cpu_seconds", "0.005")
+ ,("mutator_wall_seconds", "0.005")
+ ,("GC_cpu_seconds", "0.000")
+ ,("GC_wall_seconds", "0.000")
+ ]
